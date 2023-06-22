@@ -16,19 +16,19 @@
   //animacion para arriba y para abajo
   &__group {
     .c {
-      animation: goingUp 2s forwards 0s 1 normal;
+      animation: goingUp 2s forwards 1s 1 normal;
     }
     .n {
-      animation: goingDown 2s forwards 0.25s 1 normal;
+      animation: goingDown 2s forwards 1.25s 1 normal;
     }
     .d {
-      animation: goingUp 2s forwards 0.45s 1 normal;
+      animation: goingUp 2s forwards 1.45s 1 normal;
     }
     .l {
-      animation: goingDown 2s forwards 0.56s 1 normal;
+      animation: goingDown 2s forwards 1.56s 1 normal;
     }
     .a {
-      animation: goingUp 2s forwards 0.68s 1 normal;
+      animation: goingUp 2s forwards 1.68s 1 normal;
     }
 
     &__letter {
