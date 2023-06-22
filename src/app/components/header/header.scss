@@ -1,0 +1,71 @@
+@import "../globals.scss";
+
+.header {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  position: fixed;
+  z-index: 5;
+  mix-blend-mode: difference;
+
+  &__menu {
+    font-family: $roboto;
+    font-weight: 400;
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__left {
+      display: flex;
+      justify-content: space-between;
+
+      .logo{
+        position: absolute;
+        right: 50vw;
+        top: 60px;
+        transform: translate(50%, -50%);
+      }
+    }
+    &__right {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.hover {
+  display: inline-block;
+  position: relative;
+  mix-blend-mode: difference;
+}
+
+.hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -3px;
+  left: 0;
+  background-color: white;
+  mix-blend-mode: difference;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hover:focus::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+path {
+  fill: white;
+}

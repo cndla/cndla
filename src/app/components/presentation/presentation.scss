@@ -1,10 +1,19 @@
 .presentation {
-  background-image: url("../../../images/IMAGE-BACKGROUND.jpg");
+  background-image: url("../../images/IMAGE-BACKGROUND.jpg");
+  background-size: cover;
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 10;
+  //animacion para que se vaya para arriba
+  animation: fade 0.8s 2.3s 1 forwards;
+  transition-duration: 1s;
+  transform-origin: bottom;
+
+  //animacion para arriba y para abajo
   &__group {
     .c {
       animation: goingUp 2s forwards 0s 1 normal;
@@ -48,8 +57,8 @@
     transform: translateY(0);
     opacity: 1;
   }
-  100% {
-    transform: translateY(200px);
+  90% {
+    transform: translateY(100px);
     opacity: 0;
   }
 }
@@ -72,8 +81,15 @@
     opacity: 1;
   }
 
+  90% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
   100% {
-    transform: translateY(200px);
+    height: 0;
     opacity: 0;
   }
 }
