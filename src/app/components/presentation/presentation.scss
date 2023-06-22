@@ -1,0 +1,79 @@
+.presentation {
+  background-image: url("../../../images/IMAGE-BACKGROUND.jpg");
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__group {
+    .c {
+      animation: goingUp 2s forwards 0s 1 normal;
+    }
+    .n {
+      animation: goingDown 2s forwards 0.25s 1 normal;
+    }
+    .d {
+      animation: goingUp 2s forwards 0.45s 1 normal;
+    }
+    .l {
+      animation: goingDown 2s forwards 0.56s 1 normal;
+    }
+    .a {
+      animation: goingUp 2s forwards 0.68s 1 normal;
+    }
+
+    &__letter {
+      opacity: 0;
+      path {
+        fill: white;
+      }
+    }
+  }
+}
+
+@keyframes goingDown {
+  0% {
+    transform: translate(0, -150px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@keyframes goingUp {
+  0% {
+    transform: translate(0, 150px);
+    opacity: 0;
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+}
