@@ -1,8 +1,21 @@
+"use client";
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useEffect } from "react";
 import "./presentation.scss";
 
 const Presentation = () => {
+  const getUp = () => {
+    //every time the function is called, get to the top of the page
+    window.scrollTo({
+      top: 0,
+      //the time it takes to scroll to the top
+    });
+  };
+
+  useEffect(() => {
+    getUp()
+  }, [])
+
   return (
     <div className="presentation">
       <div className="presentation__group">
