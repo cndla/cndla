@@ -17,18 +17,17 @@
     opacity: 0;
     animation: fadeIn 0.5s normal 2.9s 1 forwards;
     font-family: "Wagon";
-    font-size: clamp(5rem, 6vw, 7rem);
-    font-stretch: wider;
     &__moment {
       width: 75vw;
       margin: auto;
       display: flex;
       justify-content: space-between;
+      font-size: clamp(4rem, 6vw, 7.5rem);
       line-height: clamp(4.5rem, 5.5vw, 6.5rem);
-      letter-spacing: -3px;
     }
   }
-  &__subtitle {
+  &__subtitle,
+  h2 {
     opacity: 0;
     animation: fadeIn 0.6s normal 3s 1 forwards;
 

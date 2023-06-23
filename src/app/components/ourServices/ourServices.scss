@@ -1,7 +1,42 @@
+@import "../../globals.scss";
 
+.ourServices {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  @include flexRow(center, center);
+  &__container {
+    cursor: default;
 
-.ourServices{
-    background-color: black;
-    width: 100vw;
-    height: 100vh;
+    width: 90%;
+    height: 65vh;
+    margin: auto;
+    @include flexRow(space-between, none);
+    &__title {
+      @include flexColumn(space-between, none);
+      &__first {
+        font-family: "Wagon", sans-serif;
+        font-size: clamp(2rem, 4vw, 4rem);
+      }
+      &__second {
+        font-size: clamp(1rem, 3vw, 2rem);
+        font-family: $roboto;
+      }
+    }
+    &__menu {
+      @include flexColumn(space-around, none);
+      font-size: clamp(1rem, 3vw, 2rem);
+      width: 40%;
+      &__text {
+        font-family: $roboto;
+        display: flex;
+        align-items: center;
+        line-height: 10px;
+      }
+    }
+  }
+}
+.arrow{
+    width: 10%;
 }

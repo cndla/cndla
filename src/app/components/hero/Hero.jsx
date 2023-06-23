@@ -21,12 +21,12 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero__subtitle">
-        <p className={roboto.className}>
+        <h2 className={roboto.className}>
           we’re a boutique studio working on selected projects for
-        </p>
-        <p className={roboto.className}>
+        </h2>
+        <h2 className={roboto.className}>
           startups and companies, bringing what they envision to life
-        </p>
+        </h2>
       </div>
     </div>
   );
