@@ -3,16 +3,20 @@ import React from "react";
 import "./ourServices.scss";
 import { motion } from "framer-motion";
 import arrowAnimation from "../animations/arrowAnimation.json";
-import Lottie from "lottie-react";
 import waveLine from "../animations/waveLine.json";
+import radial from '../animations/radial.json'
+import squareDot from '../animations/squareDot.json'
+import lab from '../animations/lab.json'
+import Lottie from "lottie-react";
+
 
 const OurServices = () => {
   const items = [
     { text: "Engagement strategy", animation: arrowAnimation },
     { text: "Brand identity", animation: waveLine },
-    { text: "Performance", animation: arrowAnimation },
-    { text: "Content & visual creators", animation: waveLine },
-    { text: "Creative projects lab", animation: waveLine },
+    { text: "Performance", animation: radial },
+    { text: "Content & visual creators", animation: squareDot },
+    { text: "Creative projects lab", animation: lab },
   ];
 
   return (
