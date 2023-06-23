@@ -4,14 +4,15 @@ import "./ourServices.scss";
 import { motion } from "framer-motion";
 import arrowAnimation from "../animations/arrowAnimation.json";
 import Lottie from "lottie-react";
+import waveLine from "../animations/waveLine.json";
 
 const OurServices = () => {
   const items = [
-    "Engagement strategy",
-    "Brand identity",
-    "Performance",
-    "Content & visual creators",
-    "Creative projects lab",
+    { text: "Engagement strategy", animation: arrowAnimation },
+    { text: "Brand identity", animation: waveLine },
+    { text: "Performance", animation: arrowAnimation },
+    { text: "Content & visual creators", animation: waveLine },
+    { text: "Creative projects lab", animation: waveLine },
   ];
 
   return (
@@ -32,19 +33,24 @@ const OurServices = () => {
         </div>
         <div className="ourServices__container__menu">
           {items.map((item, index) => (
-            <>
-              <span key={index} className="ourServices__container__menu__text">
-                <Lottie className="arrow" animationData={arrowAnimation} loop={true} />
-                {item}
+            <React.Fragment key={index}>
+              <span className="ourServices__container__menu__text">
+                <Lottie
+                  className="arrow"
+                  animationData={item.animation}
+                  loop={true}
+                />
+                {item.text}
               </span>
               {index !== items.length - 1 && (
                 <motion.hr
+                  key={index + 1 * 9}
                   initial={{ width: 0 }}
                   whileInView={{ width: "100%" }}
                   transition={{ duration: 0.5, delay: 0.1 + index * 0.1 }}
                 />
               )}
-            </>
+            </React.Fragment>
           ))}
         </div>
       </div>
