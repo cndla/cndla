@@ -4,11 +4,10 @@ import "./ourServices.scss";
 import { motion } from "framer-motion";
 import arrowAnimation from "../animations/arrowAnimation.json";
 import waveLine from "../animations/waveLine.json";
-import radial from '../animations/radial.json'
-import squareDot from '../animations/squareDot.json'
-import lab from '../animations/lab.json'
+import radial from "../animations/radial.json";
+import squareDot from "../animations/squareDot.json";
+import lab from "../animations/lab.json";
 import Lottie from "lottie-react";
-
 
 const OurServices = () => {
   const items = [

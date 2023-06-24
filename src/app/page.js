@@ -3,15 +3,17 @@ import Presentation from "./components/presentation/Presentation";
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import OurServices from "./components/ourServices/OurServices";
+import WorkingWith from "./components/workingWith/WorkingWith";
+import WorkingList from "./components/workingWith/WorkingList";
 
 export default function Home() {
   return (
     <main>
-    <Presentation/>
-    <Header/>
-    <Hero/>
-    <OurServices/>
+      <Presentation />
+      <Header />
+      <Hero />
+      <OurServices />
+      <WorkingList />
     </main>
-  
   );
 }
