@@ -29,7 +29,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="header__menu__right ">
-          <Link href="/" className="hover">
+          <Link href="#work" className="hover">
             WORK
           </Link>
           <Link href="/" className="hover">

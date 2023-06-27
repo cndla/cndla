@@ -13,6 +13,8 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  scroll-behavior: smooth;
+
   &__title {
     opacity: 0;
     animation: fadeIn 0.5s normal 2.9s 1 forwards;

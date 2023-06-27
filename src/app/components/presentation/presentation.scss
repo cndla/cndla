@@ -12,6 +12,8 @@
   animation: fade 0.8s 2.3s 1 forwards;
   transition-duration: 0.5s;
   transform-origin: bottom;
+  scroll-behavior: smooth;
+
 
   //animacion para arriba y para abajo
   &__group {

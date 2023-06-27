@@ -5,6 +5,8 @@
   width: 100vw;
   height: 100vh;
   color: white;
+  scroll-behavior: smooth;
+
   @include flexRow(center, center);
   &__container {
     cursor: default;

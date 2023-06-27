@@ -5,6 +5,9 @@ $size: 15vw;
   height: 110vh;
   background-size: cover;
   display: flex;
+  scroll-behavior: smooth;
+  z-index: 15;
+
   &__container {
     display: flex;
     justify-content: center;

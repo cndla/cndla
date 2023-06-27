@@ -5,7 +5,7 @@ import React from "react";
 
 const WorkingWith = ({ className, logo }) => {
   return (
-    <div className={`${className} workingWith`}>
+    <div id="work" className={`${className} workingWith`}>
       <div className="workingWith__container">
         <Image
           width={466}
