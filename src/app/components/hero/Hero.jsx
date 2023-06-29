@@ -17,7 +17,7 @@ const Hero = () => {
           <span>go</span>
           <span>beyond</span>
           <span>the</span>
-          <span>normal</span>
+          <span>normal.</span>
         </div>
       </div>
       <div className="hero__subtitle">

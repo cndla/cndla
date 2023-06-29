@@ -1,0 +1,69 @@
+$size: 15vw;
+.workingWith {
+  background-attachment: fixed;
+  width: 100vw;
+  height: 110vh;
+  background-size: cover;
+  display: flex;
+  scroll-behavior: smooth;
+  z-index: 15;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90vw;
+    height: 100vh;
+    margin: auto;
+    &__logo {
+      aspect-ratio: 3.14;
+      position: sticky;
+      top: 100px;
+      position: -webkit-sticky;
+    }
+  }
+}
+
+.artbag {
+  background-image: url(../../images/ARTBAG.webp);
+}
+.bancoFormosa {
+  background-image: url(../../images/BANCOFORMOSA.webp);
+}
+.wyndham {
+  background-image: url(../../images/WYNDHAM.png);
+}
+.rockCycle {
+  background-image: url(../../images/ROCKCYCLE.webp);
+  .workingWith__container__logo {
+    width: $size;
+    height: $size;
+  }
+}
+.piba {
+  background-image: url(../../images/PIBA.webp);
+  .workingWith__container__logo {
+    width: $size;
+    height: $size;
+  }
+}
+.diamondsFilm {
+  background-image: url(../../images/DIAMONDSFILM.webp);
+  .workingWith__container__logo {
+    width: $size;
+    height: $size;
+  }
+}
+.meta {
+  background-image: url(../../images/META.webp);
+}
+.dannyOcean {
+  background-image: url(../../images/DANNYOCEAN.webp);
+}
+.bodegaAraujo {
+  background-image: url(../../images/BODEGAARAUJO.webp);
+  .workingWith__container__logo {
+    width: $size * 2;
+    height: $size * 1.5;
+  }
+}

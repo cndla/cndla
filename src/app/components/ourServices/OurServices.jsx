@@ -2,20 +2,20 @@
 import React from "react";
 import "./ourServices.scss";
 import { motion } from "framer-motion";
-import arrowAnimation from "../animations/arrowAnimation.json";
-import waveLine from "../animations/waveLine.json";
-import radial from "../animations/radial.json";
-import squareDot from "../animations/squareDot.json";
-import lab from "../animations/lab.json";
+import pyramid from "../animations/pyramid.json";
 import Lottie from "lottie-react";
+import circle from "../animations/circle.json";
+import ripple from "../animations/ripple.json";
+import arrowDown from "../animations/arrowDown.json";
+import coin from '../animations/coin.json'
 
 const OurServices = () => {
   const items = [
-    { text: "Engagement strategy", animation: arrowAnimation },
-    { text: "Brand identity", animation: waveLine },
-    { text: "Performance", animation: radial },
-    { text: "Content & visual creators", animation: squareDot },
-    { text: "Creative projects lab", animation: lab },
+    { text: "Engagement strategy", animation: pyramid },
+    { text: "Brand identity", animation: ripple },
+    { text: "Performance", animation: circle },
+    { text: "Content & visual creators", animation: coin },
+    { text: "Creative projects lab", animation: arrowDown },
   ];
 
   return (

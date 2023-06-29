@@ -19,27 +19,26 @@
       @include flexColumn(space-between, none);
       &__first {
         font-family: "Wagon", sans-serif;
-        font-size: clamp(2rem, 4vw, 4rem);
+        font-size: clamp(2rem, 3vw, 4rem);
       }
       &__second {
-        font-size: clamp(1rem, 3vw, 2rem);
+        font-size: clamp(1rem, 2vw, 1.5rem);
         font-family: $roboto;
       }
     }
     &__menu {
       @include flexColumn(space-around, none);
-      font-size: clamp(1rem, 3vw, 2rem);
-      width: 40%;
+      font-size: clamp(1rem, 2vw, 1.93838rem);
+      width: 35%;
       &__text {
         font-family: $roboto;
         display: flex;
         align-items: center;
-        line-height: 10px;
-        gap: 10px;
+        gap: 1rem;
       }
     }
   }
 }
 .arrow{
-    width: 10%;
+    width: 50px;
 }
