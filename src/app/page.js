@@ -8,11 +8,11 @@ import Consorcio from "./components/consorcio/Consorcio";
 export default function Home() {
   return (
     <main>
-      <Presentation />
+      {/* <Presentation />
       <Header />
       <Hero />
       <OurServices />
-      <Lab/>
+      <Lab/> */}
       <Consorcio/>
     </main>
   );

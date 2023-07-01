@@ -14,15 +14,27 @@
       @include flexColumn(space-around, center);
       &__title {
         width: 60%;
-        font-size: clamp(60px, 4vw, 97px);
-        font-family: 'Wagon', sans-serif;
+        font-size: clamp(55px, 4vw, 97px);
+        font-family: "Wagon", sans-serif;
+      }
+      &__animationTop {
+        font-size: 1.5rem;
+        width: 60%;
+        &__first {
+          @include flexRow(space-between, none);
+        }
+
+        &__second {
+          @include flexRow(space-between, none);
+        }
       }
     }
     &__img {
       img {
-        width: clamp(400px, 35vw, 600px);
+        width: clamp(200px, 35vw, 500px);
         height: clamp(550px, 75vh, 800px);
       }
     }
   }
 }
+
