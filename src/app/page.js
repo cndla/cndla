@@ -4,16 +4,18 @@ import Hero from "./components/hero/Hero";
 import OurServices from "./components/ourServices/OurServices";
 import Lab from "./components/lab/Lab";
 import Consorcio from "./components/consorcio/Consorcio";
+import OnFire from "./components/onFire/OnFire";
 
 export default function Home() {
   return (
     <main>
-      {/* <Presentation />
+      <Presentation />
       <Header />
       <Hero />
       <OurServices />
-      <Lab/> */}
+      <Lab/>
       <Consorcio/>
+      <OnFire/>
     </main>
   );
 }

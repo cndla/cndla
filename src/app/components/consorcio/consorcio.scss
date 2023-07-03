@@ -18,7 +18,7 @@
         font-family: "Wagon", sans-serif;
       }
       &__animationTop {
-        font-size: 1.5rem;
+        font-size:1.5rem;
         width: 60%;
         &__first {
           @include flexRow(space-between, none);
@@ -26,6 +26,21 @@
 
         &__second {
           @include flexRow(space-between, none);
+        }
+      }
+      &__animationBot {
+        width: 60%;
+        font-size: 1.5rem;
+        &__text {
+          @include flexRow(space-between, none);
+        }
+      }
+      &__last {
+        @include flexRow(space-between, none);
+        width: 60%;
+        font: 1.9rem "Roboto";
+        &__music{
+          text-align: end;
         }
       }
     }
@@ -37,4 +52,3 @@
     }
   }
 }
-
