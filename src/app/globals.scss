@@ -1,21 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 $roboto: "Roboto", sans-serif;
-$containerWidth: 85%;
 @font-face {
   font-family: "Wagon";
   src: local("Wagon-Bold.woff"), url("./components/fonts/Wagon-Bold.woff");
 }
 
-@mixin flexColumn($justify, $align) {
-  display: flex;
-  flex-direction: column;
-  justify-content: $justify;
-  align-items: $align;
-}
-
-@mixin flexRow($justify, $align) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-}

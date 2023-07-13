@@ -1,0 +1,16 @@
+@import '../../variables';
+
+
+.weAreProud{
+    background-image: url(../../images/IMAGE-BACKGROUND.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 110vh;
+    color: white;
+    @include flexColumn(center, center);
+    &__container{
+        @include flexColumn(center, center);
+        
+
+    }
+}

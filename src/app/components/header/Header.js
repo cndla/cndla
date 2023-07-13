@@ -1,10 +1,16 @@
+'use client'
 import Link from "next/link";
 import React from "react";
 import "./header.scss";
+import useScrollVisibility from "@/app/customHooks/useScrollVisibility";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Header = () => {
+  const isVisible = useScrollVisibility()
   return (
-    <div className="header">
+    <AnimatePresence>
+    { isVisible && (<motion.div initial={{opacity:0}}  animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }} className="header">
       <div className="header__menu">
         <div className="header__menu__left ">
           <Link href="/" className="hover">
@@ -37,7 +43,8 @@ const Header = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>)}
+    </AnimatePresence>
   );
 };
 

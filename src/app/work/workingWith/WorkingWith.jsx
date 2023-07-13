@@ -1,22 +1,35 @@
+import React from "react";
+import { motion, useScroll } from "framer-motion";
 import Image from "next/image";
 import "./workingWith.scss";
 
-import React from "react";
+const WorkingWith = ({ className, logo, background, id, y }) => {
 
-const WorkingWith = ({ className, logo }) => {
   return (
-    <div id="work" className={`${className} workingWith`}>
-      <div className="workingWith__container">
-        <Image
-          width={466}
-          height={154}
-          src={logo}
-          alt="workingWith"
-          className="workingWith__container__logo"
-        />
-      </div>
-    </div>
+     <motion.div
+       id="work"
+       className={`workingWith`}
+     >
+       <div className="workingWith__container">
+         <div className="workingWith__container__background">
+           <Image
+             src={background}
+             alt="background"
+             fill
+           />
+         </div>
+         <motion.div className="workingWith__container__logo">
+           <Image
+             src={logo}
+             alt="logo"
+             width={466}
+             className={`${className} image`}
+           />
+         </motion.div>
+       </div>
+     </motion.div>
   );
 };
+
 
 export default WorkingWith;

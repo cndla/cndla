@@ -1,4 +1,5 @@
-@import "../../globals.scss";
+@import '../../variables';
+
 .consorcio {
   width: 100%;
   height: 110dvh;
@@ -52,5 +53,52 @@
     }
   }
 }
+@media (width <= $notebook) {
+  .consorcio {
+    &__container {
+      height: 120vh;
+      &__text {
+        &__title {
+          font-size: 2.5rem;
+        }
+        &__animationTop {
+          font-size:1.1rem;
+          width: 60%;
+          &__first {
+            @include flexRow(space-between, center);
+          }
+  
+          &__second {
+            @include flexRow(space-between, center);
+          }
+        }
+        &__animationBot {
+          width: 60%;
+          font-size: 1.1rem;
+          &__text {
+            @include flexRow(space-between, none);
+          }
+        }
+        &__last {
+          @include flexRow(space-between, none);
+          width: 60%;
+          font: 1.1rem "Roboto";
+          &__music{
+            text-align: end;
+          }
+        }
+      }
+      &__img {
+        img {
+          width: auto;
+          height: 70vh;
+        }
+      }
+    }
+  }
+  
+  
+}
+
 
 
