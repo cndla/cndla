@@ -20,13 +20,9 @@ import bgMeta from "../../images/META.webp";
 import bgDiamondsFilm from "../../images/DIAMONDSFILM.webp";
 import bgDannyOcean from "../../images/DANNYOCEAN.webp";
 import bgBodegaAraujo from "../../images/BODEGAARAUJO.webp";
-import {
-  useScroll,
-  useTransform,
-  motion,
-  useViewportScroll,
-} from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
+import "./workingWith.scss";
 
 const WorkingList = () => {
   const data = [
@@ -54,11 +50,11 @@ const WorkingList = () => {
   ];
 
   return (
-    <>
-    {data.map((item, i) =>(
-      <WorkingWith key={i} {...item}/>
-    ))}
-    </>
+    <div className="workingList">
+      {data.map((item, i) => (
+        <WorkingWith key={i} {...item} />
+      ))}
+    </div>
   );
 };
 

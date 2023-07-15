@@ -5,7 +5,7 @@ import './onFire.scss'
 
 const OnFire = () => {
   return (
-    <div className="onFire">
+    <section className="onFire">
       <div className="onFire__container">
         <h2 className="onFire__container__title">on fire sessions</h2>
         <div className="onFire__container__content">
@@ -21,7 +21,7 @@ const OnFire = () => {
         </div>
         <Image className="onFire__container__image" src={inspire} alt="inspire" width={"auto"} />
       </div>
-    </div>
+    </section>
   );
 };
 

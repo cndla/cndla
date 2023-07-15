@@ -17,7 +17,7 @@ const Presentation = () => {
   }, [])
 
   return (
-    <div className="presentation">
+    <section className="presentation">
       <div className="presentation__group">
         <svg
           className="presentation__group__letter c"
@@ -86,7 +86,7 @@ const Presentation = () => {
           />
         </svg>
       </div>
-    </div>
+    </section>
   );
 };
 

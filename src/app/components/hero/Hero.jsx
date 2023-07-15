@@ -6,7 +6,7 @@ const roboto = Roboto({ subsets: ["latin"], weight: "500" });
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <section className="hero">
       <div className="hero__title">
         <div className="hero__title__moment">
           <span>this</span>
@@ -28,7 +28,7 @@ const Hero = () => {
           startups and companies, bringing what they envision to life
         </h2>
       </div>
-    </div>
+    </section>
   );
 };
 

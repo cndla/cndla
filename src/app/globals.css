@@ -16,6 +16,7 @@ html {
   animation-delay: 2.40s;
   animation-direction: normal;
   animation-fill-mode: forwards;
+  scroll-snap-type: y mandatory;
 }
 
 a,

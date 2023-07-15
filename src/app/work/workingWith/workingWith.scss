@@ -1,7 +1,12 @@
+@import "../../variables";
 $size: 15vw;
+
 .workingWith {
-  width: 100vw;
-  height: 110vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  scroll-margin-top: -3px;
+    width: 100vw;
+  height: 109vh;
   display: flex;
   scroll-behavior: smooth;
   z-index: 15;
@@ -11,50 +16,83 @@ $size: 15vw;
     justify-content: flex-start;
     align-items: center;
     width: 90vw;
-    height: 110vh;
+    height: 90vh;
     margin: auto;
     &__logo {
       z-index: 15;
       width: 90vw;
-      height: 90vh; 
+      height: 90vh;
 
-      .image{
+      .image {
         position: sticky;
         top: 5vh;
-        width: clamp(300px, 23vw, 600px);
       }
     }
   }
 }
 
-.artbag {
+.workingList {
+  scroll-snap-type: proximity;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y proximity;
 }
-.bancoFormosa {
-}
-.wyndham {
-}
+
 .rockCycle {
-  width: 15vw !important;
+  width: 15vw;
   height: 15vh;
 }
 .piba {
-    width: 13vw !important;
-    height: 25vh;
+  width: 13vw;
+  height: 25vh;
 }
 .diamondsFilm {
-  width: 18vw !important;
+  width: 18vw;
   height: 27vh;
-
 }
 .meta {
-  width: 20vw !important;
+  width: 20vw;
   height: 8.5vh;
-
-}
-.dannyOcean {
 }
 .bodegaAraujo {
-    width: $size * 2 !important;
-    height: 325px;
-  
+  width: $size * 2;
+  height: 325px;
+}
+
+@media (width <= $notebook) {
+  .artbag {
+    width: 300px;
+    height: 100px;
+  }
+  .bancoFormosa {
+    width: 300px;
+    height: 100px;
+  }
+  .wyndham {
+    width: 300px;
+    height: 100px;
+  }
+  .rockCycle {
+    width: 200px;
+    height: 100px;
+  }
+  .piba {
+    width: 200px;
+    height: 200px;
+  }
+  .diamondsFilm {
+    width: 300px;
+    height: 250px;
+  }
+  .meta {
+    width: 20vw;
+    height: 8.5vh;
+  }
+  .dannyOcean {
+    width: 300px;
+    height: 150px;
+  }
+  .bodegaAraujo {
+    width: 600px;
+    height: 400px;
+  }
 }

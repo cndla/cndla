@@ -15,6 +15,7 @@ const WorkingWith = ({ className, logo, background, id, y }) => {
            <Image
              src={background}
              alt="background"
+             className="workingWith__container__background__img"
              fill
            />
          </div>
