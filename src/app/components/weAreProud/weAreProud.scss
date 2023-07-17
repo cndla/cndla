@@ -1,16 +1,30 @@
-@import '../../variables';
+@import "../../variables";
 
-
-.weAreProud{
-    background-image: url(../../images/IMAGE-BACKGROUND.jpg);
-    background-size: cover;
-    width: 100vw;
-    height: 110vh;
-    color: white;
+.weAreProud {
+  background-image: url(../../images/IMAGE-BACKGROUND.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 110vh;
+  color: white;
+  @include flexColumn(center, center);
+  &__container {
     @include flexColumn(center, center);
-    &__container{
-        @include flexColumn(center, center);
-        
-
+    &__title {
     }
+    &__content {
+        width: 80vw;
+      &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        &__logo {
+          width: 200px;
+          height: 200px;
+          &__marca {
+            scale: 0.1;
+          }
+        }
+      }
+    }
+  }
 }
