@@ -49,3 +49,24 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    height: 100vh;
+
+    &__title {
+      font-size: 28px;
+
+      &__moment {
+        width: 80%;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+
+    &__subtitle,
+    h2 {
+      font-size: 18px;
+    }
+  }
+}

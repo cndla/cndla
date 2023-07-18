@@ -26,12 +26,12 @@ const WeAreProud = () => {
     { clase: "dannyOcean", logo: dannyOcean },
     { clase: "bodegaAraujo", logo: bodegaAraujo },
   ];
-  const frase = "we're proud To work with";
+  const frase = "we're proud to work with";
   return (
     <motion.section className="weAreProud">
       <div className="weAreProud__container">
         <div className="weAreProud__container__title">
-          <h2>{frase}</h2>
+          <p>{frase}</p>
         </div>
         <div className="weAreProud__container__content">
           <div className="weAreProud__container__content__container">

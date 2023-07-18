@@ -10,18 +10,28 @@
   &__container {
     @include flexColumn(center, center);
     &__title {
+      p {
+        font-size: 3rem;
+        font-family: "Roboto";
+        font-weight: normal;
+      }
     }
     &__content {
-        width: 80vw;
+      width: 80vw;
       &__container {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+        justify-content: center;
         &__logo {
-          width: 200px;
-          height: 200px;
+          width: 14vw;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           &__marca {
-            scale: 0.1;
+            width: 100%;
+            height: auto;
           }
         }
       }
