@@ -2,10 +2,8 @@
 $size: 15vw;
 
 .workingWith {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
   scroll-margin-top: -3px;
-    width: 100vw;
+  width: 100vw;
   height: 109vh;
   display: flex;
   scroll-behavior: smooth;
@@ -32,9 +30,6 @@ $size: 15vw;
 }
 
 .workingList {
-  scroll-snap-type: proximity;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y proximity;
 }
 
 .rockCycle {

@@ -23,6 +23,7 @@ import bgBodegaAraujo from "../../images/BODEGAARAUJO.webp";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 import "./workingWith.scss";
+import { ParallaxBanner, ParallaxProvider, useParallax } from "react-scroll-parallax";
 
 const WorkingList = () => {
   const data = [
@@ -49,12 +50,27 @@ const WorkingList = () => {
     },
   ];
 
+
   return (
-    <div className="workingList">
+
+    <div className="workingList" >
       {data.map((item, i) => (
-        <WorkingWith key={i} {...item} />
+        <ParallaxBanner
+          key={i}
+          layers={[
+            { image: `${item.background}`, speed: -20 },
+            {
+              speed: -15,
+              children: (
+                <Image src={item.logo} width={60} alt="asda" />
+              ),
+            },
+          ]}
+          className="workingWith"
+        />
       ))}
     </div>
+
   );
 };
 
