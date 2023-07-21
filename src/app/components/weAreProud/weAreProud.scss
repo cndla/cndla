@@ -17,17 +17,16 @@
       }
     }
     &__content {
-      width: 80vw;
+      width: 75vw;
+      display: flex;
       &__container {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        justify-content: center;
+        justify-content: space-between;
+
         &__logo {
-          width: 14vw;
-          height: auto;
           display: flex;
-          justify-content: center;
           align-items: center;
           &__marca {
             width: 100%;
@@ -37,4 +36,35 @@
       }
     }
   }
+}
+@mixin wyh($width, $height) {
+  width: $width + px;
+  height: $height + px;
+}
+.bancoFormosa {
+  @include wyh(229, 97);
+}
+.wyndham {
+  @include wyh(279, 78);
+}
+.bodegaAraujo {
+  @include wyh(438, 106);
+}
+.logoArtbag {
+  @include wyh(215, 71);
+}
+.meta {
+  @include wyh(224, 49);
+}
+.diamondsFilm {
+  @include wyh(203, 153);
+}
+.dannyOcean {
+  @include wyh(215, 99);
+}
+.piba {
+  @include wyh(99, 99);
+}
+.rockCycle {
+  @include wyh(165, 99);
 }

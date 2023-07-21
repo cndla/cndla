@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
 import "./weAreProud.scss";
@@ -14,17 +15,16 @@ import bodegaAraujo from "../../images/logos/LOGOBODEGAARAUJO.png";
 import Image from "next/image";
 
 const WeAreProud = () => {
-  // make an array with the logos imported
   const logos = [
-    { clase: "logoArtbag", logo: logoArtbag },
     { clase: "bancoFormosa", logo: bancoFormosa },
     { clase: "wyndham", logo: wyndham },
-    { clase: "rockCycle", logo: rockCycle },
-    { clase: "piba", logo: piba },
+    { clase: "bodegaAraujo", logo: bodegaAraujo },
+    { clase: "logoArtbag", logo: logoArtbag },
     { clase: "meta", logo: meta },
     { clase: "diamondsFilm", logo: diamondsFilm },
     { clase: "dannyOcean", logo: dannyOcean },
-    { clase: "bodegaAraujo", logo: bodegaAraujo },
+    { clase: "piba", logo: piba },
+    { clase: "rockCycle", logo: rockCycle },
   ];
   const frase = "we're proud to work with";
   return (

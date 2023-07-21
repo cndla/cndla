@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "svg": "svgr -d  src/app/images/logos/svg src/app/images/logos "
   },
   "dependencies": {
     "@react-spring/web": "^9.7.3",
@@ -20,5 +21,8 @@
     "react-scroll-parallax": "^3.4.2",
     "react-spring": "^9.7.2",
     "sass": "^1.63.5"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^8.0.1"
   }
 }
