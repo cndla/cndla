@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import "./weAreProud.scss";
 import { motion } from "framer-motion";
@@ -31,12 +31,19 @@ const WeAreProud = () => {
     <motion.section className="weAreProud">
       <div className="weAreProud__container">
         <div className="weAreProud__container__title">
-          <p>{frase}</p>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >{frase}</motion.p>
         </div>
         <div className="weAreProud__container__content">
           <div className="weAreProud__container__content__container">
             {logos.map((item, i) => (
-              <div
+              <motion.div 
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}  
+                transition={{ duration: 1, delay: i * 0.3 }}
                 className="weAreProud__container__content__container__logo"
                 key={i}
               >
@@ -45,7 +52,7 @@ const WeAreProud = () => {
                   alt={item.clase}
                   className={`weAreProud__container__content__container__logo__marca ${item.clase}`}
                 />
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

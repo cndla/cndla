@@ -8,12 +8,14 @@
   color: white;
   @include flexColumn(center, center);
   &__container {
-    @include flexColumn(center, center);
+    @include flexColumn(space-between, center);
+    height: 50vh;
     &__title {
       p {
-        font-size: 3rem;
+        font-size: 40px;
         font-family: "Roboto";
         font-weight: normal;
+        font-family: "ClashDisplay-Medium";
       }
     }
     &__content {
