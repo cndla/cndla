@@ -70,3 +70,57 @@
 .rockCycle {
   @include wyh(165, 99);
 }
+
+@media (width <= $notebook) {
+  .weAreProud {
+    &__container {
+      &__title {
+        p {
+          font-size: 32px;
+        }
+      }
+      &__content {
+        &__container {
+          gap: 26px;
+  
+          &__logo {
+            &__marca {
+            }
+          }
+        }
+      }
+    }
+  }
+  @mixin wyh($width, $height) {
+    width: $width + px;
+    height: $height + px;
+  }
+  .bancoFormosa {
+    @include wyh(183, 77 )
+  }
+  .wyndham {
+    @include wyh(230 , 77.6);
+  }
+  .bodegaAraujo {
+    @include wyh(250, 70.8);
+  }
+  .logoArtbag {
+    @include wyh(150 , 60.2);
+  }
+  .meta {
+    @include wyh(179.2, 39.2);
+  }
+  .diamondsFilm {
+    @include wyh(162.4, 122.4);
+  }
+  .dannyOcean {
+    @include wyh(172 , 79.2);
+  }
+  .piba {
+    @include wyh(79, 79);
+  }
+  .rockCycle {
+    @include wyh(132 , 79.2);
+  }
+    
+}

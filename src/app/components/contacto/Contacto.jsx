@@ -108,6 +108,7 @@ const Contacto = () => {
             <p>sign up for our latest stories and insights</p>
             <Image src={linea} alt="" className="linea" />
           </div>
+          <button className="button ">send</button>
         </div>
       </div>
     </section>
