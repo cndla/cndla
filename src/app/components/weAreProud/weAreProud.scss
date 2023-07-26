@@ -82,7 +82,7 @@
       &__content {
         &__container {
           gap: 26px;
-  
+
           &__logo {
             &__marca {
             }
@@ -96,16 +96,16 @@
     height: $height + px;
   }
   .bancoFormosa {
-    @include wyh(183, 77 )
+    @include wyh(183, 77);
   }
   .wyndham {
-    @include wyh(230 , 77.6);
+    @include wyh(230, 77.6);
   }
   .bodegaAraujo {
     @include wyh(250, 70.8);
   }
   .logoArtbag {
-    @include wyh(150 , 60.2);
+    @include wyh(150, 60.2);
   }
   .meta {
     @include wyh(179.2, 39.2);
@@ -114,13 +114,15 @@
     @include wyh(162.4, 122.4);
   }
   .dannyOcean {
-    @include wyh(172 , 79.2);
+    @include wyh(172, 79.2);
   }
   .piba {
     @include wyh(79, 79);
   }
   .rockCycle {
-    @include wyh(132 , 79.2);
+    @include wyh(132, 79.2);
   }
-    
+}
+
+@media (width >= $cell) {
 }

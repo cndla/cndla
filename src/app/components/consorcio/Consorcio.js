@@ -46,7 +46,7 @@ const Consorcio = () => {
                 where
               </motion.p>
               <motion.p
-                whileInView={{ x: ["0%", width >= 500 ? "540%" : "110%"] }}
+                whileInView={{ x: ["0%", width >= 500 ? "540%" : "90%"] }}
                 transition={{
                   repeat: Infinity,
                   delay: 0.5,
@@ -59,7 +59,7 @@ const Consorcio = () => {
                 we
               </motion.p>
               <motion.p
-                whileInView={{ x: ["0%", width >= 500 ? "290%" : "60%"] }}
+                whileInView={{ x: ["0%", width >= 500 ? "290%" : "40%"] }}
                 transition={{
                   repeat: Infinity,
                   delay: 0.3,
@@ -72,7 +72,7 @@ const Consorcio = () => {
                 talk
               </motion.p>
               <motion.p
-                whileInView={{ x: ["0%", width >= 500 ? "90%" : "20%"] }}
+                whileInView={{ x: ["0%", width >= 500 ? "90%" : "10%"] }}
                 transition={{
                   repeat: Infinity,
                   delay: 0.1,
@@ -201,8 +201,8 @@ const Consorcio = () => {
                   <motion.p
                     whileInView={{
                       x: [
-                        width >= 500 ? "-650%" : "-375%",
-                        width >= 500 ? "650%" : "375%",
+                        width >= 500 ? "-650%" : "-350%",
+                        width >= 500 ? "650%" : "350%",
                       ],
                     }}
                     transition={{

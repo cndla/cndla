@@ -2,7 +2,7 @@
 
 .ourServices {
   background-color: black;
-  background-image: url('../../images/ONDAS.png');
+  background-image: url("../../images/ONDAS.png");
   background-size: cover;
   width: 100vw;
   height: 110dvh;
@@ -42,6 +42,9 @@
     }
   }
 }
-.arrow{
-    width: 50px;
+.arrow {
+  width: 50px;
+}
+
+@media (width >= $cell) {
 }

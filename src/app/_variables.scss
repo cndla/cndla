@@ -1,32 +1,26 @@
 @mixin flexColumn($justify, $align) {
-    display: flex;
-    flex-direction: column;
-    justify-content: $justify;
-    align-items: $align;
-  }
-
-@mixin flexRow($justify, $align) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
-  }
-  
-
-
-
-$notebook: 1800px  ;
-$tablet: 1299.9px  ;
-$cell: 799.9px;
-
-@font-face {
-  font-family: 'ClashDisplay-Medium';
-  src: url('./components/fonts/ClashDisplay-Medium.woff2') format('woff2'),
-       url('./components/fonts/ClashDisplay-Medium.woff') format('woff'),
-       url('./components/fonts/ClashDisplay-Medium.ttf') format('truetype');
-       font-weight: 500;
-       font-display: swap;
-       font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
 }
 
+@mixin flexRow($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
 
+$notebook: 1800px;
+$tablet: 1299.9px;
+$cell: 468px;
 
+@font-face {
+  font-family: "ClashDisplay-Medium";
+  src: url("./components/fonts/ClashDisplay-Medium.woff2") format("woff2"),
+    url("./components/fonts/ClashDisplay-Medium.woff") format("woff"),
+    url("./components/fonts/ClashDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}

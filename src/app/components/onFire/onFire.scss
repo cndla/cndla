@@ -1,3 +1,4 @@
+@import "../../variables";
 .onFire {
   background-image: url("../../images/fondogris.png");
   background-size: cover;
@@ -18,15 +19,17 @@
       font-family: "Wagon";
       font-size: 3rem;
     }
-    &__content{
-        font-family: "Roboto";
-        font-size: 1.5rem;
-        text-align: center;
-        
+    &__content {
+      font-family: "Roboto";
+      font-size: 1.5rem;
+      text-align: center;
     }
-    &__image{
-        width: 70%;
-        height: auto;
+    &__image {
+      width: 70%;
+      height: auto;
     }
   }
+}
+
+@media (width >= $cell) {
 }
