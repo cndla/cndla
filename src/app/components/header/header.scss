@@ -1,4 +1,5 @@
 @import "../../globals.scss";
+@import '../../variables';
 
 .header {
   pointer-events: none;
@@ -74,4 +75,23 @@
 
 path {
   fill: white;
+}
+
+@media (width <= $cell) {
+  .header {
+    font-size: 10px;
+    &__menu {
+      &__left {
+        .logo {
+          position: absolute;
+          top: 25px;
+          left: 33%;
+          transform: translate(50%, -50%);
+          transform: scale(.8);
+        }
+      }
+    }
+  }
+  
+  
 }

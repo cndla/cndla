@@ -73,7 +73,7 @@
   }
 }
 
-@media (width >= $cell) {
+@media (width <= $cell) {
   .hero {
     gap: 30px;
     &__title {
@@ -81,12 +81,12 @@
       animation: fadeIn 0.5s normal 2.9s 1 forwards;
       font-family: "Wagon";
       &__moment {
-        width: 65vw;
+        width: 80vw;
         margin: auto;
         display: flex;
         justify-content: space-between;
-        font-size: 4vw;
-        line-height: 4vw;
+        font-size: 24px;
+        line-height: 24px;
       }
     }
     &__subtitle,
@@ -94,7 +94,7 @@
       opacity: 0;
       animation: fadeIn 0.6s normal 3s 1 forwards;
       font-family: "Roboto";
-      font-size: 1.5vw;
+      font-size: 12px;
       text-align: center;
       font-weight: 400;
     }

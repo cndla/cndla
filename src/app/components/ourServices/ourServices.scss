@@ -46,5 +46,37 @@
   width: 50px;
 }
 
-@media (width >= $cell) {
+@media (width <= $cell) {
+  .ourServices {
+    &__container {
+      cursor: default;
+      width: 80vw;
+      margin: auto;
+      @include flexColumn(center, none);
+      &__title {
+        @include flexColumn(flex-start, none);
+        gap: 30px;
+        &__first {
+          font-family: "Wagon", sans-serif;
+          font-size: 28px;
+        }
+        &__second {
+          font-size: 16px;
+          font-family: "Roboto";
+        }
+      }
+      &__menu {
+        @include flexColumn(space-between, none);
+        font-size: clamp(1rem, 2vw, 1.93838rem);
+        width: 80vw;
+        &__text {
+          font-family: "Roboto";
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+  
 }
