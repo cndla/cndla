@@ -23,54 +23,78 @@ import bgBodegaAraujo from "../../images/BODEGAARAUJO.webp";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 import "./workingWith.scss";
-import { ParallaxBanner, ParallaxProvider, useParallax } from "react-scroll-parallax";
+import {
+  ParallaxBanner,
+  ParallaxProvider,
+  useParallax,
+} from "react-scroll-parallax";
 
 const WorkingList = () => {
   const data = [
-    { className: "artbag", logo: logoArtbag, background: bgArtBag },
+    {
+      className: "wyndham",
+      text: "wyndham hoteles",
+      background: wyndhamBg,
+      subtitle:
+      "digital strategy | content production | experience & culture | influencers",
+    },
+    {
+      className: "dannyOcean",
+      text: "danny ocean",
+      background: bgDannyOcean,
+      subtitle: "engagement strategy | content | fan club | experience ",
+    },
+    {
+      className: "artbag",
+      text: "artbag",
+      background: bgArtBag,
+      subtitle:
+        "brand strategy | social media | content | paid media | experience & culture ",
+    },
+    {
+      className: "rockCycle",
+      text: "rockcycle",
+      background: bgRockCycle,
+      subtitle:
+        " brand strategy | social media | content | email mkt | paid media | pr actions | experience & culture",
+    },
     {
       className: "bancoFormosa",
-      logo: bancoFormosa,
+      text: "banco de formosa",
       background: bgBancoFormosa,
+      subtitle:
+        "digital strategy | key visual | content | experience & culture",
     },
-    { className: "wyndham", logo: wyndham, background: wyndhamBg },
-    { className: "rockCycle", logo: rockCycle, background: bgRockCycle },
-    { className: "piba", logo: piba, background: bgPiba },
     {
       className: "diamondsFilm",
-      logo: diamondsFilm,
+      text: "diamond films",
       background: bgDiamondsFilm,
+      subtitle:
+        "brand strategy | social media | content | pr actions | experience & culture",
     },
-    { className: "meta", logo: meta, background: bgMeta },
-    { className: "dannyOcean", logo: dannyOcean, background: bgDannyOcean },
     {
       className: "bodegaAraujo",
-      logo: bodegaAraujo,
+      text: "bodega araujo",
       background: bgBodegaAraujo,
+      subtitle:
+        "brand strategy | social media | content | paid media | pr actions | experience & culture",
     },
+    {
+      className: "piba",
+      text: "piba",
+      background: bgPiba,
+      subtitle:
+        "brand strategy | social media | content | paid media | pr actions | experience & culture",
+    },
+    { className: "meta", text: "meta", background: bgMeta, subtitle: "digital strategy | content production | experience & culture | influencers" },
   ];
 
-
   return (
-
-    <div className="workingList" >
+    <section className="workingList">
       {data.map((item, i) => (
-        <ParallaxBanner
-          key={i}
-          layers={[
-            { image: `${item.background}`, speed: -20 },
-            {
-              speed: -15,
-              children: (
-                <Image src={item.logo} width={60} alt="asda" />
-              ),
-            },
-          ]}
-          className="workingWith"
-        />
+        <WorkingWith {...item} key={i} />
       ))}
-    </div>
-
+    </section>
   );
 };
 

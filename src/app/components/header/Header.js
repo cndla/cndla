@@ -7,6 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const Header = () => {
   const isVisible = useScrollVisibility()
+  
   return (
     <AnimatePresence>
     { isVisible && (<motion.div initial={{opacity:0}}  animate={{ opacity: 1 }}

@@ -1,93 +1,106 @@
 @import "../../variables";
 $size: 15vw;
 
-.workingWith {
+.workingList {
   scroll-margin-top: -3px;
   width: 100vw;
-  height: 109vh;
+  height: 900vh;
   display: flex;
-  scroll-behavior: smooth;
-  z-index: 15;
+  flex-direction: column;
   position: relative;
   &__container {
-    display: flex;
-    justify-content: flex-start;
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 90vw;
-    height: 90vh;
-    margin: auto;
-    &__logo {
-      z-index: 15;
-      width: 90vw;
-      height: 90vh;
-
-      .image {
-        position: sticky;
-        top: 5vh;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    &__banner {
+      height: 15vh;
+      width: 93vw;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      &:nth-child(even) {
+        background-color: black;
       }
+      &__text {
+        font-size: 65px;
+        font-family: "Clash Display", serif;
+        font-weight: bold;
+      }
+      &__subtitle {
+        font-size: 25px;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+    &:nth-child(odd) {
+      background-color: black;
+      color: white;
+    }
+
+    &__img {
+      width: 100vw;
+      height: 85vh;
+      background-size: cover;
     }
   }
 }
 
-.workingList {
+.artbag {
+  background-image: url(../../images/ARTBAG.webp);
 }
-
+.bancoFormosa {
+  background-image: url(../../images/BANCOFORMOSA.webp);
+}
+.wyndham {
+  background-image: url(../../images/WYNDHAM.png);
+}
 .rockCycle {
-  width: 15vw;
-  height: 15vh;
+  background-image: url(../../images/ROCKCYCLE.webp);
 }
 .piba {
-  width: 13vw;
-  height: 25vh;
+  background-image: url(../../images/PIBA.webp);
 }
 .diamondsFilm {
-  width: 18vw;
-  height: 27vh;
+  background-image: url(../../images/DIAMONDSFILM.webp);
 }
 .meta {
-  width: 20vw;
-  height: 8.5vh;
+  background-image: url(../../images/META.webp);
+}
+.dannyOcean {
+  background-image: url(../../images/DANNYOCEAN.webp);
 }
 .bodegaAraujo {
-  width: $size * 2;
-  height: 325px;
+  background-image: url(../../images/BODEGAARAUJO.webp);
 }
 
 @media (width <= $notebook) {
-  .artbag {
-    width: 300px;
-    height: 100px;
-  }
-  .bancoFormosa {
-    width: 300px;
-    height: 100px;
-  }
-  .wyndham {
-    width: 300px;
-    height: 100px;
-  }
-  .rockCycle {
-    width: 200px;
-    height: 100px;
-  }
-  .piba {
-    width: 200px;
-    height: 200px;
-  }
-  .diamondsFilm {
-    width: 300px;
-    height: 250px;
-  }
-  .meta {
-    width: 20vw;
-    height: 8.5vh;
-  }
-  .dannyOcean {
-    width: 300px;
-    height: 150px;
-  }
-  .bodegaAraujo {
-    width: 600px;
-    height: 400px;
+  .workingList {
+    &__container {
+      &__banner {
+         &__text {
+          font-size: 40px;
+          font-family: "Clash Display", serif;
+          font-weight: bold;
+        }
+        &__subtitle {
+          font-size: 18px;
+          font-family: "Roboto", sans-serif;
+        }
+      }
+      &:nth-child(odd) {
+        background-color: black;
+        color: white;
+      }
+
+      &__img {
+        width: 100vw;
+        height: 85vh;
+        background-size: cover;
+      }
+    }
   }
 }

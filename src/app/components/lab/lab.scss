@@ -55,5 +55,55 @@
   }
 }
 
-@media (width >= $cell) {
+@media (width <= $cell) {
+  .lab {
+    width: 100vw;
+    height: 110dvh;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      &__title {
+        font-family: "Wagon";
+        text-transform: lowercase;
+        font-size: 30px;
+      }
+      &__subtitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        font-family: "Roboto";
+        font-size: clamp(1rem, 1.6vw, 2rem);
+        &__top {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          justify-self: flex-start;
+          gap: 20px;
+          &__hr {
+            height: 1px;
+            background-color: black;
+            width: 32%;
+          }
+        }
+        &__bottom {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 20px;
+          &__hr {
+            height: 1px;
+            background-color: black;
+            width: 35%;
+          }
+        }
+      }
+    }
+  }
+  
 }

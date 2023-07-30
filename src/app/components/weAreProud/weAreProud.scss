@@ -13,7 +13,6 @@
     &__title {
       p {
         font-size: 40px;
-        font-family: "Roboto";
         font-weight: normal;
         font-family: "ClashDisplay-Medium";
       }
@@ -91,10 +90,6 @@
       }
     }
   }
-  @mixin wyh($width, $height) {
-    width: $width + px;
-    height: $height + px;
-  }
   .bancoFormosa {
     @include wyh(183, 77);
   }
@@ -124,5 +119,51 @@
   }
 }
 
-@media (width >= $cell) {
+@media (width <= $cell) {
+  .weAreProud {
+    width: 100vw;
+    height: 100dvh;
+    color: white;
+    @include flexColumn(center, center);
+    &__container {
+      @include flexRow(center, center);
+      gap: 50px;
+      height: 80vh;
+      columns: 2;
+      &__title {
+        p {
+          font-size: 24px;
+          font-weight: normal;
+          font-family: "ClashDisplay-Medium";
+        }
+      }
+      &__content {
+        width: 90vw;
+        display: flex;
+        columns: 2;
+        &__container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          place-items: center;
+
+          &__logo {
+            display: flex;
+            align-items: center;
+            &__marca {
+              height: auto;
+              object-fit: contain;
+              max-width: 150px;
+              max-height: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bodegaAraujo{
+    max-width: 200px;
+  }
+  .logoArtbag{
+    max-width: 100px;
+  }
 }
