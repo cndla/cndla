@@ -234,6 +234,7 @@
       @include flexColumn(center, center);
       gap: .5rem;
       &__title {
+        width: 100%;
         flex-shrink: 0;
         color: #fff;
         text-align: center;
@@ -311,7 +312,8 @@
           }
           .linea {
             align-self: self-end;
-            width: 95%;
+            width: 90%;
+            height: 1px;
           }
           &__redes {
             color: #fff;
