@@ -31,5 +31,25 @@
   }
 }
 
-@media (width >= $cell) {
+@media (width <= $cell) {
+  .onFire {
+    &__container {
+      gap: 60px;
+      &__title {
+        font-family: "Wagon";
+        font-size: 2.5rem;
+        text-align: center;
+        width: 50%;
+      }
+      &__content {
+        font-size: 1rem;
+        text-align: center;
+        width: 95%;
+      }
+      &__image {
+        width: auto;
+        height: 17vh;
+      }
+    }
+  }
 }

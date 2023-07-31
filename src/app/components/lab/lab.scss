@@ -64,30 +64,19 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 30px;
+      gap: 10px;
       &__title {
         font-family: "Wagon";
         text-transform: lowercase;
-        font-size: 30px;
+        font-size: 48px;
       }
       &__subtitle {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        font-family: "Roboto";
-        font-size: clamp(1rem, 1.6vw, 2rem);
+        font-size: 14px;
         &__top {
-          display: flex;
-          align-items: center;
-          width: 100%;
-          justify-self: flex-start;
-          gap: 20px;
           &__hr {
             height: 1px;
             background-color: black;
-            width: 32%;
+            width: 10%;
           }
         }
         &__bottom {
@@ -95,11 +84,11 @@
           display: flex;
           align-items: center;
           justify-content: flex-end;
-          gap: 20px;
+          gap: 5px;
           &__hr {
             height: 1px;
             background-color: black;
-            width: 35%;
+            width: 15%;
           }
         }
       }

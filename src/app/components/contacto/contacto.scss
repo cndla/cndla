@@ -20,7 +20,7 @@
       flex-shrink: 0;
       color: #fff;
       text-align: center;
-      font-family: Clash Display;
+      font-family: "ClashDisplay-Medium";
       font-size: 2.5rem;
       font-style: normal;
       font-weight: 500;
@@ -171,7 +171,7 @@
           height: 29px;
           p {
             color: #fff;
-            font-family: Roboto;
+            font-family: "Roboto";
             font-size: 1.5rem;
             font-style: normal;
             font-weight: 500;
@@ -218,3 +218,111 @@
   box-shadow: 0px 0px 1px;
 }
   
+@media (width <= $cell) {
+  .contacto {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../images/IMAGE-BACKGROUND.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container {
+      width: 80%;
+      height: 70%;
+      @include flexColumn(center, center);
+      gap: .5rem;
+      &__title {
+        flex-shrink: 0;
+        color: #fff;
+        text-align: center;
+        font-family: "ClashDisplay-Medium";
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      &__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        &__formContainer {
+          &__form {
+            margin: auto;
+            width: 98.5%;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            justify-content: space-between;
+  
+            &__inputContainer {
+              display: inline-flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 0.5rem;
+              p {
+                display: inline-flex;
+                flex-direction: column;
+                color: #fff;
+                font-family: "Roboto";
+                font-size: 1rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1rem; /* 100% */
+              }
+  
+              &__end {
+                justify-self: flex-start;
+                align-self: self-start;
+                text-align: start;
+              }
+              input {
+                font-family: "Roboto";
+                width: 17.8125rem;
+                border: none;
+                border-bottom: 2px solid #fff;
+                outline: 0;
+                font-size: 17px;
+                color: #fff;
+                padding: 7px 0;
+                background: transparent;
+              }
+            }
+          }
+        }
+        &__footer {
+          width: 100%;
+          display: inline-flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          height: 29px;
+          p {
+            color: #fff;
+            font-family: "Roboto";
+            font-size: .7rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: .7rem; /* 100% */
+          }
+          .linea {
+            align-self: self-end;
+            width: 95%;
+          }
+          &__redes {
+            color: #fff;
+            a {
+              mix-blend-mode: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  
+}
