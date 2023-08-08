@@ -201,8 +201,8 @@ const Consorcio = () => {
                   <motion.p
                     whileInView={{
                       x: [
-                        width >= 500 ? "-650%" : "-350%",
-                        width >= 500 ? "650%" : "350%",
+                        width >= 500 ? "-600%" : "-300%",
+                        width >= 500 ? "600%" : "300%",
                       ],
                     }}
                     transition={{
