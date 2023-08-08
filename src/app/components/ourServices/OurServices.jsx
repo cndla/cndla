@@ -11,11 +11,11 @@ import coin from '../animations/coin.json'
 
 const OurServices = () => {
   const items = [
-    { text: "Engagement strategy", animation: pyramid },
-    { text: "Brand identity", animation: ripple },
-    { text: "Performance", animation: circle },
-    { text: "Content & visual creators", animation: coin },
-    { text: "Creative projects lab", animation: arrowDown },
+    { text: "engagement strategy", animation: pyramid },
+    { text: "brand identity", animation: ripple },
+    { text: "performance", animation: circle },
+    { text: "content & visual creators", animation: coin },
+    { text: "creative projects lab", animation: arrowDown },
   ];
 
   return (
@@ -24,7 +24,7 @@ const OurServices = () => {
         <div className="ourServices__container__title">
           <div className="ourServices__container__title__first">
             <p className="ourServices__container__title__first__text">
-              Our Services
+              our services
             </p>
             <p className="">-</p>
           </div>
