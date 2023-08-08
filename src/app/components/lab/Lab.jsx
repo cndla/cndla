@@ -1,5 +1,7 @@
+'use client'
 import React from "react";
 import "./lab.scss";
+import { motion } from 'framer-motion'
 
 const Lab = () => {
   return (
@@ -12,12 +14,20 @@ const Lab = () => {
         </h2>
         <div className="lab__container__subtitle">
           <div className="lab__container__subtitle__top">
-            <div className="lab__container__subtitle__top__hr"></div>
+            <motion.div
+              initial={{ "width": 0 }}
+              whileInView={{ "width": "33%" }}
+              transition={{ duration: 0.5 }}
+              className="lab__container__subtitle__top__hr"></motion.div>
             an innovation lab that builds ideas and projects
           </div>
           <div className="lab__container__subtitle__bottom">
             that reshape culture and entertainment.
-            <div className="lab__container__subtitle__bottom__hr"></div>
+            <motion.div
+              initial={{ "width": 0 }}
+              whileInView={{ "width": "35%" }}
+              transition={{ duration: 0.5 }}
+              className="lab__container__subtitle__bottom__hr"></motion.div>
           </div>
         </div>
       </div>
