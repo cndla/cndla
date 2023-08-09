@@ -125,7 +125,7 @@
           text-align: center;
         }
         &__animationTop {
-          font-size: 1.25rem;
+          font-size: 1rem;
           width: 100%;
           &__first {
             @include flexRow(space-between, center);
@@ -137,7 +137,7 @@
         }
         &__animationBot {
           width: 100%;
-          font-size: 1.25rem;
+          font-size: 1rem;
           &__text {
             @include flexRow(space-between, none);
           }
