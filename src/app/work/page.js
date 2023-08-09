@@ -5,10 +5,8 @@ import WorkingList from "./workingWith/WorkingList";
 export default function Home() {
 
   return (
-    <ParallaxProvider>
-      <main>
-        <WorkingList />
-      </main>
-    </ParallaxProvider>
+    <main>
+      <WorkingList />
+    </main>
   );
 }

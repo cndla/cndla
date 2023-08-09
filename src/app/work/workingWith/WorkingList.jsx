@@ -23,11 +23,8 @@ import bgBodegaAraujo from "../../images/BODEGAARAUJO.webp";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Image from "next/image";
 import "./workingWith.scss";
-import {
-  ParallaxBanner,
-  ParallaxProvider,
-  useParallax,
-} from "react-scroll-parallax";
+
+import Link from "next/link";
 
 const WorkingList = () => {
   const data = [
@@ -36,7 +33,7 @@ const WorkingList = () => {
       text: "wyndham hoteles",
       background: wyndhamBg,
       subtitle:
-      "digital strategy | content production | experience & culture | influencers",
+        "digital strategy | content production | experience & culture | influencers",
     },
     {
       className: "dannyOcean",

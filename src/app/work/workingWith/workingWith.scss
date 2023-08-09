@@ -8,6 +8,12 @@ $size: 15vw;
   display: flex;
   flex-direction: column;
   position: relative;
+
+  &__menu {
+    z-index: 99;
+    color: #000;
+    background-color: #000;
+  }
   &__container {
     height: 100vh;
     display: inline-flex;
@@ -81,7 +87,7 @@ $size: 15vw;
   .workingList {
     &__container {
       &__banner {
-         &__text {
+        &__text {
           font-size: 40px;
           font-family: "Clash Display", serif;
           font-weight: bold;
