@@ -6,20 +6,9 @@
   scroll-behavior: smooth;
 }
 
-html {
+html{
   overflow-x: hidden;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  animation-name: yep;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-delay: 2.40s;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  scroll-snap-type: y mandatory;
-  width: 100vw;
 }
-
 a,
 a:visited {
   text-decoration: none;

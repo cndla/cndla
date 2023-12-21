@@ -11,7 +11,6 @@ const Lab = () => {
     <section className="lab">
       <div className="lab__container">
       <motion.div 
-      //i want to animate a line from right to left starting with 0 width 
       initial={{width:0, transformOrigin:'left'}}
       whileInView={{width:'100%'}}
       transition={{duration:1}}

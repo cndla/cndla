@@ -10,8 +10,7 @@ const Header = () => {
 
   return (
     <AnimatePresence>
-      {isVisible && (<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }} className="header">
+    <div  className="header">
         <div className="header__menu">
           <div className="header__menu__left ">
             <Link href="/" className="hover">
@@ -44,7 +43,7 @@ const Header = () => {
             </Link>
           </div>
         </div>
-      </motion.div>)}
+      </div>
     </AnimatePresence>
   );
 };
