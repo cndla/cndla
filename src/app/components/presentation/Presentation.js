@@ -2,9 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import "./presentation.scss";
-import { motion } from "framer-motion";
-import Background from "../background/Background";
-import InteractiveBackground from "../background/Background";
+import { delay, motion } from "framer-motion";
 
 const Presentation = () => {
   const variantsTop = {
@@ -28,8 +26,9 @@ const Presentation = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           initial="hidden"
-          animate="visible"
+          animate='visible'
           variants={variantsTop}
+          
         >
           <path
             d="M132.7 17.2L116.5 43.3C116.2 18.2 102.7 4.89999 82.8999 4.89999C49.2999 4.89999 36.8 40.7 36.5 73.3C36.2 103.4 52.3002 126.5 83.2002 126.6C104.1 126.6 124.3 116.9 137.4 94C137.7 94.3 139.4 95.4 139.4 95.4C124 121.2 105.1 131.2 78 131.2C33.1 131.2 0.799805 104.1 0.799805 66C0.799805 27.9 32.4 0.799988 78.5 0.799988C99.2 1.19999 120.7 6.70001 132.7 17.2Z"
@@ -102,7 +101,6 @@ const Presentation = () => {
           />
         </motion.svg>
       </div>
-      <InteractiveBackground/>
     </section>
   );
 };

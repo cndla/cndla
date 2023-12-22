@@ -10,8 +10,11 @@
     "svg": "svgr -d  src/app/images/logos/svg src/app/images/logos "
   },
   "dependencies": {
+    "@react-spring/three": "^9.7.3",
     "@react-spring/web": "^9.7.3",
     "@react-three/drei": "^9.92.5",
+    "@studio-freight/lenis": "^1.0.29",
+    "@studio-freight/react-lenis": "^0.0.38",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.6",
     "framer-motion": "^10.12.17",
@@ -20,9 +23,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scroll-parallax": "^3.4.2",
-    "react-spring": "^9.7.2",
+    "react-spring": "^9.7.3",
     "react-three-fiber": "^6.0.13",
-    "sass": "^1.63.5",
+    "sass": "^1.69.5",
     "three": "^0.159.0"
   },
   "devDependencies": {

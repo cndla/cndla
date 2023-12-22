@@ -10,40 +10,39 @@
 
   @include flexRow(center, center);
   &__container {
-    cursor: default;
 
     width: 90%;
     height: 65vh;
     margin: auto;
-    @include flexRow(space-between, none);
-    &__title {
-      @include flexColumn(space-between, none);
-      height: 99%;
-      &__first {
-        font-family: "Wagon", sans-serif;
-        font-size: clamp(2rem, 3vw, 4rem);
-      }
-      &__second {
-        font-size: clamp(1rem, 2vw, 1.5rem);
-        font-family: "Roboto";
-      }
+    @include flexRow(center, none);
+    gap: 6px;
+    &__item{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #FFF;
+      border-radius: 70%;
+      padding: 100px;
+      font-family: Roboto;
+      flex-shrink: 0;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 50px;
+      text-align: center;
+      width: 454px;
+      text-align: center;
+      
     }
-    &__menu {
-      @include flexColumn(space-between, none);
-      font-size: clamp(1rem, 2vw, 1.93838rem);
-      width: 35%;
-      &__text {
-        font-family: "Roboto";
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-      }
+    &__item span:last-child{
+      font-weight: 700;
     }
-  }
-}
-.arrow {
-  width: 50px;
-}
+    &__item:hover{
+      background-color: #FFF;
+      color: black;
+    }
+  }}
 
 @media (width <= $cell) {
   .ourServices {

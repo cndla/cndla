@@ -2,60 +2,37 @@
 import React from "react";
 import "./ourServices.scss";
 import { motion } from "framer-motion";
-import pyramid from "../animations/pyramid.json";
-import Lottie from "lottie-react";
-import circle from "../animations/circle.json";
-import ripple from "../animations/ripple.json";
-import arrowDown from "../animations/arrowDown.json";
-import coin from '../animations/coin.json'
 
 const OurServices = () => {
-  const items = [
-    { text: "engagement strategy", animation: pyramid },
-    { text: "brand identity", animation: ripple },
-    { text: "performance", animation: circle },
-    { text: "content & visual creators", animation: coin },
-    { text: "creative projects lab", animation: arrowDown },
+  const data = [
+    {
+      text: ["digital", "strategy", "studio"],
+    },
+    {
+      text: ["creative", "lab and", "experiences"],
+    },
+    {
+      text: ["on fire", "sessions -", "workshops"],
+    },
   ];
 
   return (
     <section className="ourServices">
       <div className="ourServices__container">
-        <div className="ourServices__container__title">
-          <div className="ourServices__container__title__first">
-            <p className="ourServices__container__title__first__text">
-              our services
-            </p>
-            <p className="">-</p>
-          </div>
-          <div className="ourServices__container__title__second">
-            <p className="">we create digital spaces</p>
-            <p className="">that re-imagine the way</p>
-            <p className="">people interact with brands</p>
-          </div>
-        </div>
-        <div className="ourServices__container__menu">
-          {items.map((item, index) => (
-            <React.Fragment key={index}>
-              <span className="ourServices__container__menu__text">
-                <Lottie
-                  className="arrow"
-                  animationData={item.animation}
-                  loop={true}
-                />
-                {item.text}
-              </span>
-              {index !== items.length - 1 && (
-                <motion.hr
-                  key={index + 1 * 9}
-                  initial={{ width: 0 }}
-                  whileInView={{ width: "100%" }}
-                  transition={{ duration: 0.5, delay: 0.1 + index * 0.1 }}
-                />
-              )}
-            </React.Fragment>
-          ))}
-        </div>
+        {data.map((item, index) => (
+          <motion.a
+            key={index}
+            href=""
+            className="ourServices__container__item"
+            initial={{ opacity: 0, y: 100  }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 + index*0.2, duration: 0.65 }}
+          >
+            {item.text.map((text, i) => (
+              <span key={i}>{text}</span>
+            ))}
+          </motion.a>
+        ))}
       </div>
     </section>
   );
