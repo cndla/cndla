@@ -1,42 +1,59 @@
 @import "../../variables";
 
 .weAreProud {
-  background-image: url(../../images/IMAGE-BACKGROUND.jpg);
+  background-image: url("../../images/fondogris.png");
   background-size: cover;
   width: 100vw;
   height: 110vh;
   color: white;
   @include flexColumn(center, center);
+  color: #000;
+  font-family: 'Roboto';
   &__container {
     @include flexColumn(space-between, center);
     height: 50vh;
     &__title {
-      p {
-        font-size: 40px;
-        font-weight: normal;
-        font-family: "ClashDisplay-Medium";
-      }
-    }
-    &__content {
-      width: 75vw;
+     font-family: Roboto;
+     font-size: 80px;
+     font-weight: 700;
+     text-align: right;
+     &__second{
       display: flex;
-      &__container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        justify-content: space-between;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
 
-        &__logo {
-          display: flex;
-          align-items: center;
-          &__marca {
-            width: 100%;
-            height: auto;
-          }
-        }
+      &__hr{
+        width:190px ;
+        height: 10px;
+        background-color: #000;
       }
+     }
+    }
+    &__subtitle{
+    
+      font-size: 50px;
+      font-weight: 400;
+      text-align: justify;
+      
+      width: 1332px;
+      
+      
+      &__first{
+        display: flex;
+        &__text{
+          display: flex;
+          justify-content: space-between;
+          width: 1332px;
+
+        }
+        
+        
+      }
+      
     }
   }
+  
 }
 @mixin wyh($width, $height) {
   width: $width + px;

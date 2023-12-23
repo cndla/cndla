@@ -3,60 +3,94 @@
 import React from "react";
 import "./weAreProud.scss";
 import { motion } from "framer-motion";
-import logoArtbag from "../../images/logos/LOGOARTBAG.png";
-import bancoFormosa from "../../images/logos/LOGOBANCOFORMOSA.png";
-import wyndham from "../../images/logos/LOGOWYNDHAM.png";
-import rockCycle from "../../images/logos/LOGOROCKCYCLE.png";
-import piba from "../../images/logos/LOGOPIBA.png";
-import meta from "../../images/logos/LOGOMETA.png";
-import diamondsFilm from "../../images/logos/LOGODIAMONDFILMS.png";
-import dannyOcean from "../../images/logos/LOGODANNYOCEAN.png";
-import bodegaAraujo from "../../images/logos/LOGOBODEGAARAUJO.png";
-import Image from "next/image";
+import { fadeIn } from "../helpers/motionAnimations/animations";
 
 const WeAreProud = () => {
-  const logos = [
-    { clase: "bancoFormosa", logo: bancoFormosa },
-    { clase: "wyndham", logo: wyndham },
-    { clase: "bodegaAraujo", logo: bodegaAraujo },
-    { clase: "logoArtbag", logo: logoArtbag },
-    { clase: "meta", logo: meta },
-    { clase: "diamondsFilm", logo: diamondsFilm },
-    { clase: "dannyOcean", logo: dannyOcean },
-    { clase: "piba", logo: piba },
-    { clase: "rockCycle", logo: rockCycle },
-  ];
-  const frase = "we're proud to work with";
   return (
     <motion.section className="weAreProud">
-      <div className="weAreProud__container">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 0.7 }}
+        className="weAreProud__container"
+      >
         <div className="weAreProud__container__title">
-          <motion.p 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-          >{frase}</motion.p>
-        </div>
-        <div className="weAreProud__container__content">
-          <div className="weAreProud__container__content__container">
-            {logos.map((item, i) => (
-              <motion.div 
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}  
-                transition={{ duration: 1, delay: i * 0.3 }}
-                className="weAreProud__container__content__container__logo"
-                key={i}
-              >
-                <Image
-                  src={item.logo}
-                  alt={item.clase}
-                  className={`weAreProud__container__content__container__logo__marca ${item.clase}`}
-                />
-              </motion.div>
-            ))}
+          <h2 className="weAreProud__container__title__first">
+            {" "}
+            our full-service creative
+          </h2>
+          <div className="weAreProud__container__title__second">
+            <motion.div
+              className="weAreProud__container__title__second__hr"
+              initial={{ maxWidth: 0 }}
+              whileInView={{ maxWidth: "300px" }}
+              transition={{ delay: 1, duration: 2 }}
+            ></motion.div>
+            <h2>and strategic studio</h2>
           </div>
         </div>
-      </div>
+        <div className="weAreProud__container__subtitle">
+          <div className="weAreProud__container__subtitle__first">
+            <motion.p
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, type: "tween" }}
+              className="weAreProud__container__subtitle__first__text"
+            >
+              With digital and offline impact,
+              <motion.span
+                style={{}}
+                initial={{ x: "6.604vw" }}
+                animate={{ opacity: 1, x: "-4.604vw" }}
+                transition={{
+                  duration: 1,
+                  type: "just",
+                  delay: 0.5,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                  repeatDelay: 3,
+                }}
+              >
+                is{" "}
+              </motion.span>
+              <motion.span
+                style={{}}
+                initial={{ x: "4.604vw" }}
+                animate={{ opacity: 1, x: "-4.604vw" }}
+                transition={{
+                  duration: 1,
+                  type: "just",
+                  delay: 0.6,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                  repeatDelay: 3,
+                }}
+              >
+                dedicated
+              </motion.span>
+              and <br />
+            </motion.p>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "4px",
+            }}
+          >
+            <p className="weAreProud__container__subtitle__second">
+              committed to empower our clients success and growth
+            </p>
+            <motion.div
+              style={{ width: "8%", height: "10px", backgroundColor: "black" }}
+              initial={{ maxWidth: 0 }}
+              whileInView={{ maxWidth: "8%" }}
+              transition={{ delay: 0.5, duration: 1 }}
+            ></motion.div>
+          </div>
+        </div>
+      </motion.div>
     </motion.section>
   );
 };

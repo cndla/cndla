@@ -12,7 +12,7 @@
   &__container {
 
     width: 90%;
-    height: 65vh;
+    height:65vh;
     margin: auto;
     @include flexRow(center, none);
     gap: 6px;

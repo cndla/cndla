@@ -34,7 +34,6 @@ const Hero = () => {
         <div className="hero__title__moment"></div>
       </div>
       <div className="hero__subtitle">
-        <AnimatePresence>
         <motion.p
           initial={{ opacity: 0, y: 100,  }}
           whileInView={{ opacity: 1, y: 0,  }}
@@ -71,7 +70,6 @@ const Hero = () => {
         >
           based in Argentina working globally.
         </motion.p>
-        </AnimatePresence>
       </div>
     </section>
   );
