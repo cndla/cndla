@@ -8,7 +8,13 @@ import WeAreProud from "./components/weAreProud/WeAreProud";
 import Contacto from "./components/contacto/Contacto";
 import Header from "./components/header/Header";
 
+export const metadata = {
+  title: "Cndla Collective",
+  description: "",
+};
+
 export default function Home() {
+  
   return (
     <div>
       <Header />

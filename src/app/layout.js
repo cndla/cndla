@@ -6,10 +6,7 @@ import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
-export const metadata = {
-  title: "Cndla Collective",
-  description: "",
-};
+
 
 export default function RootLayout({ children }) {
   const lenis = useLenis(({ scroll }) => {
