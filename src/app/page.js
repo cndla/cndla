@@ -7,6 +7,8 @@ import OnFire from "./components/onFire/OnFire";
 import WeAreProud from "./components/weAreProud/WeAreProud";
 import Contacto from "./components/contacto/Contacto";
 import Header from "./components/header/Header";
+import { UnderOneRoof } from "./components/underOneRoof/UnderOneRoof";
+import WeBelive from "./components/weBelive/WeBelive";
 
 export const metadata = {
   title: "Cndla Collective",
@@ -14,7 +16,7 @@ export const metadata = {
 };
 
 export default function Home() {
-  
+
   return (
     <div>
       <Header />
@@ -23,10 +25,13 @@ export default function Home() {
         <Hero />
         <OurServices />
         <WeAreProud />
+        <UnderOneRoof />
+        <WeBelive />
         <Lab />
         <Consorcio />
         <OnFire />
         <Contacto />
+
       </main>
     </div>
   );

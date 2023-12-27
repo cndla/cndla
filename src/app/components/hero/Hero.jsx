@@ -19,7 +19,7 @@ const Hero = () => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
-    offset: ["start end", "center center"],
+    offset: ["center end", "end start"],
   });
   const x = useTransform(scrollYProgress, [0, 1], [-400, 0]);
   const x2 = useTransform(scrollYProgress, [0, 1], [400, 0]);

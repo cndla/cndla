@@ -9,10 +9,9 @@ const WeAreProud = () => {
   return (
     <motion.section className="weAreProud">
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.7 }}
-        className="weAreProud__container"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5, duration: 0.65 }} className="weAreProud__container"
       >
         <div className="weAreProud__container__title">
           <h2 className="weAreProud__container__title__first">
@@ -41,7 +40,7 @@ const WeAreProud = () => {
               <motion.span
                 style={{}}
                 initial={{ x: "6.604vw" }}
-                animate={{ opacity: 1, x: "-4.604vw" }}
+                animate={{ opacity: 1, x: "-2.604vw" }}
                 transition={{
                   duration: 1,
                   type: "just",
@@ -85,7 +84,7 @@ const WeAreProud = () => {
             <motion.div
               style={{ width: "8%", height: "10px", backgroundColor: "black" }}
               initial={{ maxWidth: 0 }}
-              whileInView={{ maxWidth: "8%" }}
+              whileInView={{ maxWidth: "7%" }}
               transition={{ delay: 0.5, duration: 1 }}
             ></motion.div>
           </div>
