@@ -35,36 +35,36 @@ const Hero = () => {
       </div>
       <div className="hero__subtitle">
         <motion.p
-          initial={{ opacity: 0, y: 100,  }}
-          whileInView={{ opacity: 1, y: 0,  }}
+          initial={{ opacity: 0, y: 100, }}
+          whileInView={{ opacity: 1, y: 0, }}
           transition={{ delay: 0.5, duration: 0.7 }}
         >
-          an impulsive feeling that drives you to do everything you love, to
+          an impulsive feeling that drives you to do everything you love, <br /> to
           achieve and to take on new challenges.
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, y: 100,  }}
-          whileInView={{ opacity: 1, y: 0,  }}
+          initial={{ opacity: 0, y: 100, }}
+          whileInView={{ opacity: 1, y: 0, }}
           transition={{ delay: 0.5, duration: 0.65 }}
         >
           the passion of each of the people who are part of the team
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, y: 100,  }}
-          whileInView={{ opacity: 1, y: 0,  }}
+          initial={{ opacity: 0, y: 100, }}
+          whileInView={{ opacity: 1, y: 0, }}
           transition={{ delay: 0.5, duration: 0.60 }}
         >
           thoughts that are transformed into real strategic actions.
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, y: 100,  }}
-          whileInView={{ opacity: 1, y: 0,  }}
+          initial={{ opacity: 0, y: 100, }}
+          whileInView={{ opacity: 1, y: 0, }}
           transition={{ delay: 0.5, duration: 0.55 }}
         >
           the rush of adrenaline of a new project.
         </motion.p>
         <motion.p
-          initial={{ opacity: 0, y: 100,  }}
+          initial={{ opacity: 0, y: 100, }}
           whileInView={{ opacity: 1, y: 0, rotateY: 0, originX: "100px" }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
