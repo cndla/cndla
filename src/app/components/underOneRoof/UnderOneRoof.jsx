@@ -2,6 +2,7 @@
 import React from 'react'
 import './underOneRoof.scss'
 import { motion } from 'framer-motion'
+import SvgEngagement from '@/app/svgs/SvgEngagement'
 
 
 
@@ -50,6 +51,8 @@ export const UnderOneRoof = () => {
                     <Hr />
                     {data.map((item) => (
                         <div key={item.id}>
+                            {item.icon}
+                            <SvgEngagement />
                             <p >{item.icon}{item.text}</p>
 
                             <Hr />

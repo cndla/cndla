@@ -19,15 +19,15 @@ const Hero = () => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
-    offset: ["center end", "end start"],
+    offset: ["center end", "end center"],
   });
   const x = useTransform(scrollYProgress, [0, 1], [-400, 0]);
   const x2 = useTransform(scrollYProgress, [0, 1], [400, 0]);
 
   return (
-    <section ref={container} className={`${roboto.className} hero `}>
+    <section className={`${roboto.className} hero `}>
       <div className="hero__title">
-        <div className="hero__title__moment">
+        <div ref={container} className="hero__title__moment">
           <motion.span style={{ x: x }}>we</motion.span>
           <motion.span style={{ x: x2 }}>are</motion.span>
         </div>

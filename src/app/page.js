@@ -9,6 +9,8 @@ import Contacto from "./components/contacto/Contacto";
 import Header from "./components/header/Header";
 import { UnderOneRoof } from "./components/underOneRoof/UnderOneRoof";
 import WeBelive from "./components/weBelive/WeBelive";
+import SmoothScroll from "./components/work/Work";
+import './components/work/work.scss'
 
 export const metadata = {
   title: "Cndla Collective",
@@ -27,6 +29,7 @@ export default function Home() {
         <WeAreProud />
         <UnderOneRoof />
         <WeBelive />
+        <SmoothScroll />
         <Lab />
         <Consorcio />
         <OnFire />
