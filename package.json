@@ -27,6 +27,7 @@
     "react-three-fiber": "^6.0.13",
     "resize-observer-polyfill": "^1.5.1",
     "sass": "^1.69.5",
+    "swiper": "^11.0.5",
     "three": "^0.159.0"
   },
   "devDependencies": {

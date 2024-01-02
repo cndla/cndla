@@ -6,7 +6,7 @@
   scroll-behavior: smooth;
 }
 
-html{
+html {
   overflow-x: hidden;
 }
 a,
@@ -16,13 +16,11 @@ a:visited {
   mix-blend-mode: difference;
 }
 
-
 @keyframes yep {
-  0%{
+  0% {
     overflow-y: hidden;
   }
-  100%{
+  100% {
     overflow-y: auto;
   }
-  
 }
