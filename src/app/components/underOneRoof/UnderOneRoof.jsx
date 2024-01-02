@@ -3,6 +3,7 @@ import React from 'react'
 import './underOneRoof.scss'
 import { motion } from 'framer-motion'
 import SvgEngagement from '@/app/svgs/SvgEngagement'
+import Performance from '@/app/svgs/Performance'
 
 
 
@@ -52,7 +53,7 @@ export const UnderOneRoof = () => {
                     {data.map((item) => (
                         <div key={item.id}>
                             {item.icon}
-                            <SvgEngagement />
+                            <Performance />
                             <p >{item.icon}{item.text}</p>
 
                             <Hr />
