@@ -53,7 +53,6 @@ export const UnderOneRoof = () => {
                     {data.map((item) => (
                         <div key={item.id}>
                             {item.icon}
-                            <Performance />
                             <p >{item.icon}{item.text}</p>
 
                             <Hr />

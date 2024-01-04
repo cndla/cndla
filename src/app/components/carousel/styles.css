@@ -15,14 +15,12 @@
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 .swiper-button-prev,
 .swiper-button-next {
-  color: black;
+  color: gray;
 }
 .swiper-button-disabled {
   color: gray;
@@ -31,9 +29,55 @@
 .container {
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  z-index: 0;
 }
-.text {
+.container:hover .hiddenText {
+  opacity: 1;
+}
+.container:hover {
+  backdrop-filter: blur(10px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.container::before {
+  transition: all 275ms ease;
+}
+
+.container:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 275ms ease;
+}
+.icon {
   position: absolute;
   z-index: 3;
+}
+
+.hiddenText {
+  transition: all 275ms ease;
+
+  opacity: 0;
+  padding-top: 30px;
+  max-width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 500;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.textLeft {
+}
+
+.logoWynd {
+  width: 600px;
 }
