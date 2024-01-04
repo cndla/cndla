@@ -17,20 +17,20 @@
   gap: 20px;
   scroll-behavior: smooth;
   position: relative;
-  
 
   &__title {
+    padding-top: 200px;
     &__moment {
       margin: auto;
       display: flex;
       justify-content: center;
       gap: 50px;
-      font-size: clamp(150px, 280px,10vw);
+      font-size: clamp(150px, 280px, 10vw);
       line-height: 4vw;
-    font-weight: normal;
+      font-weight: normal;
     }
   }
-  &__subtitle{
+  &__subtitle {
     padding-top: 67px;
     display: flex;
     flex-direction: column;
@@ -38,10 +38,8 @@
     font-size: 30px;
     width: 53ch;
     text-align: center;
-
   }
 }
-
 
 @media (max-width: 768px) {
   .hero {
