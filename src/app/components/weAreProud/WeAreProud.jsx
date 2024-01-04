@@ -39,8 +39,8 @@ const WeAreProud = () => {
               With digital and offline impact,
               <motion.span
                 style={{}}
-                initial={{ x: "6.604vw" }}
-                animate={{ opacity: 1, x: "-2.604vw" }}
+                initial={{ x: "9.604vw" }}
+                animate={{ opacity: 1, x: "-.604vw" }}
                 transition={{
                   duration: 1,
                   type: "just",
@@ -50,7 +50,7 @@ const WeAreProud = () => {
                   repeatDelay: 3,
                 }}
               >
-                is{" "}
+                is
               </motion.span>
               <motion.span
                 style={{}}
@@ -82,7 +82,7 @@ const WeAreProud = () => {
               committed to empower our clients success and growth
             </p>
             <motion.div
-              style={{ width: "8%", height: "10px", backgroundColor: "black" }}
+              style={{ width: "8%", height: "5px", backgroundColor: "black" }}
               initial={{ maxWidth: 0 }}
               whileInView={{ maxWidth: "7%" }}
               transition={{ delay: 0.5, duration: 1 }}
