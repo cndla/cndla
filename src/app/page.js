@@ -12,6 +12,7 @@ import WeBelive from "./components/weBelive/WeBelive";
 import SmoothScroll from "./components/work/Work";
 import './components/work/work.scss'
 import CarouselSwiper from "./components/carousel/CarouselSwiper";
+import HorizontalScroll from "./components/horizontalScroll/HorizontalScroll";
 
 export const metadata = {
   title: "Cndla Collective",
@@ -31,6 +32,7 @@ export default function Home() {
         <UnderOneRoof />
         <WeBelive />
         <CarouselSwiper />
+        <HorizontalScroll />
 
         <Lab />
         <Consorcio />

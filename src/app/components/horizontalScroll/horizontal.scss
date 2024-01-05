@@ -1,0 +1,14 @@
+.horizontal {
+  position: relative;
+  height: 800vh;
+
+  &__container {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    &__motion {
+      display: flex;
+      gap: 30px;
+    }
+  }
+}
