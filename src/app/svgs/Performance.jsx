@@ -6,41 +6,20 @@ import { pathVariants, pathVariants2, svgVariants } from "./SvgEngagement";
 
 
 export const Performance = () => {
-  const canvasRef = useRef(null);
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
 
-    let end = 50; // Initial ending point of the line
-    const targetEnd = 150; // Final ending point of the line
-    const animationSpeed = 2; // Speed of the drawing animation
 
-    const drawLine = () => {
-      ctx.clearRect(0, 10, canvas.width, canvas.height);
-
-      // Set line properties
-      ctx.strokeStyle = 'white';
-      ctx.lineWidth = 2;
-
-      // Draw the line
-      ctx.beginPath();
-      ctx.moveTo(50, 50); // Starting point coordinates
-      ctx.quadraticCurveTo(100, 25, 150, 50)
-      ctx.lineTo(end, 50); // Current ending point coordinates
-      ctx.stroke();
-
-      // Increment the line's endpoint until reaching the target
-      if (end < targetEnd) {
-        end += animationSpeed;
-        requestAnimationFrame(drawLine);
-      }
-    };
-
-    drawLine();
-  }, []);
-
-  return <canvas ref={canvasRef} width={200} height={100} />;
+  return <svg xmlns="http://www.w3.org/2000/svg" width="33" height="59" viewBox="0 0 33 59" fill="none">
+    <g clip-path="url(#clip0_107_233)">
+      <path d="M16.4999 56.2158C12.4678 56.2158 10.5578 42.5596 8.54171 28.1344C6.63174 14.4517 4.66872 0.291713 0.90184 0.291713C0.822258 0.291713 0.742676 0.212162 0.742676 0.132612C0.742676 0.0530613 0.822258 -0.0264893 0.90184 -0.0264893C4.93399 -0.0264893 6.84396 13.6297 8.86004 28.0549C10.77 41.7376 12.733 55.8976 16.5264 55.8976C20.3198 55.8976 22.2829 41.7376 24.1928 28.0549C26.2089 13.6032 28.1189 -0.0264893 32.151 -0.0264893C32.2306 -0.0264893 32.3102 0.0530613 32.3102 0.132612C32.3102 0.212162 32.2306 0.291713 32.151 0.291713C28.3842 0.291713 26.3946 14.4517 24.4846 28.1344C22.4686 42.5861 20.5586 56.2158 16.5264 56.2158H16.4999Z" fill="white" />
+      <path d="M32.0982 59C27.6416 59 25.8908 48.0751 23.3972 30.2558C21.8055 18.774 19.6038 3.07597 16.4736 3.07597C13.3433 3.07597 11.1681 18.8005 9.54992 30.2558C7.05635 48.0751 5.30554 59 0.848951 59C0.344932 59 -0.0529785 58.6023 -0.0529785 58.0984C-0.0529785 57.5946 0.344932 57.1969 0.848951 57.1969C3.97918 57.1969 6.15442 41.4724 7.77258 30.0171C10.2927 12.1978 12.0435 1.27283 16.5001 1.27283C20.9567 1.27283 22.7075 12.1978 25.201 30.0171C26.7927 41.4989 28.9945 57.1969 32.1247 57.1969C32.6287 57.1969 33.0266 57.5946 33.0266 58.0984C33.0266 58.6023 32.6287 59 32.1247 59H32.0982Z" fill="white" />
+    </g>
+    <defs>
+      <clipPath id="clip0_107_233">
+        <rect width="33" height="59" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>;
 
 };
 

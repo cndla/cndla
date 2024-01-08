@@ -1,14 +1,69 @@
 .horizontal {
   position: relative;
-  height: 800vh;
+  height: 1000vh;
 
   &__container {
     position: sticky;
     top: 0;
     overflow: hidden;
+    background-color: black;
+
     &__motion {
       display: flex;
       gap: 30px;
+      position: relative;
+
+      &__molecule {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover &__particles {
+          display: flex;
+        }
+
+        .pic {
+          width: 100vw;
+        }
+        &__particles {
+          display: flex;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          &:hover {
+            backdrop-filter: opacity(10px);
+            background-image: linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+            );
+          }
+          position: absolute;
+          z-index: 3;
+          &__item {
+            font-size: 30px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            &__text {
+              width: 70vw;
+              display: flex;
+              justify-content: space-around;
+              gap: 10px;
+              &__second,
+              &__first {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -31,9 +31,15 @@
       font-family: Roboto;
       font-size: 35px;
       justify-content: space-around;
-      p {
-        padding: 25px;
-        padding-bottom: 35px;
+      &__molecules {
+        &__particles {
+          display: grid;
+          grid-template-columns: 8% 80%;
+          align-items: center;
+          padding: 25px;
+          padding-bottom: 35px;
+          gap: 10px;
+        }
       }
     }
   }

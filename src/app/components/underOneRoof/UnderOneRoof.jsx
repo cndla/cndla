@@ -4,6 +4,9 @@ import './underOneRoof.scss'
 import { motion } from 'framer-motion'
 import SvgEngagement from '@/app/svgs/SvgEngagement'
 import Performance from '@/app/svgs/Performance'
+import BranIdentity from '@/app/svgs/BranIdentity'
+import Audiovisual from '@/app/svgs/Audiovisual'
+import BrandExperience from '@/app/svgs/BrandExperience'
 
 
 
@@ -11,23 +14,23 @@ export const UnderOneRoof = () => {
     const data = [
         {
             id: 1,
-            icon: "",
+            icon: <SvgEngagement />,
             text: "engagement strategy"
         }, {
             id: 2,
-            icon: "",
+            icon: <BranIdentity />,
             text: "brand identity"
         }, {
             id: 3,
-            icon: "",
+            icon: <Performance />,
             text: "performance / paid media"
         }, {
             id: 4,
-            icon: "",
+            icon: <Audiovisual />,
             text: "audiovisual content producers"
         }, {
             id: 5,
-            icon: "",
+            icon: <BrandExperience />,
             text: "brand experiences & influencers"
         },
     ]
@@ -51,9 +54,9 @@ export const UnderOneRoof = () => {
                 <div className="underOneRoof__content__right">
                     <Hr />
                     {data.map((item) => (
-                        <div key={item.id}>
-                            {item.icon}
-                            <p >{item.icon}{item.text}</p>
+                        <div key={item.id} className='underOneRoof__content__right__molecules'>
+
+                            <div className='underOneRoof__content__right__molecules__particles' >{item.icon}{item.text}</div>
 
                             <Hr />
 

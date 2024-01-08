@@ -31,7 +31,8 @@ import logovalentina from 'public/images/logovalentina.png'
 export const data = [{
     id: 1,
     icon: logowyn,
-    text: ["engagement strategy ", "content production", "social media ", " paid media", "brand experience"],
+    text: ["engagement strategy ", "content production", "social media ",],
+    text2: [" paid media", "brand experience"],
     pic: picwynd
 
 
@@ -39,12 +40,14 @@ export const data = [{
 {
     id: 2,
     icon: logodanny,
-    text: ["engagement strategy", "fan club ", " brand experience"],
+    text: ["engagement strategy", "fan club ",],
+    text2: ["brand experience"],
     pic: picdanny
 }, {
     id: 3,
     icon: logorefik,
-    text: ["engagement strategy ", " social media", "audiovisual content "],
+    text: ["engagement strategy ", " social media",],
+    text2: ["audiovisual content "],
     pic: picrefik
 
 }, {
@@ -56,49 +59,57 @@ export const data = [{
 }, {
     id: 5,
     icon: logodiamond,
-    text: ["engagement strategy ", " social media", "content production", "pr actions", "brand experience"],
+    text: ["engagement strategy ", " social media", "content production",],
+    text2: ["pr actions", "brand experience"],
     pic: picdiamon
 
 }, {
     id: 6,
     icon: logometa,
     text: ["meta rise", "engagement strategy"],
+    text2: [],
     pic: picmeta
 
 }, {
     id: 7,
     icon: logoeureca,
-    text: ["branding", "engagement strategy", "social media | brand-experience"],
+    text: ["branding", "engagement strategy",],
+    text2: ["social media ", " brand-experience"],
     pic: piceureca
 
 }, {
     id: 8,
     icon: logorock,
-    text: ["engagement strategy ", " social media ", "content production", "email mkt", "paid media ", " pr actions ", " brand experience"],
+    text: ["engagement strategy ", " social media ", "content production",],
+    text2: ["email mkt", "paid media ", " pr actions ", " brand experience"],
     pic: picrock
 
 }, {
     id: 9,
     icon: logoartbag,
-    text: ["engagement strategy ", " social media ", "content production", "paid media", "brand experience"],
+    text: ["engagement strategy ", " social media ", "content production",],
+    text2: ["paid media", "brand experience"],
     pic: picartbag
 
 }, {
     id: 10,
     icon: logobodega,
-    text: ["engagement strategy ", "social media ", " content production", "paid media", "pr actions", "brand experience"],
+    text: ["engagement strategy ", "social media ", " content production",],
+    text2: ["paid media", "pr actions", "brand experience"],
     pic: picbodega
 
 }, {
     id: 11,
     icon: logopiba,
-    text: ["engagement strategy ", "social media ", " content production", "paid media", "pr actions", "brand experience"],
+    text: ["engagement strategy ", "social media ", " content production",],
+    text2: ["paid media", "pr actions", "brand experience"],
     pic: picpiba
 
 }, {
     id: 12,
     icon: logovalentina,
-    text: ["engagement strategy ", "social media ", " graphic design ", "content production"],
+    text: ["engagement strategy ", "social media ",],
+    text2: [" graphic design ", "content production"],
     pic: picvalentina
 }]
 
