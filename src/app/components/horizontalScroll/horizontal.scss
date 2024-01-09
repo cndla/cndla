@@ -1,6 +1,6 @@
 .horizontal {
   position: relative;
-  height: 1000vh;
+  height: 1200vh;
 
   &__container {
     position: sticky;
@@ -18,27 +18,26 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        &:hover &__particles {
-          display: flex;
-        }
+        // &:hover &__particles {
+        //   display: flex;
+        // }
 
         .pic {
-          width: 100vw;
         }
         &__particles {
           display: flex;
-          display: none;
+          // display: none;
           justify-content: center;
           align-items: center;
           height: 100%;
           width: 100%;
-          &:hover {
-            backdrop-filter: opacity(10px);
-            background-image: linear-gradient(
-              rgba(0, 0, 0, 0.5),
-              rgba(0, 0, 0, 0.5)
-            );
-          }
+          // &:hover {
+          //   backdrop-filter: opacity(10px);
+          //   background-image: linear-gradient(
+          //     rgba(0, 0, 0, 0.5),
+          //     rgba(0, 0, 0, 0.5)
+          //   );
+          // }
           position: absolute;
           z-index: 3;
           &__item {
