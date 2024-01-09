@@ -12,7 +12,7 @@ const HorizontalScroll = () => {
     const { scrollYProgress } = useScroll({
         target: targetRef,
     })
-    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-1010%"])
+    const x = useTransform(scrollYProgress, [0, 1], ["1%", "-1100%"])
 
     return (
         <section ref={targetRef} className='horizontal'>
@@ -29,11 +29,18 @@ const HorizontalScroll = () => {
                                     <Image src={item.icon} alt='' width={0} height={0}></Image>
                                     <div className="horizontal__container__motion__molecule__particles__item__text">
                                         <div className='horizontal__container__motion__molecule__particles__item__text__first'> {item.text.map((text, i) => (
-                                            <motion.p initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1 + i * 0.2 }} key={i}>| {text} |</motion.p>
+                                            <motion.div key={i} initial={{ opacity: 0, x: -200 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: 1 + i * 0.2 }} >
+
+                                                <motion.p whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1 + i * 0.2 }} >| {text} |</motion.p>
+                                                <motion.p whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1 + i * 0.2 }}>*</motion.p>
+                                            </motion.div>
                                         ))}
                                         </div>
                                         <div className='horizontal__container__motion__molecule__particles__item__text__second'> {item.text2?.map((text, i) => (
-                                            <motion.p initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1 + i * 0.2 }} key={i}>| {text} |</motion.p>
+                                            <motion.div className="" key={i} initial={{ opacity: 0, x: 200 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: 1 + i * 0.2 }}>
+                                                <motion.p whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1 + i * 0.2 }}>*</motion.p>
+                                                <motion.p whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1 + i * 0.2 }} >| {text} |</motion.p>
+                                            </motion.div>
                                         ))}
                                         </div>
                                     </div>

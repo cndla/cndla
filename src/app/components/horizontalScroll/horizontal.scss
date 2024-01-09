@@ -1,6 +1,6 @@
 .horizontal {
   position: relative;
-  height: 1000vh;
+  height: 1100vh;
 
   &__container {
     position: sticky;
@@ -10,7 +10,6 @@
 
     &__motion {
       display: flex;
-      gap: 30px;
       position: relative;
 
       &__molecule {
@@ -18,26 +17,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // &:hover &__particles {
-        //   display: flex;
-        // }
 
         .pic {
+          width: 100vw;
         }
         &__particles {
           display: flex;
-          // display: none;
           justify-content: center;
           align-items: center;
           height: 100%;
           width: 100%;
-          // &:hover {
-          //   backdrop-filter: opacity(10px);
-          //   background-image: linear-gradient(
-          //     rgba(0, 0, 0, 0.5),
-          //     rgba(0, 0, 0, 0.5)
-          //   );
-          // }
+
           position: absolute;
           z-index: 3;
           &__item {
@@ -49,15 +39,29 @@
             align-items: center;
             gap: 30px;
             &__text {
-              width: 70vw;
+              width: 50vw;
               display: flex;
+              flex-direction: column;
               justify-content: space-around;
               gap: 10px;
               &__second,
               &__first {
                 display: flex;
-                flex-direction: column;
                 gap: 10px;
+                div {
+                  justify-content: space-between;
+                  align-items: center;
+                  display: flex;
+                  width: 100%;
+                }
+              }
+              &__second {
+                div {
+                  justify-content: space-between;
+                  display: flex;
+                  width: 100%;
+                  align-items: center;
+                }
               }
             }
           }
