@@ -10,10 +10,13 @@
   grid-template-areas:
     "text images"
     "bottom bottom";
-  grid-template-columns: 2fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
   font-family: $roboto;
   &__text {
+    img {
+      scale: 0.85;
+    }
     display: flex;
     flex-direction: column;
     gap: 49px;
@@ -43,9 +46,11 @@
     flex-direction: column;
     justify-content: center;
     gap: 58px;
+
     &__images {
       display: flex;
       justify-content: space-around;
+      scale: 0.85;
     }
     &__upcoming {
       align-self: center;
