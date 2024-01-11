@@ -1,5 +1,5 @@
 @import "../../globals.scss";
-@import '../../variables';
+@import "../../variables";
 
 .header {
   pointer-events: none;
@@ -9,7 +9,6 @@
   position: fixed;
   z-index: 15;
   mix-blend-mode: difference;
-
 
   &__menu {
     font-family: $roboto;
@@ -22,6 +21,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-transform: uppercase;
     &__left {
       pointer-events: all;
       display: flex;
@@ -78,7 +78,6 @@ path {
 
 @media (width <= $cell) {
   .header {
-    
     &__menu {
       height: 90vh;
       height: 90dvh;
@@ -86,11 +85,9 @@ path {
         .logo {
           top: 25px;
           left: 33%;
-          transform: scale(.8);
+          transform: scale(0.8);
         }
       }
     }
   }
-  
-  
 }
