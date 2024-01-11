@@ -2,244 +2,57 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./consorcio.scss";
 import Image from "next/image";
-import vina from "../../images/vina.jpg";
-import { motion } from "framer-motion";
-
-const firstSentence = "we mix everything we love and";
-const secondSentence = "";
-const thirdSentence = "cities we visit.";
-const firstSentenceArray = firstSentence.split(" ");
-const secondSentenceArray = secondSentence.split(" ");
-const thirdSentenceArray = thirdSentence.split(" ");
+import { consorcio1, consorcio2, consorcio3, consorcio4, consorcio5, culture, gastro, gozadera, music, people } from "./data";
+import reunion from "public/images/reuniondeconsorcio.png";
+import { motion } from "framer-motion"
 
 const Consorcio = () => {
-  const divSize = useRef();
-  const [width, setWidth] = useState(0);
-
-  useEffect(() => {
-    setWidth(divSize.current.offsetWidth);
-  }, []);
+  const axisY = "219px"
 
   return (
     <section className="consorcio">
-      <div className="consorcio__container">
-        <div className="consorcio__container__text">
-          <h2 className="consorcio__container__text__title">
-            reunión de consorcio
-          </h2>
-          <div
-            ref={divSize}
-            className="consorcio__container__text__animationTop"
-          >
-            <motion.div className="consorcio__container__text__animationTop__first">
-              <motion.p
-                whileInView={{ x: ["0%"] }}
-                transition={{
-                  repeat: Infinity,
-                  delay: 1.3,
-                  duration: 2.3,
-                  repeatDelay: 4,
-                  repeatType: "reverse",
-                  ease: "anticipate",
-                }}
-              >
-                where
-              </motion.p>
-              <motion.p
-                whileInView={{ x: ["0%", width >= 500 ? "540%" : "90%"] }}
-                transition={{
-                  repeat: Infinity,
-                  delay: 0.5,
-                  duration: 2,
-                  repeatDelay: 4.3,
-                  repeatType: "reverse",
-                  ease: "anticipate",
-                }}
-              >
-                we
-              </motion.p>
-              <motion.p
-                whileInView={{ x: ["0%", width >= 500 ? "290%" : "40%"] }}
-                transition={{
-                  repeat: Infinity,
-                  delay: 0.3,
-                  duration: 2.3,
-                  repeatDelay: 4,
-                  repeatType: "reverse",
-                  ease: "anticipate",
-                }}
-              >
-                talk
-              </motion.p>
-              <motion.p
-                whileInView={{ x: ["0%", width >= 500 ? "90%" : "10%"] }}
-                transition={{
-                  repeat: Infinity,
-                  delay: 0.1,
-                  duration: 2.8,
-                  repeatDelay: 3.5,
-                  repeatType: "reverse",
-                  ease: "anticipate",
-                }}
-              >
-                about
-              </motion.p>
-              <motion.p>everything</motion.p>
-            </motion.div>
-            <div className="consorcio__container__text__animationTop__second">
-              <motion.p>but </motion.p>
-              <motion.p
-                whileInView={{ x: width >= 500 ? "-290%" : "-90%" }}
-                transition={{
-                  repeat: Infinity,
-                  delay: 0.8,
-                  duration: 2.8,
-                  repeatDelay: 3.5,
-                  repeatType: "reverse",
-                  ease: "anticipate",
-                }}
-              >
-                the{" "}
-              </motion.p>
-              <motion.p
-                whileInView={{ x: width >= 500 ? "-185%" : "-60%" }}
-                transition={{
-                  repeat: Infinity,
-                  delay: 0.8,
-                  duration: 2.8,
-                  repeatDelay: 3.5,
-                  repeatType: "reverse",
-                  ease: "anticipate",
-                }}
-              >
-                important{" "}
-              </motion.p>
-              <motion.p
-                whileInView={{ x: width >= 500 ? "-400%" : "-20%" }}
-                transition={{
-                  repeat: Infinity,
-                  delay: 0.8,
-                  duration: 2.8,
-                  repeatDelay: 3.5,
-                  repeatType: "reverse",
-                  ease: "anticipate",
-                }}
-              >
-                things.{" "}
-              </motion.p>
-            </div>
-          </div>
-          <div className="consorcio__container__text__animationBot">
-            <motion.div className="consorcio__container__text__animationBot__text">
-              {firstSentenceArray.map((word, index) => (
-                <motion.p
-                  whileInView={{ x: [0, width >= 500 ? -index * 45 : -index * 10] }}
-                  transition={{
-                    repeat: Infinity,
-                    delay: 0.8,
-                    duration: 2.8,
-                    repeatDelay: 3.5,
-                    repeatType: "reverse",
-                    ease: "anticipate",
-                  }}
-                  key={index}
-                >
-                  {word}
-                </motion.p>
-              ))}
-            </motion.div>
-            <div className="consorcio__container__text__animationBot__text">
-              <motion.p>we </motion.p>
-              <motion.p
-                whileInView={{ x: ["0%", width >= 500 ? "-100%" : "-30%"] }}
-                transition={{
-                  repeat: Infinity,
-                  delay: 0.8,
-                  duration: 2.8,
-                  repeatDelay: 3.5,
-                  repeatType: "reverse",
-                  ease: "anticipate",
-                }}
-              >
-                make{" "}
-              </motion.p>
-              <motion.p
-                whileInView={{
-                  x: ["0%", width >= 500 ? "100%" : "30%"],
-                }}
-                transition={{
-                  repeat: Infinity,
-                  delay: 0.8,
-                  duration: 2.8,
-                  repeatDelay: 3.5,
-                  repeatType: "reverse",
-                  ease: "anticipate",
-                }}
-              >
-                experiences{" "}
-              </motion.p>
-              <motion.p
-                whileInView={{
-                  x: ["0%", width >= 500 ? "330%" : "110%"],
-                }}
-                transition={{
-                  repeat: Infinity,
-                  delay: 0.8,
-                  duration: 2.8,
-                  repeatDelay: 3.5,
-                  repeatType: "reverse",
-                  ease: "anticipate",
-                }}
-              >
-                in{" "}
-              </motion.p>
-              <motion.p>the</motion.p>
-            </div>
-            <div className="consorcio__container__text__animationBot__text">
-              {thirdSentenceArray.map((word, index) =>
-                index === 1 ? (
-                  <motion.p
-                    whileInView={{
-                      x: [
-                        width >= 500 ? "-600%" : "-300%",
-                        width >= 500 ? "600%" : "300%",
-                      ],
-                    }}
-                    transition={{
-                      repeat: Infinity,
-                      delay: 0.8,
-                      duration: 2.8,
-                      repeatDelay: 3.5,
-                      repeatType: "reverse",
-                      ease: "easeInOut",
-                    }}
-                    key={index}
-                  >
-                    {word}
-                  </motion.p>
-                ) : (
-                  <p key={index}>{word}</p>
-                )
-              )}
-            </div>
-          </div>
-          <div className="consorcio__container__text__last">
-            <div className="consorcio__container__text__last__gastro">
-              <p>gastro</p>
-              <p>+</p>
-              <p>culture</p>
-            </div>
-            <div className="consorcio__container__text__last__music">
-              <p>music</p>
-              <p>+</p>
-              <p>people</p>
-            </div>
-          </div>
-        </div>
-        <div className="consorcio__container__img">
-          <Image src={vina} alt="vina" width={"auto"} />
+      <div className="consorcio__text">
+        <Image src={reunion} alt="imagen que dice reunion de consorcio" width={0} height={0} />
+        <p>an own project made with love</p>
+        <p>where we talk about everything but <br /> the import things</p>
+        <p>we mix everything we love and we <br /> make experiences in the cities we visit</p>
+      </div>
+      <div className="consorcio__images">
+        <motion.img src={consorcio1.src} alt="imagen que dice reunion de consorcio"
+          initial={{ opacity: 0 }}
+          whileInView={{ y: axisY, opacity: 1 }}
+          transition={{ duration: 3, delay: 1, type: "spring", repeat: Infinity, repeatType: "reverse", repeatDelay: 1 }}
+        />
+        <motion.img src={consorcio4.src} alt="imagen que dice reunion de consorcio" width={0} height={0} initial={{ y: axisY, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+
+          transition={{ duration: 3, delay: 1.5, type: "spring", repeat: Infinity, repeatType: "reverse", repeatDelay: 1 }}
+        />
+        <motion.img src={consorcio2.src} alt="imagen que dice reunion de consorcio" width={0} height={0}
+          initial={{ opacity: 0 }}
+          whileInView={{ y: axisY, opacity: 1 }}
+          transition={{ duration: 3, delay: 1.3, type: "spring", repeat: Infinity, repeatType: "reverse", repeatDelay: 1 }}
+        />
+        <div className="">
+
+          <motion.img src={consorcio3.src} alt="imagen que dice reunion de consorcio" width={205} height={205} initial={{ x: "-205px" }}
+            whileInView={{ x: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+          />
+          <motion.img src={consorcio5.src} alt="imagen que dice reunion de consorcio" width={205} height={205} />
         </div>
       </div>
+      <div className="consorcio__bottom">
+        <div className="consorcio__bottom__images">
+          <Image src={people} alt="imagen que dice reunion de consorcio" width={0} height={0} />
+          <Image src={culture} alt="imagen que dice reunion de consorcio" width={0} height={0} />
+          <Image src={gastro} alt="imagen que dice reunion de consorcio" width={0} height={0} />
+          <Image src={music} alt="imagen que dice reunion de consorcio" width={0} height={0} />
+          <Image src={gozadera} alt="imagen que dice reunion de consorcio" width={0} height={0} />
+        </div>
+        <p className="consorcio__bottom__upcoming">upcoming dates here</p>
+      </div>
+
     </section>
   );
 };
