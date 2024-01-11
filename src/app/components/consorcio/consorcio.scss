@@ -5,13 +5,13 @@
   height: 110dvh;
   background-color: black;
   color: white;
-  padding: 208px 0 208px 48px;
+  padding: 208px 208px;
   display: grid;
   grid-template-areas:
     "text images"
     "bottom bottom";
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
   font-family: $roboto;
   &__text {
     img {
@@ -31,8 +31,8 @@
     gap: 14px;
     grid-area: images;
     img {
-      width: 198px;
-      height: 205px;
+      width: 175px;
+      height: 175px;
     }
     div {
       display: flex;
@@ -41,6 +41,7 @@
     }
   }
   &__bottom {
+    padding-top: 100px;
     grid-area: bottom;
     display: flex;
     flex-direction: column;

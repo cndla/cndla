@@ -7,7 +7,7 @@ import reunion from "public/images/reuniondeconsorcio.png";
 import { motion } from "framer-motion"
 
 const Consorcio = () => {
-  const axisY = "219px"
+  const axisY = "189px"
 
   return (
     <section className="consorcio">
