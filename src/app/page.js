@@ -13,6 +13,7 @@ import SmoothScroll from "./components/work/Work";
 import './components/work/work.scss'
 import CarouselSwiper from "./components/carousel/CarouselSwiper";
 import HorizontalScroll from "./components/horizontalScroll/HorizontalScroll";
+import YourMoment from "./components/yourMoment/YourMoment";
 
 export const metadata = {
   title: "Cndla Collective",
@@ -36,6 +37,7 @@ export default function Home() {
         <Lab />
         <Consorcio />
         <OnFire />
+        <YourMoment />
         <Contacto />
 
       </main>

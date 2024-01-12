@@ -1,16 +1,21 @@
 @import "../../variables";
 .onFire {
+  font-family: Roboto;
+  
   background-color: black;
   width: 100%;
-  height: 110dvh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: white;
+  padding: 207px 0;
+  gap: 30px;
   &__images {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     &__onfire {
       position: relative;
       top: -50px;
@@ -19,6 +24,35 @@
       width: 654px;
       height: 654px;
     }
+  }
+  &__workshops {
+    font-size: 50px;
+    text-align: center;
+    line-height: 50px;
+  
+    &__subtitle {
+      font-size: 35px;
+    }
+  }
+  &__texts {
+    display: flex;
+    font-size: 38px;
+    font-weight: 700;
+    gap: 33px;
+    &__animation {
+      width: 300px;
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+    }
+  }
+  &__newEdition {
+    padding-top: 15px;
+    align-self: center;
+    font-weight: 400;
+    font-size: 30px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
   }
 }
 
