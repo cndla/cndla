@@ -4,18 +4,33 @@ import React from "react";
 import "./header.scss";
 import useScrollVisibility from "@/app/customHooks/useScrollVisibility";
 import { AnimatePresence, motion } from "framer-motion";
+import { useRouter } from "next/navigation";
+
 
 const Header = () => {
   const isVisible = useScrollVisibility()
+  const router = useRouter()
+
+  const goTo = (link) => {
+    const element = document.getElementById(link)
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+
+
+    }
+  }
+
+  const pointer = { cursor: 'pointer' }
+
 
   return (
     <AnimatePresence>
-    <div  className="header">
+      <div className="header">
         <div className="header__menu">
           <div className="header__menu__left ">
-            <Link href="/" className="hover">
+            <a onClick={() => goTo('home')} className="hover">
               home
-            </Link>
+            </a>
             <Link href="#" className="logo hover">
               <svg
                 width="150"
@@ -30,17 +45,17 @@ const Header = () => {
                 <path d="M591.4 172.7C605.7 172.7 608.2 161.4 608.6 156.2V113.6C601.6 142.4 582.8 178.5 553.4 178.5C534.1 178.5 516.3 163 516.7 139.4L608.4 85.1V80.3C608.4 58.4 593 52.5 580.6 52.8C562.5 53.2 538.7 72.8 523.2 100.5L520.7 100.1L533 57.5L580.7 48.5C601.6 48.5 642.9 57.5 643.6 79.8V173H660.4L663.4 176.2H594.3L591.4 172.7ZM557.4 121.8C552.3 136.6 557 161.6 571.2 161.6C589.7 161.3 606.6 118.7 608.7 93.2V89L557.4 121.8Z" />
               </svg>
             </Link>
-            <Link href="/" className="hover">
+            <a onClick={() => goTo("about")} className="hover">
               about
-            </Link>
+            </a>
           </div>
           <div className="header__menu__right ">
-            <Link href="work" className="hover">
+            <a onClick={() => { goTo("work") }} className="hover">
               work
-            </Link>
-            <Link href="/" className="hover">
+            </a>
+            <a onClick={() => goTo("connect")} className="hover">
               connect
-            </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@
   place-content: center;
   &__container {
     font-family: Roboto;
-    font-size: 90px;
+    font-size: 70px;
     width: 60vw;
     display: flex;
     flex-direction: column;
@@ -17,12 +17,12 @@
     &__first {
       display: flex;
       align-items: baseline;
-      
     }
     &__text {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
     }
   }
 }
@@ -30,4 +30,5 @@
 .spacer {
   height: 2px;
   background-color: black;
+  transform-origin: left;
 }

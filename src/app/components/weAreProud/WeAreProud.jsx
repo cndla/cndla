@@ -7,7 +7,7 @@ import { fadeIn } from "../helpers/motionAnimations/animations";
 
 const WeAreProud = () => {
   return (
-    <motion.section className="weAreProud">
+    <motion.section className="weAreProud" id="studio">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -21,8 +21,8 @@ const WeAreProud = () => {
           <div className="weAreProud__container__title__second">
             <motion.div
               className="weAreProud__container__title__second__hr"
-              initial={{ maxWidth: 0 }}
-              whileInView={{ maxWidth: "300px" }}
+              initial={{ width: 0 }}
+              whileInView={{ width: "130px" }}
               transition={{ delay: 1, duration: 2 }}
             ></motion.div>
             <h2>and strategic studio</h2>
@@ -30,7 +30,7 @@ const WeAreProud = () => {
         </div>
         <div className="weAreProud__container__subtitle">
           <div className="weAreProud__container__subtitle__first">
-            <motion.p
+            <motion.div
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, type: "tween" }}
@@ -38,37 +38,22 @@ const WeAreProud = () => {
             >
               With digital and offline impact,
               <motion.span
-                style={{}}
-                initial={{ x: "9.604vw" }}
-                animate={{ opacity: 1, x: "-.604vw" }}
-                transition={{
-                  duration: 1,
-                  type: "just",
-                  delay: 0.5,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                  repeatDelay: 3,
-                }}
+                initial={{ x: "-40px" }}
+                whileInView={{ x: ["80px", "-40px"] }}
+                transition={{ duration: 10, repeat: Infinity, repeatType: "reverse" }}
               >
                 is
               </motion.span>
               <motion.span
-                style={{}}
-                initial={{ x: "4.604vw" }}
-                animate={{ opacity: 1, x: "-4.604vw" }}
-                transition={{
-                  duration: 1,
-                  type: "just",
-                  delay: 0.6,
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                  repeatDelay: 3,
-                }}
+                initial={{ x: "-80px" }}
+                whileInView={{ x: ["40px", "-80px"] }}
+                transition={{ duration: 10, repeat: Infinity, repeatType: "reverse", restSpeed: 3 }}
+
               >
                 dedicated
               </motion.span>
               and <br />
-            </motion.p>
+            </motion.div>
           </div>
           <div
             style={{

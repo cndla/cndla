@@ -10,7 +10,7 @@ const Logos = ({ logo }) => {
 
 const Contacto = () => {
   return (
-    <section className="contacto">
+    <section className="contacto" id="connect">
       <div className="contacto__container">
         <h2 className="contacto__container__title">{"let's work together"}</h2>
         <div className="contacto__container__content">

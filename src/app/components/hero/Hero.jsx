@@ -25,7 +25,7 @@ const Hero = () => {
   const x2 = useTransform(scrollYProgress, [0, 1], [400, 0]);
 
   return (
-    <section className={`${roboto.className} hero `}>
+    <section className={`${roboto.className} hero `} id="about">
       <div className="hero__title">
         <div ref={container} className="hero__title__moment">
           <motion.span style={{ x: x }}>we</motion.span>

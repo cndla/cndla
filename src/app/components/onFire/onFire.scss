@@ -1,7 +1,7 @@
 @import "../../variables";
 .onFire {
   font-family: Roboto;
-  
+
   background-color: black;
   width: 100%;
   display: flex;
@@ -29,21 +29,20 @@
     font-size: 50px;
     text-align: center;
     line-height: 50px;
-  
+
     &__subtitle {
       font-size: 35px;
     }
   }
   &__texts {
     display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 38px;
     font-weight: 700;
-    gap: 33px;
+    gap: 70px;
     &__animation {
-      width: 300px;
       display: flex;
-      justify-content: space-around;
-      gap: 10px;
     }
   }
   &__newEdition {

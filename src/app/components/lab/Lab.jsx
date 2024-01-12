@@ -16,7 +16,7 @@ const Lab = () => {
     visible: { transform: "translateY(0px)" },
   }
   return (
-    <section className="lab">
+    <section className="lab" id="experiences">
       <div className="lab__container">
         <div className="lab__container__firstText">
 

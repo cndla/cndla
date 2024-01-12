@@ -15,13 +15,13 @@ const HorizontalScroll = () => {
     const x = useTransform(scrollYProgress, [0, 1], ["1%", "-1100%"])
 
     return (
-        <section ref={targetRef} className='horizontal'>
+        <section ref={targetRef} className='horizontal' id="work">
             <div className="horizontal__container">
                 <motion.div className="horizontal__container__motion" style={{ x, transition: "all 200ms ease" }}>
 
                     {data.map((item) => (
                         <motion.div initial={{ opacity: 0, }} whileInView={{ opacity: 1, }} transition={{ duration: .8 }} className="horizontal__container__motion__molecule" key={item.id}>
-                            <Image src={item.pic} width={1700} height={1080} alt='something' className='pic' />
+                            <Image src={item.pic} width="auto" height="auto" alt='something' className='pic' />
                             <motion.div className="horizontal__container__motion__molecule__particles" initial={{ opacity: 0 }} whileInView={{
                                 opacity: 1, backdropFilter: "opacity(10px)", backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7))"
                             }} transition={{ duration: 2, delay: 1 }}>

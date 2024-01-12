@@ -29,7 +29,7 @@ const animation = {
 
 const OnFire = () => {
   return (
-    <section className="onFire">
+    <section className="onFire" id="workshops">
       <div className="onFire__images">
         <Image
           src={hongo}
@@ -62,7 +62,7 @@ const OnFire = () => {
           <motion.span
             initial={{ x: 0 }}
             whileInView={{
-              x: "72px",
+              x: ["-40px", "0px"]
 
             }}
             transition={{
@@ -76,14 +76,14 @@ const OnFire = () => {
           >
             creati
           </motion.span>
-          vity
+          vity✱
         </p>
         /
         <p className="onFire__texts__animation">
           <motion.span
             initial={{ x: 0, }}
             whileInView={{
-              x: "40px",
+              x: ["-40px", "-10px"]
 
             }}
             transition={{
@@ -97,15 +97,16 @@ const OnFire = () => {
           >
             digital
           </motion.span>{" "}
-          world
+          world✱
         </p>
         /
         <p className="onFire__texts__animation">
           en
           <motion.span
-            initial={{ x: 0, }}
+            layout
+            initial={{}}
             whileInView={{
-              x: "-36px"
+              x: ["40px", "0px"],
             }}
             transition={{
               duration: 0.99,
@@ -116,7 +117,7 @@ const OnFire = () => {
               type: "spring",
             }}
           >
-            trepeneurs
+            trepeneurs✱
           </motion.span>
         </p>
       </div>
