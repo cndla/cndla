@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 
 const animation = {
   hidden: {
-    opacity: 0,
     transition: {
       duration: 0.5,
       ease: "easeInOut",
@@ -19,7 +18,6 @@ const animation = {
     },
   },
   visible: {
-    opacity: 1,
     transition: {
       duration: 0.5,
       ease: "easeInOut",
@@ -62,10 +60,10 @@ const OnFire = () => {
       <div className="onFire__texts">
         <p className="onFire__texts__animation">
           <motion.span
-            initial={{ x: 0, opacity: 0 }}
+            initial={{ x: 0 }}
             whileInView={{
               x: "72px",
-              opacity: 1,
+
             }}
             transition={{
               duration: 0.99,
@@ -83,10 +81,10 @@ const OnFire = () => {
         /
         <p className="onFire__texts__animation">
           <motion.span
-            initial={{ x: 0, opacity: 0 }}
+            initial={{ x: 0, }}
             whileInView={{
               x: "40px",
-              opacity: 1
+
             }}
             transition={{
               duration: 0.99,
@@ -105,9 +103,9 @@ const OnFire = () => {
         <p className="onFire__texts__animation">
           en
           <motion.span
-            initial={{ x: 0, opacity: 0 }}
+            initial={{ x: 0, }}
             whileInView={{
-              x: "-36px", opacity: 1
+              x: "-36px"
             }}
             transition={{
               duration: 0.99,
