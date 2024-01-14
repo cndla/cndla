@@ -43,13 +43,14 @@
     gap: 70px;
     &__animation {
       display: flex;
+      align-items: center;
     }
   }
   &__newEdition {
-    padding-top: 15px;
+    padding-top: 20px;
     align-self: center;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 28px;
     text-decoration: underline;
     text-underline-offset: 8px;
   }

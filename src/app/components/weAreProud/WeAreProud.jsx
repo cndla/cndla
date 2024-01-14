@@ -40,14 +40,14 @@ const WeAreProud = () => {
               <motion.span
                 initial={{ x: "-40px" }}
                 whileInView={{ x: ["80px", "-40px"] }}
-                transition={{ duration: 10, repeat: Infinity, repeatType: "reverse" }}
+                transition={{ duration: 3, repeat: Infinity, repeatType: "reverse", repeatDelay: 1 }}
               >
                 is
               </motion.span>
               <motion.span
                 initial={{ x: "-80px" }}
                 whileInView={{ x: ["40px", "-80px"] }}
-                transition={{ duration: 10, repeat: Infinity, repeatType: "reverse", restSpeed: 3 }}
+                transition={{ duration: 3, repeat: Infinity, repeatType: "reverse", damping:20, repeatDelay: 1 }}
 
               >
                 dedicated

@@ -76,7 +76,7 @@ const OnFire = () => {
           >
             creati
           </motion.span>
-          vity✱
+          vity*
         </p>
         /
         <p className="onFire__texts__animation">
@@ -97,7 +97,7 @@ const OnFire = () => {
           >
             digital
           </motion.span>{" "}
-          world✱
+          world*
         </p>
         /
         <p className="onFire__texts__animation">
@@ -117,7 +117,7 @@ const OnFire = () => {
               type: "spring",
             }}
           >
-            trepeneurs✱
+            trepeneurs*
           </motion.span>
         </p>
       </div>
