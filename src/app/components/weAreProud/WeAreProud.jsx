@@ -67,9 +67,9 @@ const WeAreProud = () => {
               committed to empower our clients success and growth
             </p>
             <motion.div
-              style={{ width: "15%", height: "5px", backgroundColor: "black" }}
-              initial={{ maxWidth: 0 }}
-              whileInView={{ maxWidth: "7%" }}
+              style={{ height: "2px", backgroundColor: "black" }}
+              initial={{ width: "0%" }}
+              whileInView={{ width: "22%" }}
               transition={{ delay: 0.5, duration: 1 }}
             ></motion.div>
           </div>
