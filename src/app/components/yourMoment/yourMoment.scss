@@ -1,5 +1,5 @@
 .yourMoment {
-  height: 115vh;
+  height: 105vh;
   background-image: url("../../images/fondogris.png");
   background-size: cover;
   width: 100%;
@@ -8,7 +8,7 @@
   place-content: center;
   &__container {
     font-family: Roboto;
-    font-size: 80px;
+    font-size: 90px;
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -16,11 +16,12 @@
     &__first {
       display: flex;
       align-items: baseline;
-    }
-    &__text {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
+
+      &__text {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+      }
     }
   }
 }

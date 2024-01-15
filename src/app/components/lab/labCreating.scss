@@ -1,0 +1,12 @@
+.LabCreating {
+  &__text {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 862px;
+    font-family: Roboto;
+    font-size: 100px;
+    span {
+      padding-right: 20px;
+    }
+  }
+}

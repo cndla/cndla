@@ -1,15 +1,18 @@
 "use client";
 import React from "react";
 import "./lab.scss";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
+import LabCreating from "./LabCreating";
+
+export const Logo = () => (
+  <div className="border">
+    <p className="border__text">cndla / lab</p>
+  </div>
+)
 
 const Lab = () => {
 
-  const Logo = () => (
-    <div className="border">
-      <p className="border__text">cndla / lab</p>
-    </div>
-  )
+
 
   const variants = {
     hidden: { y: "100%", overflow: "hidden" },
@@ -17,12 +20,7 @@ const Lab = () => {
   }
   return (
     <section className="lab" id="experiences">
-      <div className="lab__container">
-        <div className="lab__container__firstText">
-
-          <Logo />
-        </div>
-      </div>
+      <LabCreating />
     </section>
   );
 };
