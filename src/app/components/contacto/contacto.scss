@@ -82,7 +82,7 @@
         p {
           color: #fff;
           font-family: Roboto;
-          font-size: 1.875rem;
+          font-size: 1.8rem;
           font-style: normal;
           font-weight: 500;
         }
@@ -95,6 +95,9 @@
             mix-blend-mode: normal;
           }
         }
+      }
+      img{
+        width: 900px;
       }
     }
   }
