@@ -20,24 +20,8 @@ const Lab = () => {
       <div className="lab__container">
         <div className="lab__container__firstText">
 
-          <Logo /><div className="spacer"></div><motion.p className="lab__container__firstText__creating"
-            initial="hidden"
-            whileInView="visible"
-            variants={variants}> creating</motion.p>
+          <Logo />
         </div>
-        <motion.p initial="hidden"
-          whileInView="visible"
-          variants={variants} className="lab__container__secondText">impactful <span>*</span></motion.p>
-        <div className="lab__container__thirdText">
-          <div className="lab__container__thirdText__spacer"></div> <motion.p
-            initial="hidden"
-            whileInView="visible"
-            variants={variants}>online and</motion.p>
-        </div>
-        <motion.p
-          initial="hidden"
-          whileInView="visible"
-          variants={variants} className="lab__container__offline">offline experiences.</motion.p>
       </div>
     </section>
   );

@@ -38,16 +38,16 @@ const WeAreProud = () => {
             >
               With digital and offline impact,
               <motion.span
-                initial={{ x: "-40px" }}
-                whileInView={{ x: ["80px", "-40px"] }}
-                transition={{ duration: 3, repeat: Infinity, repeatType: "reverse", repeatDelay: 1 }}
+                initial={{ x: "220px" }}
+                whileInView={{ x: ["220px", "-120px"] }}
+                transition={{ duration: 5, repeat: Infinity, repeatType: "reverse", repeatDelay: 5 }}
               >
                 is
               </motion.span>
               <motion.span
-                initial={{ x: "-80px" }}
-                whileInView={{ x: ["40px", "-80px"] }}
-                transition={{ duration: 3, repeat: Infinity, repeatType: "reverse", damping:20, repeatDelay: 1 }}
+                initial={{ x: "110px" }}
+                whileInView={{ x: ["110px", "-240px"] }}
+                transition={{ duration: 5, repeat: Infinity, repeatType: "reverse", repeatDelay: 5 }}
 
               >
                 dedicated
@@ -67,7 +67,7 @@ const WeAreProud = () => {
               committed to empower our clients success and growth
             </p>
             <motion.div
-              style={{ width: "8%", height: "5px", backgroundColor: "black" }}
+              style={{ width: "15%", height: "5px", backgroundColor: "black" }}
               initial={{ maxWidth: 0 }}
               whileInView={{ maxWidth: "7%" }}
               transition={{ delay: 0.5, duration: 1 }}

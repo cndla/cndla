@@ -10,11 +10,17 @@
   font-family: Roboto;
   &__content {
     font-size: 80px;
+    text-align: justify;
+
     &__withLine {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 10px;
+    }
+    &__p {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }
