@@ -23,7 +23,7 @@ const YourMoment = () => {
         <div className="yourMoment__container__first">
           <motion.div
             initial={{ width: "0px", opacity: 0 }}
-            whileInView={{ width: "100px", opacity: 1 }}
+            whileInView={{ width: "60px", opacity: 1 }}
             className="spacer"
             transition={{ duration: 1, type: "tween", }}
             style={{ originX: 0 }}
@@ -37,7 +37,7 @@ const YourMoment = () => {
           <motion.span
             ref={scope}
             initial={{ opacity: 0 }}
-            whileInView={{ x: ["0px", "50px"] }}
+            whileInView={{ x: ["-10px", "40px"] }}
             transition={{ duration: 3, type: "spring", repeat: Infinity, repeatType: 'reverse', repeatDelay: 1 }}
 
 
