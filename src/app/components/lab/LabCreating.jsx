@@ -8,27 +8,29 @@ const LabCreating = () => {
   const text = "_creating impactful * online and offline experiences.";
   const { scrollYProgress } = useScroll({
     target: reference,
-    offset: ["start 0.9", "end start"],
+    offset: ["start 0.9", "start 0.25"],
   });
 
   const splitText = text.split(" ");
   return (
     <div className="LabCreating">
-      <Logo />
-      <p className="LabCreating__text" ref={reference}>
-        {splitText.map((text, i) => {
-          const start = i / text.length;
-          const end = start + 1 / text.length;
-          return (
-            <Word
-              key={i}
-              range={[start, end]}
-              progress={scrollYProgress}
-              value={text}
-            ></Word>
-          );
-        })}
-      </p>{" "}
+      <div className="LabCreating__row">
+        <Logo />
+        <p className="LabCreating__text" ref={reference}>
+          _creating
+        </p>
+      </div>
+      <div className="LabCreating__row">
+        <p className="LabCreating__text">impactful</p>
+        <p className="LabCreating__text">*</p>
+      </div>
+      <div className="LabCreating__row">
+        <p  className="LabCreating__text"></p>
+        <p  className="LabCreating__text">online and</p>
+      </div>
+      <div className="LabCreating__row">
+        <p  className="LabCreating__text">offline experiences.</p>
+      </div>
     </div>
   );
 };
