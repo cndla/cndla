@@ -28,8 +28,8 @@ const Hero = () => {
     <section className={`${roboto.className} hero `} id="about">
       <div className="hero__title">
         <div ref={container} className="hero__title__moment">
-          <motion.span style={{ x: x }}>we</motion.span>
-          <motion.span style={{ x: x2 }}>are</motion.span>
+          <motion.span style={{ x: x }} className="roboto">we</motion.span>
+          <motion.span style={{ x: x2 }} className="roboto">are</motion.span>
         </div>
         <div className="hero__title__moment"></div>
       </div>
@@ -38,6 +38,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 100, }}
           whileInView={{ opacity: 1, y: 0, }}
           transition={{ delay: 0.5, duration: 0.7 }}
+          className={roboto.className}
         >
           an impulsive feeling that drives you to do everything you love, <br /> to
           achieve and to take on new challenges.
@@ -46,6 +47,8 @@ const Hero = () => {
           initial={{ opacity: 0, y: 100, }}
           whileInView={{ opacity: 1, y: 0, }}
           transition={{ delay: 0.5, duration: 0.65 }}
+          className={roboto.className}
+
         >
           the passion of each of the people who are part of the team
         </motion.p>

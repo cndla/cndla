@@ -6,3 +6,11 @@ $roboto: "Roboto", sans-serif;
   src: local("Wagon-Bold.woff"), url("./components/fonts/Wagon-Bold.woff");
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("./font/Roboto-Medium.ttf");
+}
+
+body {
+  font-family: "Roboto";
+}
