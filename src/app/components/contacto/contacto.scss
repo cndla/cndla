@@ -96,7 +96,7 @@
           }
         }
       }
-      img{
+      img {
         width: 900px;
       }
     }
@@ -164,9 +164,9 @@
           }
         }
         &__footer {
-          width: 100%;
+          width: 99%;
           display: inline-flex;
-          justify-content: space-around;
+          justify-content: space-between;
           align-items: center;
           height: 29px;
           p {
