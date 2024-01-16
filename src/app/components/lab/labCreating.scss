@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 862px;
   height: 416px;
+  scale: 0.9;
   &__row {
     display: flex;
     justify-content: space-between;
@@ -17,7 +18,7 @@
     font-family: Roboto;
     font-size: 100px;
     line-height: 100px;
-    
+
     span {
       margin-right: 20px;
       margin-top: 20px;
