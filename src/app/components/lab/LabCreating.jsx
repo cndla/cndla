@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 const LabCreating = () => {
     const reference = useRef(null);
-    const text = "_creating impactful * online and offline experiences.";
+    const text = "_creating impactful ✽ online and offline experiences.";
     const { scrollYProgress } = useScroll({
         target: reference,
         offset: ["start 0.9", "start 0.25"],
@@ -22,7 +22,7 @@ const LabCreating = () => {
             </div>
             <div className="LabCreating__row">
                 <p className="LabCreating__text">impactful</p>
-                <p className="LabCreating__text" style={{ fontSize: "60px" }}>✱</p>
+                <p className="LabCreating__text" style={{ fontSize: "60px" }}>✽</p>
             </div>
             <div className="LabCreating__row">
                 <p className="LabCreating__text"></p>

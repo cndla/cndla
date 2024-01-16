@@ -71,7 +71,7 @@ const WeAreProud = () => {
               initial={{ width: "0%" }}
               whileInView={{ width: "22%" }}
               transition={{ delay: 0.5, duration: 1 }}
-            ></motion.div><span >✱</span>
+            ></motion.div><span >✽</span>
           </div>
         </div>
       </motion.div>

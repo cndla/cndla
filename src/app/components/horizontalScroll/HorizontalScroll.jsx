@@ -32,13 +32,13 @@ const HorizontalScroll = () => {
                                             <motion.div key={i} initial={{ opacity: 0, x: -200 }} whileInView={{ opacity: 1, x: 0, }} transition={{ duration: 0.5, delay: 1 + i * 0.2 }}  >
 
                                                 <motion.p whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1 + i * 0.2 }} >| {text} |</motion.p>
-                                                <motion.p whileInView={{ opacity: 1, y: 0, }} transition={{ duration: 0.5, delay: 1 + i * 0.2 }}>✱</motion.p>
+                                                <motion.p whileInView={{ opacity: 1, y: 0, }} transition={{ duration: 0.5, delay: 1 + i * 0.2 }}>✽</motion.p>
                                             </motion.div>
                                         ))}
                                         </div>
                                         <div className='horizontal__container__motion__molecule__particles__item__text__second'> {item.text2?.map((text, i) => (
                                             <motion.div className="" key={i} initial={{ opacity: 0, x: 200 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: 1 + i * 0.2 }}>
-                                                <motion.p whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1 + i * 0.2 }}>✱</motion.p>
+                                                <motion.p whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1 + i * 0.2 }}>✽</motion.p>
                                                 <motion.p whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 1 + i * 0.2 }} >| {text} |</motion.p>
                                             </motion.div>
                                         ))}
