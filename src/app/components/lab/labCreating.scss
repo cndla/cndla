@@ -1,7 +1,7 @@
 .LabCreating {
   display: flex;
   flex-direction: column;
-  width: 862px;
+  width: 900px;
   height: 416px;
   scale: 0.9;
   &__row {
@@ -14,7 +14,7 @@
   &__text {
     display: flex;
     flex-wrap: wrap;
-    max-width: 862px;
+    max-width: 900px;
     font-family: Roboto;
     font-size: 100px;
     line-height: 100px;
