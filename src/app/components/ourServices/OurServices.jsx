@@ -31,7 +31,7 @@ const OurServices = () => {
           <motion.a
             key={index}
             onClick={() => goTo(item.text[2])}
-            className="ourServices__container__item"
+            className="ourServices__container__item roboto"
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 + index * 0.2, duration: 0.65 }}

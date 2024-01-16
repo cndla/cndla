@@ -1,16 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-
-$roboto: "Roboto", sans-serif;
 @font-face {
   font-family: "Wagon";
   src: local("Wagon-Bold.woff"), url("./components/fonts/Wagon-Bold.woff");
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "RobotoMedium";
   src: url("./font/Roboto-Medium.ttf");
 }
-
-body {
+@font-face {
   font-family: "Roboto";
+  src: url("./font/Roboto-Regular.ttf");
+}
+
+.roboto {
+  font-style: normal;
+  font-family: "Roboto";
+
+}
+
+.robotoMedium{
+  font-style: normal;
+  font-family: "RobotoMedium";
 }

@@ -10,70 +10,33 @@
 
   @include flexRow(center, center);
   &__container {
-
     width: 90%;
-    height:65vh;
+    height: 65vh;
     margin: auto;
     @include flexRow(center, none);
     gap: 6px;
-    &__item{
+    &__item {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border: 1px solid #FFF;
+      border: 1px solid #fff;
       border-radius: 70%;
       padding: 100px;
-      font-family: Roboto;
       flex-shrink: 0;
       font-size: 50px;
-      font-style: normal;
-      font-weight: 300;
       line-height: 50px;
+      font-weight: 100;
       text-align: center;
       width: 454px;
       text-align: center;
-      
     }
-    &__item span:last-child{
-      font-weight: 700;
+    &__item span:last-child {
+      font-weight: 900;
     }
-    &__item:hover{
-      background-color: #FFF;
+    &__item:hover {
+      background-color: #fff;
       color: black;
-    }
-  }}
-
-@media (width <= $cell) {
-  .ourServices {
-    &__container {
-      cursor: default;
-      width: 80vw;
-      margin: auto;
-      @include flexColumn(center, none);
-      &__title {
-        @include flexColumn(flex-start, none);
-        gap: 30px;
-        &__first {
-          font-family: "Wagon", sans-serif;
-          font-size: 28px;
-        }
-        &__second {
-          font-size: 16px;
-          font-family: "Roboto";
-        }
-      }
-      &__menu {
-        @include flexColumn(space-between, none);
-        font-size: clamp(1rem, 2vw, 1.93838rem);
-        width: 80vw;
-        &__text {
-          font-family: "Roboto";
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-        }
-      }
     }
   }
 }
