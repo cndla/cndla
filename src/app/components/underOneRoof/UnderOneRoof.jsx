@@ -47,7 +47,7 @@ export const UnderOneRoof = () => {
         <section className='underOneRoof'>
             <div className="underOneRoof__content">
                 <div className="underOneRoof__content__left">
-                    <p>all under one roof <br />-</p>
+                    <p className='robotoMedium'>all under one roof <br />-</p>
                     <p>we put our passion and know-how <br />
                         at the service of your brand.</p>
                 </div>

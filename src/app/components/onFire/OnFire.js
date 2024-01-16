@@ -58,7 +58,7 @@ const OnFire = () => {
         </motion.p>
       </motion.div>
       <div className="onFire__texts">
-        <p className="onFire__texts__animation">
+        <p className="onFire__texts__animation robotoMedium">
           <motion.span
             initial={{ x: 0 }}
             whileInView={{
@@ -79,7 +79,7 @@ const OnFire = () => {
           vity✽
         </p>
         /
-        <p className="onFire__texts__animation">
+        <p className="onFire__texts__animation robotoMedium">
           <motion.span
             initial={{ x: 0, }}
             whileInView={{
@@ -100,7 +100,7 @@ const OnFire = () => {
           world✽
         </p>
         /
-        <p className="onFire__texts__animation">
+        <p className="onFire__texts__animation robotoMedium">
           en
           <motion.span
             layout

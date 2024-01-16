@@ -13,7 +13,7 @@ const WeAreProud = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.65 }} className="weAreProud__container"
       >
-        <div className="weAreProud__container__title">
+        <div className="weAreProud__container__title robotoMedium">
           <h2 className="weAreProud__container__title__first">
             {" "}
             our full-service creative
@@ -67,9 +67,9 @@ const WeAreProud = () => {
               committed to empower our clients success and growth
             </p>
             <motion.div
-              style={{ height: "2px", backgroundColor: "black" }}
+              style={{  }}
               initial={{ width: "0%" }}
-              whileInView={{ width: "22%" }}
+              whileInView={{ width: "200px" }}
               transition={{ delay: 0.5, duration: 1 }}
             ></motion.div><span >✽</span>
           </div>
