@@ -11,7 +11,7 @@
   @include flexRow(center, center);
   &__container {
     width: 90%;
-    height: 65vh;
+    height: 600px;
     margin: auto;
     @include flexRow(center, none);
     gap: 6px;

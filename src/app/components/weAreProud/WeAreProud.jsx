@@ -11,7 +11,8 @@ const WeAreProud = () => {
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 0.65 }} className="weAreProud__container"
+        transition={{ delay: 0.5, duration: 0.65 }}
+        className="weAreProud__container"
       >
         <div className="weAreProud__container__title robotoMedium">
           <h2 className="weAreProud__container__title__first">
@@ -38,21 +39,31 @@ const WeAreProud = () => {
             >
               With digital and offline impact,
               <motion.span
-                initial={{ x: "220px" }}
-                whileInView={{ x: ["220px", "-120px"] }}
-                transition={{ duration: 5, repeat: Infinity, repeatType: "reverse", repeatDelay: 5 }}
+                initial={{ marginLeft: '10px' }}
+                whileInView={{ marginLeft: "350px" }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                  repeatDelay: 5,
+                }}
               >
                 is
               </motion.span>
               <motion.span
-                initial={{ x: "110px" }}
-                whileInView={{ x: ["110px", "-240px"] }}
-                transition={{ duration: 5, repeat: Infinity, repeatType: "reverse", repeatDelay: 5 }}
-
+                initial={{marginLeft: '10px'}}
+                whileInView={{marginLeft:'auto'}}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                  repeatDelay: 5,
+                }}
               >
                 dedicated
               </motion.span>
-              and <br />
+              <motion.span initial={{ marginLeft: "auto" }}>and</motion.span>{" "}
+              <br />
             </motion.div>
           </div>
           <div
@@ -67,11 +78,12 @@ const WeAreProud = () => {
               committed to empower our clients success and growth
             </p>
             <motion.div
-              style={{  }}
+              style={{}}
               initial={{ width: "0%" }}
               whileInView={{ width: "200px" }}
               transition={{ delay: 0.5, duration: 1 }}
-            ></motion.div><span >✽</span>
+            ></motion.div>
+            <span>✽</span>
           </div>
         </div>
       </motion.div>
