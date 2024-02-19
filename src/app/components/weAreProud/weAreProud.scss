@@ -10,7 +10,11 @@
   color: #000;
   font-family: "Roboto";
   &__container {
-    @include flexColumn(space-between, center);
+    @include flexColumn(center, center);
+    &__pill {
+      justify-self: flex-start;
+      align-items: flex-start;
+    }
     gap: 50px;
     &__title {
       font-family: Roboto;

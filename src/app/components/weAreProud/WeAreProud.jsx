@@ -14,7 +14,9 @@ const WeAreProud = () => {
         transition={{ delay: 0.5, duration: 0.65 }}
         className="weAreProud__container"
       >
+        <div className="weAreProud__container__pill">dgital studio</div>
         <div className="weAreProud__container__title robotoMedium">
+
           <h2 className="weAreProud__container__title__first">
             {" "}
             our full-service creative
@@ -51,8 +53,8 @@ const WeAreProud = () => {
                 is
               </motion.span>
               <motion.span
-                initial={{marginLeft: '10px'}}
-                whileInView={{marginLeft:'auto'}}
+                initial={{ marginLeft: '10px' }}
+                whileInView={{ marginLeft: 'auto' }}
                 transition={{
                   duration: 5,
                   repeat: Infinity,

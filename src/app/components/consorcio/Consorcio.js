@@ -13,9 +13,9 @@ const Consorcio = () => {
     <section className="consorcio">
       <div className="consorcio__text">
         <Image src={reunion} alt="imagen que dice reunion de consorcio" width={0} height={0} />
-        <p>an own project made with love</p>
-        <p>where we talk about everything but <br /> the import things</p>
-        <p>we mix everything we love and we <br /> make experiences in the cities we visit</p>
+        <p>an own project made with love.</p>
+        <p>where we talk about everything but <br /> the import things.</p>
+        <p>we mix everything we love and we <br /> make experiences in the cities we visit.</p>
       </div>
       <div className="consorcio__images">
         <motion.img src={consorcio1.src} alt="imagen que dice reunion de consorcio"

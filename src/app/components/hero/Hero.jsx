@@ -34,43 +34,10 @@ const Hero = () => {
         <div className="hero__title__moment"></div>
       </div>
       <div className="hero__subtitle roboto">
-        <motion.p
-          initial={{ opacity: 0, y: 100, }}
-          whileInView={{ opacity: 1, y: 0, }}
-          transition={{ delay: 0.5, duration: 0.7 }}
-        >
-          an impulsive feeling that drives you to do everything you love, <br /> to
-          achieve and to take on new challenges.
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 100, }}
-          whileInView={{ opacity: 1, y: 0, }}
-          transition={{ delay: 0.5, duration: 0.65 }}
-          
-        >
-          the passion of each of the people who are part of the team
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 100, }}
-          whileInView={{ opacity: 1, y: 0, }}
-          transition={{ delay: 0.5, duration: 0.60 }}
-        >
-          thoughts that are transformed into real strategic actions.
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 100, }}
-          whileInView={{ opacity: 1, y: 0, }}
-          transition={{ delay: 0.5, duration: 0.55 }}
-        >
-          the rush of adrenaline of a new project.
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 100, }}
-          whileInView={{ opacity: 1, y: 0, rotateY: 0, originX: "100px" }}
-          transition={{ delay: 0.5, duration: 0.5 }}
-        >
-          based in Argentina working globally.
-        </motion.p>
+        <p className="hero__subtitle__text"><span className="hero__subtitle__text__span">manifist</span> an impulsive feeling that drives you to do <strong>everything you love</strong>, to achieve and
+          to take on new <strong>challenges_____</strong>the passion of each of the people who are part of the team____
+          thoughts that are transformed into real <strong>strategic actions______</strong>the rush of <strong>adrenaline </strong> of a new
+          project______based in Argentina <strong>working globally.</strong> </p>
       </div>
     </section>
   );

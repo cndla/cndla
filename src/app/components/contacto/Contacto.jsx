@@ -105,8 +105,8 @@ const Contacto = () => {
                 </svg>{" "}
               </a>
             </div>
-            <p>sign up for our latest stories and insights</p>
-            <Image src={linea} alt="" className="linea" width={0} height={0}/>
+            <p>subscribe for our latest stories and insights</p>
+            <Image src={linea} alt="" className="linea" width={0} height={0} />
           </div>
           <button className="button ">send</button>
         </div>
