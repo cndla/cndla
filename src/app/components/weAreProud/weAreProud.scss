@@ -3,7 +3,7 @@
 .weAreProud {
   background-image: url("../../images/fondogris.png");
   background-size: cover;
-  width: 100vw;
+  max-width: 100vw;
   height: 110vh;
   color: white;
   @include flexColumn(center, center);
@@ -12,8 +12,13 @@
   &__container {
     @include flexColumn(center, center);
     &__pill {
-      justify-self: flex-start;
-      align-items: flex-start;
+      align-self: flex-start;
+      border: 2px solid black;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-size: 35px;
+      margin-bottom: -40px;
+      font-weight: bold;
     }
     gap: 50px;
     &__title {

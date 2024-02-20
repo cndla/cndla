@@ -31,6 +31,9 @@ const OnFire = () => {
   return (
     <section className="onFire" id="workshops">
       <div className="onFire__images">
+        <div className="onFire__images__pill">
+          / wrkshops
+        </div>
         <Image
           src={hongo}
           alt="aca va un gif"

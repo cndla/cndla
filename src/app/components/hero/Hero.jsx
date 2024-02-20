@@ -12,6 +12,8 @@ import {
 } from "framer-motion";
 import { motion } from "framer-motion";
 import Lenis from "@studio-freight/lenis";
+import Video from 'next-video';
+import myVideo from '/videos/video.mp4'
 
 const roboto = Roboto({ subsets: ["latin"], weight: "500" });
 
@@ -19,7 +21,7 @@ const Hero = () => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
-    offset: ["center end", "end center"],
+    offset: ["start end", "0.3 0.6"],
   });
   const x = useTransform(scrollYProgress, [0, 1], [-400, 0]);
   const x2 = useTransform(scrollYProgress, [0, 1], [400, 0]);
@@ -27,6 +29,7 @@ const Hero = () => {
   return (
     <section className={`${roboto.className} hero `} id="about">
       <div className="hero__title">
+        <Video src={myVideo} autoPlay loop muted controls={false} />
         <div ref={container} className="hero__title__moment">
           <motion.span style={{ x: x }} className="roboto">we</motion.span>
           <motion.span style={{ x: x2 }} className="roboto">are</motion.span>

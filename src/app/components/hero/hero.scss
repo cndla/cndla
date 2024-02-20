@@ -17,6 +17,9 @@
 
   &__title {
     padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
     &__moment {
       margin: auto;
       display: flex;
@@ -36,6 +39,7 @@
     width: 80%;
     text-align: justify;
     line-height: 3rem;
+    color: #ffffff;
     &__text {
       &__span {
         color: orange;

@@ -5,7 +5,7 @@ import LabCreating from "./LabCreating";
 
 export const Logo = () => (
   <div className="border">
-    <p className="border__text">cndla / lab</p>
+    <span className="border__text">cndla / lab</span>
   </div>
 );
 

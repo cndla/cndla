@@ -9,19 +9,19 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-  }
+    overflow: hidden;
+    &__text {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 900px;
+      font-family: Roboto;
+      font-size: 100px;
+      line-height: 100px;
 
-  &__text {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 900px;
-    font-family: Roboto;
-    font-size: 100px;
-    line-height: 100px;
-
-    span {
-      margin-right: 20px;
-      margin-top: 20px;
+      span {
+        margin-right: 20px;
+        margin-top: 20px;
+      }
     }
   }
 }
