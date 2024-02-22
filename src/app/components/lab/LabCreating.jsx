@@ -61,7 +61,7 @@ const LabCreating = () => {
   };
   return (
     <div
-      className="flex flex-col w-[44%] gap-80 h-[100vh] max-h-[100vh] justify-center self-center
+      className="flex flex-col w-[44%] gap-80 h-[130vh]  justify-center self-center
       justify-self-center
      "
     >
