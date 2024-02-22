@@ -16,19 +16,15 @@ const WeAreProud = () => {
       >
         <div className="weAreProud__container__pill">dgital studio</div>
         <div className="weAreProud__container__title robotoMedium">
-
-          <h2 className="weAreProud__container__title__first">
-            {" "}
-            our full-service creative
-          </h2>
+          <h2 className="text-8xl"> our full-service creative</h2>
           <div className="weAreProud__container__title__second">
             <motion.div
               className="weAreProud__container__title__second__hr"
               initial={{ width: 0 }}
               whileInView={{ width: "130px" }}
-              transition={{ delay: 1, duration: 2 }}
+              transition={{ delay: 1, duration: 0.275 }}
             ></motion.div>
-            <h2>and strategic studio</h2>
+            <h2 className="text-8xl">and strategic studio</h2>
           </div>
         </div>
         <div className="weAreProud__container__subtitle">
@@ -41,7 +37,7 @@ const WeAreProud = () => {
             >
               With digital and offline impact,
               <motion.span
-                initial={{ marginLeft: '10px' }}
+                initial={{ marginLeft: "10px" }}
                 whileInView={{ marginLeft: "350px" }}
                 transition={{
                   duration: 5,
@@ -53,8 +49,8 @@ const WeAreProud = () => {
                 is
               </motion.span>
               <motion.span
-                initial={{ marginLeft: '10px' }}
-                whileInView={{ marginLeft: 'auto' }}
+                initial={{ marginLeft: "10px" }}
+                whileInView={{ marginLeft: "auto" }}
                 transition={{
                   duration: 5,
                   repeat: Infinity,
@@ -68,15 +64,8 @@ const WeAreProud = () => {
               <br />
             </motion.div>
           </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "4px",
-            }}
-          >
-            <p className="weAreProud__container__subtitle__second">
+          <div className="flex ">
+            <p className="weAreProud__container__subtitle__second ">
               committed to empower our clients success and growth
             </p>
             <motion.div

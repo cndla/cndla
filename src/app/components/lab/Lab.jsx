@@ -2,6 +2,7 @@
 import React from "react";
 import "./lab.scss";
 import LabCreating from "./LabCreating";
+import { AnimatePresence } from "framer-motion";
 
 export const Logo = () => (
   <div className="border">
@@ -12,7 +13,9 @@ export const Logo = () => (
 const Lab = () => {
   return (
     <section className="lab" id="experiences">
-      <LabCreating />
+      <AnimatePresence>
+        <LabCreating />
+      </AnimatePresence>
     </section>
   );
 };

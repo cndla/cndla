@@ -4,10 +4,9 @@ import "./hero.scss";
 import { Roboto } from "next/font/google";
 import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
-import Lenis from "@studio-freight/lenis";
-import Video from "next-video";
-import myVideo from "/videos/video.mp4";
-
+import video from "./video.gif";
+import Image from "next/image";
+import { element } from "three/examples/jsm/nodes/shadernode/ShaderNode";
 const roboto = Roboto({ subsets: ["latin"], weight: "500" });
 
 const Hero = () => {
@@ -19,10 +18,16 @@ const Hero = () => {
   const x = useTransform(scrollYProgress, [0, 1], [-400, 0]);
   const x2 = useTransform(scrollYProgress, [0, 1], [400, 0]);
 
+  const element = useRef(null);
+  const { scrollYProgress: scrollYProgress2 } = useScroll({
+    target: element,
+    offset: ["start end", "start center"],
+  });
+
   return (
     <section className={`${roboto.className} hero `} id="about">
       <div className="hero__title">
-        <Video src={myVideo} autoPlay loop muted controls={false} />
+        <Image src={video} alt="logo" width={605} height={301} />
         <div ref={container} className="hero__title__moment">
           <motion.span style={{ x: x }} className="roboto">
             we
@@ -34,7 +39,11 @@ const Hero = () => {
         <div className="hero__title__moment"></div>
       </div>
       <div className="hero__subtitle roboto">
-        <p className="hero__subtitle__text">
+        <motion.p
+          style={{ opacity: scrollYProgress2 }}
+          className="hero__subtitle__text"
+          ref={element}
+        >
           <span className="hero__subtitle__text__span">manifist</span> an
           impulsive feeling that drives you to do{" "}
           <strong>everything you love</strong>, to achieve and to take on new{" "}
@@ -43,7 +52,7 @@ const Hero = () => {
           <strong>strategic actions______</strong>the rush of{" "}
           <strong>adrenaline </strong> of a new project______based in Argentina{" "}
           <strong>working globally.</strong>{" "}
-        </p>
+        </motion.p>
       </div>
     </section>
   );

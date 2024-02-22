@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -17,14 +21,6 @@ a:visited {
   cursor: pointer;
 }
 
-@keyframes yep {
-  0% {
-    overflow-y: hidden;
-  }
-  100% {
-    overflow-y: auto;
-  }
-}
 
 html.lenis {
   height: auto;
