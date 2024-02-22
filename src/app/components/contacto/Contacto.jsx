@@ -12,7 +12,7 @@ const Contacto = () => {
   return (
     <section className="contacto" id="connect">
       <div className="contacto__container">
-        <h2 className="contacto__container__title">{"let's work together"}</h2>
+        <h2 className="contacto__container__title roboto">{"let's work together"}</h2>
         <div className="contacto__container__content">
           <div className="contacto__container__content__formContainer">
             <form className="contacto__container__content__formContainer__form">
@@ -43,7 +43,7 @@ const Contacto = () => {
             </form>
           </div>
           <div className="contacto__container__content__footer">
-            <div className="contacto__container__content__footer__redes">
+            <div className="contacto__container__content__footer__redes flex gap-1">
               <a href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

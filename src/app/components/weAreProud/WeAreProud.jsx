@@ -15,8 +15,8 @@ const WeAreProud = () => {
         className="weAreProud__container"
       >
         <div className="weAreProud__container__pill">dgital studio</div>
-        <div className="weAreProud__container__title robotoMedium">
-          <h2 className="text-8xl"> our full-service creative</h2>
+        <div className="weAreProud__container__title roboto">
+          <h2 className="text-8xl font-semibold"> our full-service creative</h2>
           <div className="weAreProud__container__title__second">
             <motion.div
               className="weAreProud__container__title__second__hr"

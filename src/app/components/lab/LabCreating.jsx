@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Logo } from "./Lab";
 import "./labCreating.scss";
 import {
+  animate,
   motion,
   useAnimate,
   useInView,
@@ -11,87 +12,83 @@ import {
 } from "framer-motion";
 
 const LabCreating = () => {
-  const words = ["Primera", "Segunda", "Tercera"];
-  const [currentWord, setCurrentWord] = useState(words[0]);
+  const words = ["_creating", "an innovation", "activations,"];
+  const words2 = ["impactful", "lab that builds ideas", "events and "]
+  const words3 = ["online and", "and projects", "strategies  on the"]
+  const words4 = ["offline experiences.", "that reshape culture.", "_           point-of-sale."]
 
-  const spliting = (word, effect) => {
+  const [currentWord, setCurrentWord] = useState(words[0]);
+  const [currentWord2, setCurrentWord2] = useState(words2[0]);
+  const [currentWord3, setCurrentWord3] = useState(words3[0]);
+  const [currentWord4, setCurrentWord4] = useState(words4[0]);
+
+  const wordRef = useRef(null); // Ref to hold the word container
+
+  const enterAnimation = async () => {
+    await animate('.myWord', { y: [80, 0], opacity: [0, 1] }, { duration: 0.275, delay: 0.5 })
+  }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const nextWordIndex = (words.indexOf(currentWord) + 1) % words.length;
+      const nextWordIndex2 = (words2.indexOf(currentWord2) + 1) % words2.length;
+      const nextWordIndex3 = (words3.indexOf(currentWord3) + 1) % words3.length;
+      const nextWordIndex4 = (words4.indexOf(currentWord4) + 1) % words4.length;
+      setCurrentWord(words[nextWordIndex]);
+      setCurrentWord2(words2[nextWordIndex2]);
+      setCurrentWord3(words3[nextWordIndex3]);
+      setCurrentWord4(words4[nextWordIndex4]);
+    }, 6000);
+    enterAnimation()
+    return () => {
+      clearInterval(interval);
+    };
+
+  }, [currentWord, words]);
+
+  const spliting = (word, effect, className) => {
     return word.split("").map((letter, i) => (
       <motion.p
         {...effect}
-        exit={{ opacity: 0 }}
-        transition={{ delay: i * 0.05, mass: 0.5 }}
+        transition={{ delay: i * 0.05, mass: 0.5, repeat: Infinity, repeatDelay: 4 }}
         key={i}
+        className={className}
+
       >
         {letter}
       </motion.p>
     ));
   };
-
-  const effect = {
-    initial: { y: 80 },
-    whileInView: { y: 0 },
-  };
-  const effect2 = {
-    initial: { justifyContent: "space-around" },
-    whileInView: { width: "auto" },
-  };
-
-  const effect3 = {
-    initial: { opacity: 0 },
-    whileInView: { opacity: 1 },
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const nextWordIndex = (words.indexOf(currentWord) + 1) % words.length;
-      setCurrentWord(words[nextWordIndex]);
-    }, 3000);
-
-    // Trigger animation on word change
-    const animateLetters = () => {
-      // Animate them using library-specific methods
-    };
-
-    animateLetters(); // Call once initially
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [currentWord, words]);
   return (
     <div
-      className="flex flex-col w-[44%] gap-80 py-96
+      className="flex flex-col w-[44%] gap-80 h-[100vh] max-h-[100vh] justify-center self-center
+      justify-self-center
      "
     >
       <div className=" text-8xl flex flex-col">
         <div className="flex  justify-between items-center ">
           <Logo />
-          <div className="flex overflow-hidden leading-tight">
-            {spliting(currentWord, effect)}
+          <div className="flex  leading-[1.1] overflow-hidden" ref={wordRef}>
+            <p className="myWord">{currentWord}</p>
           </div>
         </div>
-        <div className="flex items-end justify-between">
+        <div className="flex items-end justify-around">
           <motion.div
-            className="flex overflow-hidden w-full"
-            initial={{ justifyContent: "space-around" }}
-            whileInView={{ width: "auto" }}
-            transition={{ delay: 0.5, duration: 1 }}
+            className="flex w-full overflow-hidden"
           >
-            {spliting("impactful", effect2)}
+            <p className="myWord leading-[1.1]">{currentWord2}</p>
           </motion.div>
-          <p className="">✽</p>
+          <p className="transition-all">✽</p>
         </div>
         <div className="flex items-end justify-end gap-7">
           <div className="text-right flex overflow-hidden">
-            {spliting("online", effect)}{" "}
+            <p className="myWord leading-[1.1]">{currentWord3}</p>
           </div>
-          <div className="text-right flex overflow-hidden">
-            {spliting("and", effect)}
-          </div>
+
+
         </div>
-        <div className="flex gap-9">
-          <div className="flex">{spliting("offline ", effect3)}</div>
-          <div className="flex">{spliting("experiences. ", effect3)}</div>
+        <div className="flex gap-9 overflow-hidden">
+          <pre className="myWord roboto leading-[1.1]">{currentWord4}</pre>
         </div>
       </div>
     </div>
