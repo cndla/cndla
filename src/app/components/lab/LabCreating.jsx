@@ -42,7 +42,7 @@ const LabCreating = () => {
       setCurrentWord2(words2[nextWordIndex2]);
       setCurrentWord3(words3[nextWordIndex3]);
       setCurrentWord4(words4[nextWordIndex4]);
-    }, 6000);
+    }, 3000);
     enterAnimation()
     return () => {
       clearInterval(interval);
