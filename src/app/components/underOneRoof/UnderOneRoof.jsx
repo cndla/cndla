@@ -55,11 +55,8 @@ export const UnderOneRoof = () => {
                     <Hr />
                     {data.map((item) => (
                         <div key={item.id} className='underOneRoof__content__right__molecules'>
-
                             <div className='underOneRoof__content__right__molecules__particles' >{item.icon}{item.text}</div>
-
                             <Hr />
-
                         </div>
                     ))}
                 </div>

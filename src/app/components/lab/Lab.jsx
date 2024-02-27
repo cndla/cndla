@@ -4,9 +4,9 @@ import "./lab.scss";
 import LabCreating from "./LabCreating";
 import { AnimatePresence } from "framer-motion";
 
-export const Logo = () => (
-  <div className="border p-1">
-    <span className="border__text">cndla / lab</span>
+export const Logo = ({ text, borderColor }) => (
+  <div className={`border-2 ${borderColor ? borderColor : "border-black"} flex  p-2 rounded-full max-w-64 justify-center`}>
+    <span className="text-4xl px-3 font-normal">{text}</span>
   </div>
 );
 

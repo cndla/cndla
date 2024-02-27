@@ -1,18 +1,24 @@
+'use client'
 /* eslint-disable @next/next/no-img-element */
+
 import React from "react";
 import "./contacto.scss";
 import linea from "../../images/linea.png";
 import Image from "next/image";
 
-const Logos = ({ logo }) => {
-  return <img src={logo} alt="" />;
-};
+import { motion } from "framer-motion";
 
 const Contacto = () => {
+  const text = "let's work together"
+  const splitText = text.split(" ")
+
   return (
     <section className="contacto" id="connect">
       <div className="contacto__container">
-        <h2 className="contacto__container__title roboto">{"let's work together"}</h2>
+        <h2 className="contacto__container__title roboto" >{splitText.map((text, i) => (
+          <motion.span key={i} className={`pr-3 ${i == 2 && "text-cnlda-orange"}`} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
+            transition={{ duration: .500, delay: 0.3 * i }} >{text}</motion.span>
+        ))}</h2>
         <div className="contacto__container__content">
           <div className="contacto__container__content__formContainer">
             <form className="contacto__container__content__formContainer__form">

@@ -29,12 +29,14 @@
       display: flex;
       flex-direction: column;
       font-family: Roboto;
-      font-size: 35px;
+      font-size: clamp(24px, 3vw, 32px);
       justify-content: space-around;
+      gap: 10px;
+
       &__molecules {
         &__particles {
           display: grid;
-          grid-template-columns: 8% 80%;
+          grid-template-columns: 10% 80%;
           align-items: center;
           padding: 25px;
           padding-bottom: 35px;

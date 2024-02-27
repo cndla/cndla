@@ -12,7 +12,7 @@ const OurServices = () => {
       text: ["creative", "lab and", "experiences"],
     },
     {
-      text: ["on fire", "sessions -", "workshops"],
+      text: ["on fire", "sessions ", "workshops"],
     },
   ];
 
@@ -31,13 +31,13 @@ const OurServices = () => {
           <motion.a
             key={index}
             onClick={() => goTo(item.text[2])}
-            className="ourServices__container__item roboto"
+            className="roboto flex flex-col border border-white justify-center w-11/12 items-center rounded-[50%] hover:bg-white hover:text-black text-5xl h-[70vh]"
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 + index * 0.2, duration: 0.65 }}
           >
             {item.text.map((text, i) => (
-              <span key={i}>{text}</span>
+              <span key={i} className="last:font-bold">{text}</span>
             ))}
           </motion.a>
         ))}

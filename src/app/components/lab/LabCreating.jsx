@@ -15,7 +15,7 @@ const LabCreating = () => {
   const words = ["_creating", "an innovation", "activations,"];
   const words2 = ["impactful", "lab that builds ideas", "events and "]
   const words3 = ["online and", "and projects", "strategies  on the"]
-  const words4 = ["offline experiences.", "that reshape culture.", "_           point-of-sale."]
+  const words4 = ["offline experiences.", "that reshape culture.", "_                 point-of-sale."]
 
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [currentWord2, setCurrentWord2] = useState(words2[0]);
@@ -27,6 +27,10 @@ const LabCreating = () => {
   const enterAnimation = async () => {
     await animate('.myWord', { y: [80, 0], opacity: [0, 1] }, { duration: 0.275, delay: 0.5 })
   }
+
+
+
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -65,9 +69,9 @@ const LabCreating = () => {
       justify-self-center
      "
     >
-      <div className=" text-8xl flex flex-col">
+      <div className=" text-[4.3vw] flex flex-col">
         <div className="flex  justify-between items-center ">
-          <Logo />
+          <Logo text={"cndla / lab"} />
           <div className="flex  leading-[1.1] overflow-hidden" ref={wordRef}>
             <p className="myWord">{currentWord}</p>
           </div>
@@ -87,7 +91,7 @@ const LabCreating = () => {
 
 
         </div>
-        <div className="flex gap-9 overflow-hidden">
+        <div className="flex gap-9 overflow-hidden w-full">
           <pre className="myWord roboto leading-[1.1]">{currentWord4}</pre>
         </div>
       </div>

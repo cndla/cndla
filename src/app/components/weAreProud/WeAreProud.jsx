@@ -4,6 +4,7 @@ import React from "react";
 import "./weAreProud.scss";
 import { motion } from "framer-motion";
 import { fadeIn } from "../helpers/motionAnimations/animations";
+import { Logo } from "../lab/Lab";
 
 const WeAreProud = () => {
   return (
@@ -14,8 +15,9 @@ const WeAreProud = () => {
         transition={{ delay: 0.5, duration: 0.65 }}
         className="weAreProud__container"
       >
-        <div className="weAreProud__container__pill">dgital studio</div>
+
         <div className="weAreProud__container__title roboto">
+          <Logo text={"dgital studio"} />
           <h2 className="text-8xl font-semibold"> our full-service creative</h2>
           <div className="weAreProud__container__title__second">
             <motion.div
@@ -35,7 +37,7 @@ const WeAreProud = () => {
               transition={{ duration: 1, type: "tween" }}
               className="weAreProud__container__subtitle__first__text"
             >
-              With digital and offline impact,
+              with digital and offline impact,
               <motion.span
                 initial={{ marginLeft: "10px" }}
                 whileInView={{ marginLeft: "350px" }}

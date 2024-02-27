@@ -5,6 +5,7 @@ import "./onFire.scss";
 import hongo from "public/images/hongo.gif";
 import onfire from "public/images/onfire.png";
 import { motion } from "framer-motion";
+import { Logo } from "../lab/Lab";
 
 const animation = {
   hidden: {
@@ -31,8 +32,9 @@ const OnFire = () => {
   return (
     <section className="onFire" id="workshops">
       <div className="onFire__images">
-        <div className="onFire__images__pill">
-          / wrkshops
+        <div className="pb-6">
+
+          <Logo text={"/wrkshop"} borderColor={"border-white"} />
         </div>
         <Image
           src={hongo}
@@ -61,7 +63,7 @@ const OnFire = () => {
         </motion.p>
       </motion.div>
       <div className="onFire__texts">
-        <p className="onFire__texts__animation robotoMedium">
+        <p className="onFire__texts__animation robotoMedium ">
           <motion.span
             initial={{ x: 0 }}
             whileInView={{

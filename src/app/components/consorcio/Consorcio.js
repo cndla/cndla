@@ -10,12 +10,12 @@ const Consorcio = () => {
   const axisY = "189px"
 
   return (
-    <section className="consorcio">
+    <section className="consorcio w-11/12 m-auto py-64">
       <div className="consorcio__text">
         <Image src={reunion} alt="imagen que dice reunion de consorcio" width={0} height={0} />
-        <p>an own project made with love.</p>
-        <p>where we talk about everything but <br /> the import things.</p>
-        <p>we mix everything we love and we <br /> make experiences in the cities we visit.</p>
+        <p className="text-2xl 2xl:text-4xl">an own project made with love.</p>
+        <p className="text-2xl 2xl:text-4xl">where we talk about everything but <br /> the import things.</p>
+        <p className="text-2xl 2xl:text-4xl">we mix everything we love and we <br /> make experiences in the cities we visit.</p>
       </div>
       <div className="consorcio__images">
         <motion.img src={consorcio1.src} alt="imagen que dice reunion de consorcio"

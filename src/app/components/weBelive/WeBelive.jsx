@@ -25,7 +25,7 @@ const WeBelive = () => {
 
     return (
         <section className='weBelive' ref={container}>
-            <div className="weBelive__content">
+            <div className="weBelive__content roboto">
                 <motion.p style={{ opacity: x }}>we believe in strong</motion.p>
                 <motion.div style={{ opacity: x }} className='weBelive__content__withLine'><Hr />partnerships with</motion.div>
                 <motion.p style={{ opacity: x }} className='weBelive__content__p'>engaging <span className='weBelive__content__p__span'>

@@ -14,13 +14,4 @@
 }
 
 .border {
-  border: 3px solid black;
-  border-radius: 70px;
-  width: 250px;
-  display: flex;
-  justify-content: center;
-  &__text {
-    font-weight: 700;
-    font-size: 40px;
-  }
 }
