@@ -8,7 +8,9 @@ import video from "./video.gif";
 import Image from "next/image";
 import { element } from "three/examples/jsm/nodes/shadernode/ShaderNode";
 import Word from "./Word";
-const roboto = Roboto({ subsets: ["latin"], weight: "500" });
+
+
+export const roboto = Roboto({ subsets: ["latin"], weight: ["100", "300", "400", "500", "700", "900"] });
 
 const text = "an impulsive feeling that drives you to do everything you love, to achieve and to take on new challenges_____the passion  of each of the people who are part of the team____ thoughts that are transformed into real strategic actions______the rush of adrenaline of a new project______based in Argentina working globally."
 
@@ -39,16 +41,15 @@ const Hero = () => {
       <div className="hero__title">
         <div ref={container} className="hero__title__moment flex flex-col justify-center items-center">
           <motion.span style={{ x: x }} className="flex justify-center">
-            <Image src={video} alt="logo" width={"auto"} height={"auto"} className="w-11/12" />
+            <Image src={video} alt="logo" width={"auto"} height={"auto"} className="" />
           </motion.span>
-          <motion.span style={{ x: x2 }} className="roboto">
-            we
-            are
+          <motion.span style={{ x: x2 }} className=" text-[10rem]">
+            we are
           </motion.span>
         </div>
         <div className="hero__title__moment"></div>
       </div>
-      <div className="hero__subtitle roboto">
+      <div className="hero__subtitle ">
         <motion.div
           style={{ opacity: scrollYProgress2 }}
           className="hero__subtitle__text flex flex-wrap"
