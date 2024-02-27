@@ -28,7 +28,7 @@ const YourMoment = () => {
             transition={{ duration: 1, type: "tween", }}
             style={{ originX: 0 }}
           ></motion.div>
-          <p className="yourMoment__container__first__text">
+          <p className="yourMoment__container__first__text leading-3">
             this is your moment,
           </p>
         </div>
