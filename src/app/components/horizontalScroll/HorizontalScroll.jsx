@@ -18,7 +18,7 @@ const HorizontalScroll = () => {
     <section ref={targetRef} className="horizontal" id="work">
       <div className="horizontal__container">
         <motion.div
-          className="horizontal__container__motion"
+          className="horizontal__container__motion snap-x"
           style={{ x, transition: "all 200ms ease" }}
         >
           {data.map((item) => (
@@ -26,7 +26,7 @@ const HorizontalScroll = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="horizontal__container__motion__molecule w-[100vw]"
+              className="horizontal__container__motion__molecule w-screen snap-center"
               key={item.id}
             >
               <Image

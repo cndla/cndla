@@ -17,6 +17,7 @@ import HorizontalScroll from "./components/horizontalScroll/HorizontalScroll";
 import YourMoment from "./components/yourMoment/YourMoment";
 import ArrowUp from "./svgs/ArrowUp";
 import { useEffect, useRef, useState } from "react";
+import { useMotionValueEvent, useScroll, useTransform } from "framer-motion";
 
 // export const metadata = {
 //   title: "Cndla Collective",
@@ -24,26 +25,35 @@ import { useEffect, useRef, useState } from "react";
 // };
 
 export default function Home() {
-  const [showToTopArrow, setShowToTopArrow] = useState(false);
-  const scrollRef = useRef(null);
+  const [show, setShow] = useState(false)
+  const [color, setColor] = useState('fill-white')
+  const { scrollY } = useScroll()
 
-  const handleScroll = () => {
-    const scrollTop = scrollRef.current.scrollTop;
-    setShowToTopArrow(scrollTop > 0); // Only show arrow when scrolled down
-  };
+
 
   useEffect(() => {
-    const element = scrollRef.current;
-    if (element) {
+    const handleScroll = (latest) => {
+      if (latest > 6240) {
+        setShow(true);
+      } else {
+        setShow(false);
+      }
+      if (latest > 16421 && latest < 17981 || latest > 20984 && latest < 22064) {
+        setColor('fill-black');
+      } else {
+        setColor('fill-white');
+      }
+    };
 
-      element.addEventListener('scroll', handleScroll);
-    }
-    return () => element.removeEventListener('scroll', handleScroll);
-  }, []);
+    // Subscribe to scroll events
+    scrollY.on("change", handleScroll);
 
-  const handleToTopClick = () => {
-    scrollRef.current.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+    // Cleanup function to unsubscribe on unmount
+    return () => scrollY.off("change", handleScroll);
+  }, [scrollY]); // Add scrollY as a dependency
+
+  const scrollRef = useRef(null);
+
 
 
   return (
@@ -57,34 +67,20 @@ export default function Home() {
         <UnderOneRoof />
         <WeBelive />
 
-        <HorizontalScroll />
 
+
+        <HorizontalScroll />
         <Lab />
-        <Consorcio />
-        <OnFire />
-        <YourMoment />
-        <Contacto />
-        {showToTopArrow && (
-          <button
-            className="back-to-top"
-            onClick={handleToTopClick}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#fff"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="feather feather-arrow-up"
-            >
-              <path d="M5 16L12 12L19 16" />
-            </svg>
-          </button>
-        )}
+        <div className="relative">
+          <div className="fixed bottom-24 right-24 ">
+            <ArrowUp show={show} color={color} />
+          </div>
+          <Consorcio />
+          <OnFire />
+          <YourMoment />
+          <Contacto />
+        </div>
+
       </main>
     </div>
   );
