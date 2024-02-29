@@ -49,7 +49,7 @@ export default function Home() {
     scrollY.on("change", handleScroll);
 
     // Cleanup function to unsubscribe on unmount
-    return () => scrollY.off("change", handleScroll);
+    // return () => scrollY.off("change", handleScroll);
   }, [scrollY]); // Add scrollY as a dependency
 
   const scrollRef = useRef(null);

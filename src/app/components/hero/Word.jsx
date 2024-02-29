@@ -12,7 +12,7 @@ const Word = ({ value }) => {
     const words = value.split(" ");
     return (
         <p ref={theElemente} className='flex flex-wrap w-11/12 m-auto justify-between items-center'>
-            <span className='text-cnlda-orange pr-44 pl-1 text-xl'>manifst</span>
+            <span className='text-cnlda-orange md:pr-44 pr-20 flex md:text-xl text-lg'>manifst</span>
             {words.map((word, index) => {
                 const start = index / words.length;
                 const end = start + (1 / words.length);
@@ -27,9 +27,9 @@ const Word = ({ value }) => {
 const TheWord = ({ children, range, progress }) => {
     const opacity = useTransform(progress, range, [0, 1])
 
-    return <span className='p-1 leading-9 relative '>
-        <span className='absolute opacity-15 text-3xl'>{children}</span>
-        <motion.span style={{ opacity: opacity }} className='text-cnlda-orange text-3xl'>{children}</motion.span>
+    return <span className=' md:leading-9 leading-9 relative '>
+        <span className='absolute md:opacity-15 opacity-0 md:text-3xl text-lg'>{children}</span>
+        <motion.span style={{ opacity: opacity }} className='text-cnlda-orange md:text-3xl text-lg mr-1'>{children}</motion.span>
     </span>
 
 }

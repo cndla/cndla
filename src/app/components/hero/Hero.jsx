@@ -37,13 +37,13 @@ const Hero = () => {
 
 
   return (
-    <section className={`${roboto.className} hero h-auto p-24`} id="about">
+    <section className={`${roboto.className} hero lg:h-auto md:p-24 overflow-y-hidden pt-24`} id="about">
       <div className="hero__title">
         <div ref={container} className="hero__title__moment flex flex-col justify-center items-center">
-          <motion.span style={{ x: x }} className="flex justify-center">
-            <Image src={video} alt="logo" width={"auto"} height={"auto"} className="" />
+          <motion.span style={{ x: x }} className="flex justify-center w-11/12 md:w-auto">
+            <Image src={video} alt="logo" width={"auto"} height={"auto"} className="w-11/12 md:w-auto" />
           </motion.span>
-          <motion.span style={{ x: x2 }} className=" text-[10rem]">
+          <motion.span style={{ x: x2 }} className=" md:text-[10rem] text-9xl">
             we are
           </motion.span>
         </div>
@@ -52,7 +52,7 @@ const Hero = () => {
       <div className="hero__subtitle ">
         <motion.div
           style={{ opacity: scrollYProgress2 }}
-          className="hero__subtitle__text flex flex-wrap"
+          className="hero__subtitle__text flex flex-wrap m-auto"
           ref={element}
         >
           <Word value={text} />

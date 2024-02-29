@@ -35,7 +35,6 @@
     flex-direction: column;
     gap: 30px;
     font-size: 30px;
-    width: 80%;
     text-align: justify;
     line-height: 3rem;
     color: #ffffff;
@@ -50,53 +49,4 @@
 
 .roboto {
   font-family: "Roboto";
-}
-
-@media (max-width: 768px) {
-  .hero {
-    height: 100vh;
-
-    &__title {
-      font-size: 28px;
-
-      &__moment {
-        width: 80%;
-        font-size: 16px;
-        line-height: 20px;
-      }
-    }
-
-    &__subtitle,
-    h2 {
-      font-size: 18px;
-    }
-  }
-}
-
-@media (width <= $cell) {
-  .hero {
-    gap: 30px;
-    &__title {
-      opacity: 0;
-      animation: fadeIn 0.5s normal 2.9s 1 forwards;
-      font-family: "Wagon";
-      &__moment {
-        width: 80vw;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        font-size: 24px;
-        line-height: 24px;
-      }
-    }
-    &__subtitle,
-    h2 {
-      opacity: 0;
-      animation: fadeIn 0.6s normal 3s 1 forwards;
-      font-family: "Roboto";
-      font-size: 12px;
-      text-align: center;
-      font-weight: 400;
-    }
-  }
 }

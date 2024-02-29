@@ -6,14 +6,10 @@
   max-width: 100vw;
   height: 110dvh;
   color: white;
-  scroll-behavior: smooth;
 
-  @include flexRow(center, center);
   &__container {
     width: 90%;
-    height: 600px;
     margin: auto;
-    @include flexRow(center, none);
     gap: 6px;
     &__item {
       display: flex;
@@ -23,12 +19,9 @@
       border: 1px solid #fff;
       border-radius: 70%;
       padding: 100px;
-      flex-shrink: 0;
       font-size: 50px;
       line-height: 50px;
       font-weight: 100;
-      text-align: center;
-      width: 454px;
       text-align: center;
     }
     &__item span:last-child {

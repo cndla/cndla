@@ -2,11 +2,11 @@
 import React from 'react'
 import './underOneRoof.scss'
 import { motion } from 'framer-motion'
-import SvgEngagement from '@/app/svgs/SvgEngagement'
-import Performance from '@/app/svgs/Performance'
-import BranIdentity from '@/app/svgs/BranIdentity'
-import Audiovisual from '@/app/svgs/Audiovisual'
-import BrandExperience from '@/app/svgs/BrandExperience'
+import SvgEngagement from '../../svgs/SvgEngagement'
+import BranIdentity from '../../svgs/BranIdentity'
+import Performance from '../../svgs/Performance'
+import Audiovisual from '../../svgs/Audiovisual'
+import BrandExperience from '../../svgs/BranIdentity'
 
 
 

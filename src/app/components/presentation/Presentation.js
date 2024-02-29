@@ -17,9 +17,9 @@ const Presentation = () => {
 
   return (
     <section className="presentation" id="home">
-      <div className="presentation__group flex items-baseline">
+      <div className="presentation__group flex items-baseline scale-50 lg:scale-100">
         <motion.svg
-          className="presentation__group__letter c"
+          className="presentation__group__letter c "
           width="140"
           height="132"
           viewBox="0 0 140 132"
@@ -36,7 +36,7 @@ const Presentation = () => {
           />
         </motion.svg>
         <motion.svg
-          className="presentation__group__letter n"
+          className="presentation__group__letter n "
           width="171"
           height="128"
           viewBox="0 0 171 128"
@@ -52,7 +52,7 @@ const Presentation = () => {
           />
         </motion.svg>
         <motion.svg
-          className="presentation__group__letter d"
+          className="presentation__group__letter d "
           width="152"
           height="179"
           viewBox="0 0 152 179"
@@ -68,7 +68,7 @@ const Presentation = () => {
           />
         </motion.svg>
         <motion.svg
-          className="presentation__group__letter l"
+          className="presentation__group__letter l "
           width="73"
           height="176"
           viewBox="0 0 73 176"

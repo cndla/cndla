@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './header.scss';
-import useScrollVisibility from '@/app/customHooks/useScrollVisibility';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 const Header = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
-  const isVisible = useScrollVisibility();
-  const router = useRouter();
 
   useEffect(() => {
     // Check for scroll position on initial render and component updates
