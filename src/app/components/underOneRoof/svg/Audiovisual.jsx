@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const Audiovisual = () => {
+export const Audiovisual = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="47" height="53" viewBox="0 0 47 53" fill="none" initial={{ pathLength: 0, opacity: 0 }}
             whileInView={{ pathLength: 1, opacity: 1 }}>
@@ -17,4 +17,3 @@ const Audiovisual = () => {
         </svg >)
 }
 
-export default Audiovisual

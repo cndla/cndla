@@ -27,7 +27,7 @@ export const pathVariants2 = {
     },
 };
 
-const BrandExperience = () => {
+export const BrandExperience = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="15" viewBox="0 0 60 15" fill="none">
             <g clipPath="url(#clip0_107_241)">
@@ -41,4 +41,3 @@ const BrandExperience = () => {
         </svg>)
 }
 
-export default BrandExperience

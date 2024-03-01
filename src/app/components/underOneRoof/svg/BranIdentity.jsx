@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BranIdentity = () => {
+export const BranIdentity = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
             <g clipPath="url(#clip0_107_230)">
@@ -25,4 +25,3 @@ const BranIdentity = () => {
         </svg>)
 }
 
-export default BranIdentity

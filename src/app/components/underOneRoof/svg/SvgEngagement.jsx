@@ -2,7 +2,6 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 
-import "./svgEngagement.scss";
 
 export const svgVariants = {
   hidden: {},
@@ -30,7 +29,7 @@ export const pathVariants2 = {
   },
 };
 
-const SvgEngagement = () => {
+export const SvgEngagement = () => {
 
 
   return (
@@ -87,4 +86,3 @@ const SvgEngagement = () => {
   );
 };
 
-export default SvgEngagement;
