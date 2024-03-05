@@ -12,7 +12,7 @@ const HorizontalScroll = () => {
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-1100%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-810%"]);
 
   return (
     <section ref={targetRef} className="horizontal" id="work">
@@ -34,7 +34,7 @@ const HorizontalScroll = () => {
                 width="auto"
                 height="auto"
                 alt="something"
-                className="pic"
+                className="pic w-auto"
               />
               <motion.div
                 className="horizontal__container__motion__molecule__particles"
@@ -48,7 +48,7 @@ const HorizontalScroll = () => {
                 transition={{ duration: 2, delay: 1 }}
               >
                 <div className="horizontal__container__motion__molecule__particles__item">
-                  <Image src={item.icon} alt="" width={0} height={0}></Image>
+                  <Image src={item.icon} alt="" width={0} height={0} className=""></Image>
                   <div className="horizontal__container__motion__molecule__particles__item__text">
                     <div className="horizontal__container__motion__molecule__particles__item__text__first">
                       {" "}

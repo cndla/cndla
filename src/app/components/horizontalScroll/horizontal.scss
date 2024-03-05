@@ -1,6 +1,6 @@
 .horizontal {
   position: relative;
-  height: 1110vh;
+  height: 1000vh;
   font-family: Roboto;
 
   &__container {
@@ -20,8 +20,6 @@
         align-items: center;
 
         .pic {
-          width: 100vw;
-          height: 100vh;
         }
         &__particles {
           display: flex;

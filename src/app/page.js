@@ -33,15 +33,16 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = (latest) => {
-      if (latest > 6240) {
+      console.log(latest)
+      if (latest > 15680) {
         setShow(true);
       } else {
         setShow(false);
       }
-      if (latest > 16421 && latest < 17981 || latest > 20984 && latest < 22064) {
-        setColor('fill-black');
+      if (latest > 15680 && latest < 17981 || latest > 20984 && latest < 22064) {
+        setColor(' fill-cnlda-orange');
       } else {
-        setColor('fill-white');
+        setColor(' fill-cnlda-orange');
       }
     };
 
