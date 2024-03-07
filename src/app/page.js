@@ -33,7 +33,6 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = (latest) => {
-      console.log(latest)
       if (latest > 15680) {
         setShow(true);
       } else {
