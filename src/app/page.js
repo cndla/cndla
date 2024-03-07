@@ -19,45 +19,11 @@ import ArrowUp from "./svgs/ArrowUp";
 import { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll, useTransform } from "framer-motion";
 
-// export const metadata = {
-//   title: "Cndla Collective",
-//   description: "",
-// };
+
 
 export default function Home() {
-  const [show, setShow] = useState(false)
-  const [color, setColor] = useState('fill-white')
-  const { scrollY } = useScroll()
-
-
-
-  useEffect(() => {
-    const handleScroll = (latest) => {
-      if (latest > 15680) {
-        setShow(true);
-      } else {
-        setShow(false);
-      }
-      if (latest > 15680 && latest < 17981 || latest > 20984 && latest < 22064) {
-        setColor(' fill-cnlda-orange');
-      } else {
-        setColor(' fill-cnlda-orange');
-      }
-    };
-
-    // Subscribe to scroll events
-    scrollY.on("change", handleScroll);
-
-    // Cleanup function to unsubscribe on unmount
-    // return () => scrollY.off("change", handleScroll);
-  }, [scrollY]); // Add scrollY as a dependency
-
-  const scrollRef = useRef(null);
-
-
-
   return (
-    <div ref={scrollRef}>
+    <div>
       <Header />
       <main>
         <Presentation />
@@ -71,15 +37,11 @@ export default function Home() {
 
         <HorizontalScroll />
         <Lab />
-        <div className="relative">
-          <div className="fixed bottom-24 right-24 ">
-            <ArrowUp show={show} color={color} />
-          </div>
-          <Consorcio />
-          <OnFire />
-          <YourMoment />
-          <Contacto />
-        </div>
+
+        <Consorcio />
+        <OnFire />
+        <YourMoment />
+        <Contacto />
 
       </main>
     </div>

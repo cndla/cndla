@@ -5,8 +5,6 @@ import { Roboto } from "next/font/google";
 import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
 import video from "./video.gif";
-import Image from "next/image";
-import { element } from "three/examples/jsm/nodes/shadernode/ShaderNode";
 import Word from "./Word";
 
 
@@ -32,7 +30,7 @@ const Hero = () => {
   const theElemente = useRef(null);
   const { scrollYProgress: scrollYProgress3 } = useScroll({
     target: theElemente,
-    offset: ["end end", "start center"],
+    offset: ["0.5 end", "start center"],
   })
 
   const y = useTransform(scrollYProgress3, [0, 1], [0, -300]);
@@ -46,7 +44,7 @@ const Hero = () => {
   return (
     <section className={`${roboto.className} hero lg:h-auto md:p-24 overflow-y-hidden pt-24`} id="about">
 
-      <div ref={container} className="flex justify-center items-center w-full mt-64">
+      <div ref={container} className="flex justify-center items-center w-full ">
 
         <div className="w-8/12 relative overflow-hidden">
           <div className="absolute h-full w-full">
