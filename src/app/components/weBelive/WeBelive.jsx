@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react'
 import './weBelive.scss'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { roboto } from '../fonts/Font'
 
 
 
@@ -25,7 +26,7 @@ const WeBelive = () => {
 
     return (
         <section className='weBelive' ref={container}>
-            <div className="weBelive__content roboto">
+            <div className={`${roboto.className} text-6xl`}>
                 <motion.p style={{ opacity: x }}>we believe in strong</motion.p>
                 <motion.div style={{ opacity: x }} className='weBelive__content__withLine'><Hr />partnerships with</motion.div>
                 <motion.p style={{ opacity: x }} className='weBelive__content__p'>engaging <span className='weBelive__content__p__span'>
