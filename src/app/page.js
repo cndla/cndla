@@ -23,7 +23,7 @@ import { useMotionValueEvent, useScroll, useTransform } from "framer-motion";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <Header />
       <main>
         <Presentation />
