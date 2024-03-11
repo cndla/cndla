@@ -32,10 +32,10 @@ const OnFire = () => {
   return (
     <section className="onFire" id="workshops">
       <div className="onFire__images">
-        <div className="pb-6">
 
-          <Logo text={"/wrkshop"} borderColor={"border-white"} />
-        </div>
+
+        <Logo text={"/wrkshop"} borderColor={"border-white"} extraClass={'mb-8'} />
+
         <Image
           src={hongo}
           alt="aca va un gif"

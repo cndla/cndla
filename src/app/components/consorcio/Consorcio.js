@@ -18,125 +18,190 @@ import reunion from "public/images/reuniondeconsorcio.png";
 import { motion } from "framer-motion";
 
 const Consorcio = () => {
-  const axisY = "189px";
+  const axisY = "14vh";
 
   return (
-    <section className="consorcio w-11/12 m-auto py-64">
-      <div className="consorcio__text scale-75 2xl:scale-100">
-        <Image
-          src={reunion}
-          alt="imagen que dice reunion de consorcio"
-          width={0}
-          height={0}
-        />
-        <p className="text-2xl 2xl:text-4xl">an own project made with love.</p>
-        <p className="text-2xl 2xl:text-4xl">
-          where we talk about everything but <br /> the import things.
-        </p>
-        <p className="text-2xl 2xl:text-4xl">
-          we mix everything we love and we <br /> make experiences in the cities
-          we visit.
-        </p>
-      </div>
-      <div className="consorcio__images">
-        <motion.img
-          src={consorcio1.src}
-          alt="imagen que dice reunion de consorcio"
-          initial={{ opacity: 0 }}
-          whileInView={{ y: axisY, opacity: 1 }}
-          transition={{
-            duration: 3,
-            delay: 1,
-            type: "spring",
-            repeat: Infinity,
-            repeatType: "reverse",
-            repeatDelay: 1,
-          }}
-        />
-        <motion.img
-          src={consorcio4.src}
-          alt="imagen que dice reunion de consorcio"
-          width={0}
-          height={0}
-          initial={{ y: axisY, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            duration: 3,
-            delay: 1.5,
-            type: "spring",
-            repeat: Infinity,
-            repeatType: "reverse",
-            repeatDelay: 1,
-          }}
-        />
-        <motion.img
-          src={consorcio2.src}
-          alt="imagen que dice reunion de consorcio"
-          width={0}
-          height={0}
-          initial={{ opacity: 0 }}
-          whileInView={{ y: axisY, opacity: 1 }}
-          transition={{
-            duration: 3,
-            delay: 1.3,
-            type: "spring",
-            repeat: Infinity,
-            repeatType: "reverse",
-            repeatDelay: 1,
-          }}
-        />
-        <div className="">
-          <motion.img
-            src={consorcio3.src}
-            alt="imagen que dice reunion de consorcio"
-            width={205}
-            height={205}
-            initial={{ x: "-205px" }}
-            whileInView={{ x: 0 }}
-            transition={{ duration: 1, delay: 1 }}
-          />
-          <motion.img
-            src={consorcio5.src}
-            alt="imagen que dice reunion de consorcio"
-            width={205}
-            height={205}
-          />
+    // <section className="consorcio w-11/12 m-auto py-64">
+
+    //   <div className="consorcio__images">
+    //    
+    //     <div className="">
+    //   <div className="md:col-span-3 md:row-span-4 md:col-start-4 grid grid-cols-4 grid-rows-2 gap-4">
+
+
+    //   <div >
+
+    //   </div>
+    //   <div className="col-start-2 row-start-2">
+    //     <motion.img
+    //       src={consorcio4.src}
+    //       alt="imagen que dice reunion de consorcio"
+    //       width={0}
+    //       height={0}
+    //       initial={{ y: axisY, opacity: 0 }}
+    //       whileInView={{ y: 0, opacity: 1 }}
+    //       transition={{
+    //         duration: 3,
+    //         delay: 1.5,
+    //         type: "spring",
+    //         repeat: Infinity,
+    //         repeatType: "reverse",
+    //         repeatDelay: 1,
+    //       }}
+    //     /></div>
+    //   <div className="col-start-3 row-start-1">
+    //     <motion.img
+    //       src={consorcio2.src}
+    //       alt="imagen que dice reunion de consorcio"
+    //       width={0}
+    //       height={0}
+    //       initial={{ opacity: 0 }}
+    //       whileInView={{ y: axisY, opacity: 1 }}
+    //       transition={{
+    //         duration: 3,
+    //         delay: 1.3,
+    //         type: "spring",
+    //         repeat: Infinity,
+    //         repeatType: "reverse",
+    //         repeatDelay: 1,
+    //       }}
+    //     />
+    //   </div>
+    //   <div className="col-start-4 row-start-1">
+    //   </div>
+    //   <div className="col-start-4 row-start-2">
+    // </div>
+
+    //     </div>
+    //   </div>
+    // </section>
+
+    <section className="grid grid-cols-6 grid-rows-6 gap-4 bg-black text-white pt-24 ">
+      <div className="col-span-6 row-span-2">
+
+        <div className="grid grid-cols-8 grid-rows-6 gap-1 p-4">
+          <div className="col-span-2 row-span-3">
+            <motion.img
+              src={consorcio1.src}
+              alt="imagen que dice reunion de consorcio"
+              initial={{ opacity: 0 }}
+              whileInView={{ y: axisY, opacity: 1 }}
+              transition={{
+                duration: 3,
+                delay: 1,
+                type: "spring",
+                repeat: Infinity,
+                repeatType: "reverse",
+                repeatDelay: 1,
+              }}
+              className="w-full h-full"
+            /></div>
+          <div className="col-span-2 row-span-3 col-start-3">
+            <motion.img
+              src={consorcio4.src}
+              alt="imagen que dice reunion de consorcio"
+              initial={{ y: -axisY, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              className="w-full h-full"
+              transition={{
+                duration: 3,
+                delay: 1.5,
+                type: "spring",
+                repeat: Infinity,
+                repeatType: "reverse",
+                repeatDelay: 1,
+              }}
+            />
+          </div>
+          <div className="col-span-2 row-span-3 col-start-5 row-start-1">
+            <motion.img
+              src={consorcio2.src}
+              alt="imagen que dice reunion de consorcio"
+              initial={{ opacity: 0 }}
+              whileInView={{ y: axisY, opacity: 1 }}
+              transition={{
+                duration: 3,
+                delay: 1.3,
+                type: "spring",
+                repeat: Infinity,
+                repeatType: "reverse",
+                repeatDelay: 1,
+              }}
+              className="w-full h-full"
+            />
+
+          </div>
+          <div className="col-span-2 row-span-3 col-start-7 row-start-1">
+            <motion.img
+              src={consorcio3.src}
+              alt="imagen que dice reunion de consorcio"
+              initial={{ x: "-205px" }}
+              whileInView={{ x: 0 }}
+              transition={{ duration: 1, delay: 1 }}
+              className="w-full h-full "
+            />
+
+          </div>
+          <div className="col-span-2 row-span-3 col-start-7 row-start-4">
+            <motion.img
+              src={consorcio5.src}
+              alt="imagen que dice reunion de consorcio"
+              className="w-full h-full"
+            />
+          </div>
         </div>
+
       </div>
-      <div className="consorcio__bottom">
-        <div className="consorcio__bottom__images">
+      <div className="col-span-6 row-span-2 row-start-3 ">
+        <div className="flex flex-col justify-center items-center text-lg text-center text-wrap gap-4">
           <Image
-            src={people}
+            src={reunion}
             alt="imagen que dice reunion de consorcio"
-            width={0}
-            height={0}
+            className="w-8/12"
           />
-          <Image
-            src={culture}
-            alt="imagen que dice reunion de consorcio"
-            width={0}
-            height={0}
-          />
-          <Image
-            src={gastro}
-            alt="imagen que dice reunion de consorcio"
-            width={0}
-            height={0}
-          />
-          <Image
-            src={music}
-            alt="imagen que dice reunion de consorcio"
-            width={0}
-            height={0}
-          />
-          <Image
-            src={gozadera}
-            alt="imagen que dice reunion de consorcio"
-            width={0}
-            height={0}
-          />
+          <div className="flex flex-col gap-2 px-8">
+
+            <p className="">an own project made with love.</p>
+            <p className="">
+              where we talk about everything but the import things.
+            </p>
+            <p className="">
+              we mix everything we love and we make experiences in the cities
+              we visit.
+            </p>
+          </div>
+        </div></div>
+      <div className="col-span-6 row-start-5">
+        <div className="w-full">
+          <div className="flex justify-between p-4">
+            <Image
+              src={people}
+              alt="imagen que dice reunion de consorcio"
+              className="w-12"
+            />
+            <Image
+              src={culture}
+              alt="imagen que dice reunion de consorcio"
+              className="w-12"
+            />
+            <Image
+              src={gastro}
+              alt="imagen que dice reunion de consorcio"
+              className="w-12"
+            />
+            <Image
+              src={music}
+              alt="imagen que dice reunion de consorcio"
+              className="w-12"
+            />
+            <Image
+              src={gozadera}
+              alt="imagen que dice reunion de consorcio"
+              className="w-12"
+            />
+          </div>
+          <p className="text-center">upcoming dates here</p>
         </div>
-        <p className="consorcio__bottom__upcoming">upcoming dates here</p>
       </div>
     </section>
   );

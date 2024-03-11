@@ -54,7 +54,7 @@ export const UnderOneRoof = () => {
       className={`${roboto.className} w-screen bg-black text-white py-28 px-5 md:pt-28 md:py-0 `}
     >
       <div className="grid grid-cols-6 grid-rows-6 gap-4 ">
-        <div className="col-span-6 text-2xl font-bold md:col-span-2 md:text-4xl">
+        <div className="col-span-6 text-2xl font-bold md:col-span-2 md:text-6xl">
           <p className="">all under one roof</p>
           <p className="">-</p>
         </div>
@@ -62,7 +62,10 @@ export const UnderOneRoof = () => {
           {" "}
           <Hr />
           {data.map((item) => (
-            <div key={item.id} className="md:space-y-8 text-lg xl:text-4xl flex flex-col justify-center gap-4 md:block">
+            <div
+              key={item.id}
+              className="md:space-y-8 text-lg xl:text-4xl flex flex-col justify-center gap-4 md:block"
+            >
               <div className="flex items-center justify-start gap-6   ">
                 <span className="w-11">{item.icon}</span>
                 {item.text}
@@ -72,7 +75,7 @@ export const UnderOneRoof = () => {
           ))}
         </div>
         <div className="col-span-6 row-start-6 pt-8 md:col-span-2 md:row-start-6 ">
-          <p className="text-xl">
+          <p className="text-xl md:text-4xl">
             we put our passion and know-how <br /> at the service of your brand
           </p>
         </div>

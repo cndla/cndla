@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Logo } from "./Lab";
-import "./labCreating.scss";
 import {
   animate,
   motion,
@@ -76,7 +75,7 @@ const LabCreating = () => {
       justify-self-center
      "
     >
-      <div className=" text-3xl flex flex-col text-nowrap">
+      <div className=" text-3xl flex flex-col text-nowrap md:text-6xl 2xl:text-8xl">
         <div className="flex  justify-between items-center ">
           <Logo text={"cndla / lab"} />
           <div className="flex  leading-[1.1] overflow-hidden " ref={wordRef}>
