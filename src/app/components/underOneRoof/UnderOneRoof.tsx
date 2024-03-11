@@ -51,20 +51,20 @@ export const UnderOneRoof = () => {
 
   return (
     <section
-      className={`${roboto.className} w-screen bg-black text-white py-28 px-5 md:pt-28 md:py-0 `}
+      className={`${roboto.className} w-screen bg-black text-white px-5 md:pt-40 md:py-28 py-28 md:h-screen place-content-center `}
     >
-      <div className="grid grid-cols-6 grid-rows-6 gap-4 ">
-        <div className="col-span-6 text-2xl font-bold md:col-span-2 md:text-6xl">
+      <div className="grid grid-cols-6 grid-rows-4 justify-center  h-full">
+        <div className="col-span-6 text-2xl font-bold md:col-span-2 2xl:text-6xl lg:text-4xl">
           <p className="">all under one roof</p>
           <p className="">-</p>
         </div>
-        <div className="col-span-6 row-span-4 row-start-2 place-items-stretch md:col-span-3 md:row-span-6 md:col-start-4  flex flex-col justify-between">
+        <div className="col-span-6 row-span-4 row-start-2  md:col-span-3 md:row-span-6 md:col-start-4 md:grid flex flex-col gap-4">
           {" "}
-          <Hr />
+          <Hr/>
           {data.map((item) => (
             <div
               key={item.id}
-              className="md:space-y-8 text-lg xl:text-4xl flex flex-col justify-center gap-4 md:block"
+              className=" text-lg xl:text-4xl md:gap-8 gap-20  md:flex md:flex-col md:justify-center space-y-4 "
             >
               <div className="flex items-center justify-start gap-6   ">
                 <span className="w-11">{item.icon}</span>
@@ -75,7 +75,7 @@ export const UnderOneRoof = () => {
           ))}
         </div>
         <div className="col-span-6 row-start-6 pt-8 md:col-span-2 md:row-start-6 ">
-          <p className="text-xl md:text-4xl">
+          <p className="text-xl 2xl:text-4xl lg:text-2xl">
             we put our passion and know-how <br /> at the service of your brand
           </p>
         </div>
