@@ -77,10 +77,10 @@ const Consorcio = () => {
     // </section>
 
     <section className="grid grid-cols-6 grid-rows-6 gap-4 bg-black text-white pt-24 ">
-      <div className="col-span-6 row-span-2">
+      <div className="col-span-6 row-span-2 md:col-span-3 md:row-span-4 md:col-start-4 md:row-start-1">
 
-        <div className="grid grid-cols-8 grid-rows-6 gap-1 p-4">
-          <div className="col-span-2 row-span-3">
+        <div className="grid grid-cols-8 grid-rows-6 gap-1 p-4 ">
+          <div className="col-span-2 row-span-3  ">
             <motion.img
               src={consorcio1.src}
               alt="imagen que dice reunion de consorcio"
@@ -94,7 +94,7 @@ const Consorcio = () => {
                 repeatType: "reverse",
                 repeatDelay: 1,
               }}
-              className="w-full h-full"
+              className="w-full h-full md:h-auto "
             /></div>
           <div className="col-span-2 row-span-3 col-start-3">
             <motion.img
@@ -102,7 +102,7 @@ const Consorcio = () => {
               alt="imagen que dice reunion de consorcio"
               initial={{ y: -axisY, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              className="w-full h-full"
+              className="w-full h-full md:h-auto"
               transition={{
                 duration: 3,
                 delay: 1.5,
@@ -127,7 +127,7 @@ const Consorcio = () => {
                 repeatType: "reverse",
                 repeatDelay: 1,
               }}
-              className="w-full h-full"
+              className="w-full h-full md:h-auto"
             />
 
           </div>
@@ -138,7 +138,7 @@ const Consorcio = () => {
               initial={{ x: "-205px" }}
               whileInView={{ x: 0 }}
               transition={{ duration: 1, delay: 1 }}
-              className="w-full h-full "
+              className="w-full h-full md:h-auto "
             />
 
           </div>
@@ -146,20 +146,20 @@ const Consorcio = () => {
             <motion.img
               src={consorcio5.src}
               alt="imagen que dice reunion de consorcio"
-              className="w-full h-full"
+              className="w-full h-full md:h-auto"
             />
           </div>
         </div>
 
       </div>
-      <div className="col-span-6 row-span-2 row-start-3 ">
-        <div className="flex flex-col justify-center items-center text-lg text-center text-wrap gap-4">
+      <div className="col-span-6 row-span-2 row-start-3 md:col-span-2 md:row-span-4 md:col-start-2">
+        <div className="flex flex-col justify-center items-center text-lg  text-center text-wrap gap-4 md:col-span-3 md:row-span-4 md:col-start-2 md:text-2xl md:text-right xl:text-3xl 2xl:text-4xl md:items-end">
           <Image
             src={reunion}
             alt="imagen que dice reunion de consorcio"
             className="w-8/12"
           />
-          <div className="flex flex-col gap-2 px-8">
+          <div className="flex flex-col gap-2 px-8 md:gap-4 ">
 
             <p className="">an own project made with love.</p>
             <p className="">
@@ -170,37 +170,38 @@ const Consorcio = () => {
               we visit.
             </p>
           </div>
-        </div></div>
-      <div className="col-span-6 row-start-5">
+        </div>
+      </div>
+      <div className="col-span-6 row-start-5 md:col-span-4 md:col-start-2 md:row-start-5">
         <div className="w-full">
           <div className="flex justify-between p-4">
             <Image
               src={people}
               alt="imagen que dice reunion de consorcio"
-              className="w-12"
+              className="w-12 md:w-32"
             />
             <Image
               src={culture}
               alt="imagen que dice reunion de consorcio"
-              className="w-12"
+              className="w-12 md:w-32"
             />
             <Image
               src={gastro}
               alt="imagen que dice reunion de consorcio"
-              className="w-12"
+              className="w-12 md:w-32"
             />
             <Image
               src={music}
               alt="imagen que dice reunion de consorcio"
-              className="w-12"
+              className="w-12 md:w-32"
             />
             <Image
               src={gozadera}
               alt="imagen que dice reunion de consorcio"
-              className="w-12"
+              className="w-12 md:w-32"
             />
           </div>
-          <p className="text-center">upcoming dates here</p>
+          <p className="text-center md:text-3xl">upcoming dates here</p>
         </div>
       </div>
     </section>
