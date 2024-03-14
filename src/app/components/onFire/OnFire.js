@@ -34,21 +34,21 @@ const OnFire = () => {
       <div className="onFire__images">
 
 
-        <Logo text={"/wrkshop"} borderColor={"border-white"} extraClass={'mb-8'} />
+        <Logo text={"/wrkshop"} borderColor={"border-white"} extraClass={'mb-8 text-3xl'} />
 
         <Image
           src={hongo}
           alt="aca va un gif"
           width="auto"
           height="auto"
-          className="onFire__images__hongo"
+          className="w-80 xl:w-[625px] aspect-square "
         ></Image>
         <Image
           src={onfire}
           alt="aca va un gif"
           width="auto"
           height="auto"
-          className="onFire__images__onfire"
+          className="onFire__images__onfire w-80 xl:w-[625px]"
         ></Image>
       </div>
       <motion.div
@@ -57,12 +57,12 @@ const OnFire = () => {
         variants={animation}
         className="onFire__workshops"
       >
-        <motion.p>workshops that inspire</motion.p>
-        <motion.p className="onFire__workshops__subtitle">
+        <p className="text-4xl xl:text-6xl">workshops that inspire</p>
+        <motion.p className=" text-2xl xl:text-4xl">
           for all around the galaxy
         </motion.p>
       </motion.div>
-      <div className="onFire__texts">
+      <div className="onFire__texts scale-[.35] sm:scale-100">
         <p className="onFire__texts__animation robotoMedium ">
           <motion.span
             initial={{ x: 0 }}
@@ -126,7 +126,7 @@ const OnFire = () => {
           </motion.span>
         </p>
       </div>
-      <p className="onFire__newEdition">new edition coming soon</p>
+      <p className="onFire__newEdition sm:text-3xl text-base">new edition coming soon</p>
     </section>
   );
 };

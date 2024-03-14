@@ -49,8 +49,8 @@ const HorizontalScroll = () => {
               >
                 <div className="horizontal__container__motion__molecule__particles__item">
                   <Image src={item.icon} alt="" width={0} height={0} className=""></Image>
-                  <div className="horizontal__container__motion__molecule__particles__item__text">
-                    <div className="horizontal__container__motion__molecule__particles__item__text__first">
+                  <div className="horizontal__container__motion__molecule__particles__item__text  w-full p-4 2xl:w-[50vw] xl:w-[50vw] 2xl:text-4xl xl:text-3xl text-lg">
+                    <div className="horizontal__container__motion__molecule__particles__item__text__first w-full">
                       {" "}
                       {item.text.map((text, i) => (
                         <motion.div
@@ -62,6 +62,7 @@ const HorizontalScroll = () => {
                           <motion.p
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 1 + i * 0.2 }}
+
                           >
                             | {text} |
                           </motion.p>

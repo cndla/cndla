@@ -31,7 +31,6 @@
           position: absolute;
           z-index: 3;
           &__item {
-            font-size: 1.5vw;
             color: #fff;
             display: flex;
             flex-direction: column;
@@ -39,7 +38,6 @@
             align-items: center;
             gap: 30px;
             &__text {
-              width: 50vw;
               display: flex;
               flex-direction: column;
               justify-content: space-around;

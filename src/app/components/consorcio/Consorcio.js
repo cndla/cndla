@@ -16,9 +16,16 @@ import {
 } from "./data";
 import reunion from "public/images/reuniondeconsorcio.png";
 import { motion } from "framer-motion";
+import useIsMobile from "../../customHooks/useIsMobile";
 
 const Consorcio = () => {
-  const axisY = "14vh";
+
+  const isMobile = useIsMobile()
+
+
+  const axisY = isMobile ? "14vh" : "20vh";
+  //use effect para detectar el tamaño de la pantalla y cambiar el estado de isMobile
+
 
   return (
     // <section className="consorcio w-11/12 m-auto py-64">
