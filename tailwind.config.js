@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'white-pattern': "url('images/fondogris.png')"
+      },
       colors: {
         "cnlda-orange": "#F36F10"
       }

@@ -3,10 +3,12 @@ import React, { useEffect } from "react";
 import "./yourMoment.scss";
 import { motion, useInView } from "framer-motion";
 import { useAnimate } from "framer-motion";
+import useIsMobile from "../../customHooks/useIsMobile";
 
 const YourMoment = () => {
   const [scope, animate] = useAnimate();
   const isInView = useInView(scope)
+  const isMobile = useIsMobile()
 
   useEffect(() => {
     if (isInView) {
@@ -16,6 +18,19 @@ const YourMoment = () => {
 
     }
   }, [isInView])
+
+  if (isMobile) return (
+    <section className="h-dvh bg-white-pattern bg-cover flex items-center">
+      <div className="text-5xl p-2">
+        <p>______this is your</p>
+        <p className="flex justify-between">moment, go <span>*</span></p>
+        <p>beyond the normal</p>
+      </div>
+
+    </section>
+  )
+
+
 
   return (
     <section className="yourMoment">

@@ -23,7 +23,7 @@ const Consorcio = () => {
   const isMobile = useIsMobile()
 
 
-  const axisY = isMobile ? "14vh" : "20vh";
+  const axisY = isMobile ? "120px" : "320px" - "10vh";
   //use effect para detectar el tamaño de la pantalla y cambiar el estado de isMobile
 
 
