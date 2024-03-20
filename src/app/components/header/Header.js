@@ -36,17 +36,17 @@ const Header = () => {
             <Link href="#" className="logo hover">
               {/* Your logo SVG */}
             </Link>
-            <a onClick={() => goTo("about")} className="hover">
+            <a href='#about' className="hover scroll-smooth">
               about
             </a>
           </div>
           <div className="header__menu__right ">
-            <a onClick={() => goTo("work")} className="hover">
+            <a href='#work' className="hover">
               work
             </a>
 
-            <ArrowUp color={"black"} show={show} />
-            <a onClick={() => goTo("connect")} className="hover">
+            <ArrowUp color={"text-black"} show={show} />
+            <a href='#connect' className="hover">
               connect
             </a>
           </div>
