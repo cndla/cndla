@@ -53,14 +53,14 @@ export const UnderOneRoof = () => {
     <section
       className={`${roboto.className} w-screen bg-black text-white px-5 md:pt-40 md:py-28 py-28  md:h-screen place-content-center `}
     >
-      <div className="grid grid-cols-6 grid-rows-4 justify-center  h-full">
-        <div className="col-span-6 text-2xl font-bold md:col-span-2 2xl:text-6xl lg:text-4xl">
+      <div className="grid grid-cols-6 grid-rows-4 justify-center  h-full sm:w-11/12 m-auto">
+        <div className="col-span-6 text-2xl font-bold md:col-span-2 2xl:text-5xl lg:text-4xl">
           <p className="">all under one roof</p>
           <p className="">-</p>
         </div>
         <div className="col-span-6 row-span-4 row-start-2  md:col-span-3 md:row-span-6 md:col-start-4 md:grid flex flex-col gap-4">
           {" "}
-          <Hr/>
+          <Hr />
           {data.map((item) => (
             <div
               key={item.id}

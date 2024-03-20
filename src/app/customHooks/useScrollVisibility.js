@@ -9,7 +9,6 @@ const useScrollVisibility = (timeoutDuration = 300) => {
     const handleScroll = () => {
       setIsVisible(false);
       clearTimeout(timeout);
-      timeout = setTimeout(() => setIsVisible(true), timeoutDuration);
     };
 
     window.addEventListener('scroll', handleScroll);

@@ -18,6 +18,7 @@ import YourMoment from "./components/yourMoment/YourMoment";
 import ArrowUp from "./svgs/ArrowUp";
 import { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll, useTransform } from "framer-motion";
+import './input.css'
 
 
 

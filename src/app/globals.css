@@ -10,34 +10,10 @@
   scroll-behavior: smooth;
 }
 
-html {
-  overflow-x: hidden;
-}
 a,
 a:visited {
   text-decoration: none;
   color: white;
   mix-blend-mode: difference;
   cursor: pointer;
-}
-
-
-html.lenis {
-  height: auto;
-}
-
-.lenis.lenis-smooth {
-  scroll-behavior: auto;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-  overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-  overflow: hidden;
-}
-
-.lenis.lenis-scrolling iframe {
-  pointer-events: none;
 }

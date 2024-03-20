@@ -23,7 +23,7 @@ const Consorcio = () => {
   const isMobile = useIsMobile()
 
 
-  const axisY = isMobile ? "120px" : "320px" - "10vh";
+  const axisY = isMobile ? "120px" : "15vh";
   //use effect para detectar el tamaño de la pantalla y cambiar el estado de isMobile
 
 
@@ -83,7 +83,7 @@ const Consorcio = () => {
     //   </div>
     // </section>
 
-    <section className="grid grid-cols-6 grid-rows-6 gap-4 bg-black text-white pt-24 ">
+    <section className="grid grid-cols-6 grid-rows-6 gap-4 bg-black text-white pt-48 ">
       <div className="col-span-6 row-span-2 md:col-span-3 md:row-span-4 md:col-start-4 md:row-start-1">
 
         <div className="grid grid-cols-8 grid-rows-6 gap-1 p-4 ">
@@ -160,11 +160,11 @@ const Consorcio = () => {
 
       </div>
       <div className="col-span-6 row-span-2 row-start-3 md:col-span-2 md:row-span-4 md:col-start-2">
-        <div className="flex flex-col justify-center items-center text-lg  text-center text-wrap gap-4 md:col-span-3 md:row-span-4 md:col-start-2 md:text-2xl md:text-right xl:text-3xl 2xl:text-4xl md:items-end">
+        <div className="flex flex-col justify-center items-center text-lg  text-center text-wrap gap-4 md:col-span-3 md:row-span-4 md:col-start-2 md:text-2xl md:text-right xl:text-3xl 2xl:text-3xl md:items-end">
           <Image
             src={reunion}
             alt="imagen que dice reunion de consorcio"
-            className="w-8/12"
+            className="w-80"
           />
           <div className="flex flex-col gap-2 px-8 md:gap-4 ">
 
