@@ -5,6 +5,7 @@ import { useScroll, useTransform } from "framer-motion";
 import { data } from "../carousel/data";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { roboto } from "../fonts/Font";
 
 const HorizontalScroll = () => {
   const targetRef = useRef(null);
@@ -15,7 +16,11 @@ const HorizontalScroll = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-1110%"]);
 
   return (
-    <section ref={targetRef} className="horizontal" id="work">
+    <section
+      ref={targetRef}
+      className={`${roboto.className} horizontal`}
+      id="work"
+    >
       <div className="horizontal__container">
         <motion.div
           className="horizontal__container__motion snap-x"
@@ -26,7 +31,7 @@ const HorizontalScroll = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="horizontal__container__motion__molecule w-screen snap-center h-screen "
+              className="horizontal__container__motion__molecule w-screen snap-center h-screen px-5"
               key={item.id}
             >
               <Image
@@ -34,7 +39,7 @@ const HorizontalScroll = () => {
                 width="auto"
                 height="auto"
                 alt="something"
-                className="pic h-screen w-screen object-cover"
+                className="pic h-screen w-screen object-cover bg-center"
               />
               <motion.div
                 className="horizontal__container__motion__molecule__particles"
@@ -48,8 +53,14 @@ const HorizontalScroll = () => {
                 transition={{ duration: 2, delay: 0.5 }}
               >
                 <div className="horizontal__container__motion__molecule__particles__item">
-                  <Image src={item.icon} alt="" width={0} height={0} className=""></Image>
-                  <div className="horizontal__container__motion__molecule__particles__item__text  w-full p-4 2xl:w-[50vw] xl:w-[50vw] 2xl:text-4xl xl:text-3xl text-lg">
+                  <Image
+                    src={item.icon}
+                    alt=""
+                    width={0}
+                    height={0}
+                    className="sm:w-auto w-10/12"
+                  ></Image>
+                  <div className="horizontal__container__motion__molecule__particles__item__text  w-full p-4 2xl:w-[50vw] xl:w-[50vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-sm">
                     <div className="horizontal__container__motion__molecule__particles__item__text__first w-full">
                       {" "}
                       {item.text.map((text, i) => (
@@ -62,7 +73,6 @@ const HorizontalScroll = () => {
                           <motion.p
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 1 + i * 0.2 }}
-
                           >
                             | {text} |
                           </motion.p>

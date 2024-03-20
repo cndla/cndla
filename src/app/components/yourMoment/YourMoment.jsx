@@ -4,6 +4,7 @@ import "./yourMoment.scss";
 import { motion, useInView } from "framer-motion";
 import { useAnimate } from "framer-motion";
 import useIsMobile from "../../customHooks/useIsMobile";
+import { roboto } from "../fonts/Font";
 
 const YourMoment = () => {
   const [scope, animate] = useAnimate();
@@ -33,9 +34,9 @@ const YourMoment = () => {
 
 
   return (
-    <section className="yourMoment">
+    <section className={`${roboto.className} yourMoment ` }>
       <div className="yourMoment__container">
-        <div className="yourMoment__container__first">
+        <div className="yourMoment__container__first px-5">
           <motion.div
             initial={{ width: "0px", opacity: 0 }}
             whileInView={{ width: "60px", opacity: 1 }}
@@ -43,11 +44,11 @@ const YourMoment = () => {
             transition={{ duration: 1, type: "tween", }}
             style={{ originX: 0 }}
           ></motion.div>
-          <p className="yourMoment__container__first__text leading-3">
+          <p className="yourMoment__container__first__text leading-3  text-xl sm:text-8xl ">
             this is your moment,
           </p>
         </div>
-        <p className="yourMoment__container__text">
+        <p className="yourMoment__container__text text-xl sm:text-8xl">
           go beyond{" "}
           <motion.span
             ref={scope}
@@ -56,7 +57,7 @@ const YourMoment = () => {
             transition={{ duration: 3, type: "spring", repeat: Infinity, repeatType: 'reverse', repeatDelay: 1 }}
 
 
-            className="yourMoment__container__text__animation"
+            className="yourMoment__container__text__animation text-xl sm:text-8xl"
           >
             the normal
           </motion.span>

@@ -29,8 +29,8 @@ const WeBelive = () => {
   );
 
   if (isMobile) return (
-    <motion.section className="h-dvh bg-black text-white flex items-center">
-      <motion.div className="text-5xl" style={{ opacity: x }} >
+    <motion.section className="h-dvh bg-black text-white flex items-center px-5">
+      <motion.div className="text-4xl" style={{ opacity: x }} >
         <p className="flex justify-between w-11/12">we belive in <span>*</span></p>
         <p>strong partnerships with</p>
         <p className="">_enganging brands.</p>

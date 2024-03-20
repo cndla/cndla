@@ -51,7 +51,7 @@ export const UnderOneRoof = () => {
 
   return (
     <section
-      className={`${roboto.className} w-screen bg-black text-white px-5 md:pt-40 md:py-28 py-28 md:h-screen place-content-center `}
+      className={`${roboto.className} w-screen bg-black text-white px-5 md:pt-40 md:py-28 py-28  md:h-screen place-content-center `}
     >
       <div className="grid grid-cols-6 grid-rows-4 justify-center  h-full">
         <div className="col-span-6 text-2xl font-bold md:col-span-2 2xl:text-6xl lg:text-4xl">
