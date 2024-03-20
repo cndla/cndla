@@ -22,9 +22,9 @@ const YourMoment = () => {
 
   if (isMobile) return (
     <section className="h-dvh bg-white-pattern bg-cover flex items-center">
-      <div className="text-5xl p-2">
+      <div className="text-5xl p-5">
         <p>______this is your</p>
-        <p className="flex justify-between">moment, go <span>*</span></p>
+        <p className="flex justify-between">moment, go <span>✽</span></p>
         <p>beyond the normal</p>
       </div>
 
@@ -34,7 +34,7 @@ const YourMoment = () => {
 
 
   return (
-    <section className={`${roboto.className} yourMoment ` }>
+    <section className={`${roboto.className} yourMoment `}>
       <div className="yourMoment__container">
         <div className="yourMoment__container__first px-5">
           <motion.div

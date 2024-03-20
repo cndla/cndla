@@ -2,6 +2,7 @@
 import React from "react";
 import "./ourServices.scss";
 import { motion } from "framer-motion";
+import { roboto } from "../fonts/Font";
 
 const OurServices = () => {
   const data = [
@@ -25,7 +26,7 @@ const OurServices = () => {
   }
 
   return (
-    <section className="ourServices h-screen lg:p-24 ">
+    <section className={`${roboto.className} ourServices h-screen lg:p-24 `}>
       <div className="ourServices__container flex flex-col lg:flex-row items-center justify-center h-full">
         {data.map((item, index) => (
           <motion.a

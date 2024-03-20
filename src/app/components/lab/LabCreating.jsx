@@ -71,7 +71,7 @@ const LabCreating = () => {
   };
   return (
     <div
-      className="flex flex-col md:w-[50%] gap-80 min-h-screen w-10/12 justify-center self-center
+      className="flex flex-col md:w-[50%] gap-80  w-10/12 justify-center self-center
       justify-self-center
      "
     >
