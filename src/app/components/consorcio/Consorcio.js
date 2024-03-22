@@ -164,7 +164,7 @@ const Consorcio = () => {
           <Image
             src={reunion}
             alt="imagen que dice reunion de consorcio"
-            className="w-80"
+            className="md:w-80 w-60"
           />
           <div className="flex flex-col gap-2 px-8 md:gap-4 ">
 
@@ -179,8 +179,8 @@ const Consorcio = () => {
           </div>
         </div>
       </div>
-      <div className="col-span-6 row-start-5 md:col-span-4 md:col-start-2 md:row-start-5">
-        <div className="w-11/12 m-auto">
+      <div className="col-span-6 row-start-5 md:col-span-4 xl:col-start-2 xl:row-start-5 md:col-start-1 ">
+        <div className="w-full m-auto">
           <div className="flex justify-between p-4 sm:pt-8">
             <Image
               src={people}
