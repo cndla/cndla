@@ -86,7 +86,7 @@ const LabCreating = () => {
           <motion.div className="flex w-full  overflow-hidden ">
             <p className="myWord leading-[1.1]">{currentWord2}</p>
           </motion.div>
-          <p className="transition-all">✽</p>
+          <p className="transition-all sm:text-4xl self-center text-xl">✽</p>
         </div>
         <div className="flex items-end justify-end gap-7 overflow-hidden">
           <div className="text-right flex ">

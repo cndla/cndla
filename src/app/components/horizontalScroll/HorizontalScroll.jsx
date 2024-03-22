@@ -52,15 +52,16 @@ const HorizontalScroll = () => {
                 }}
                 transition={{ duration: 2, delay: 0.5 }}
               >
-                <div className="horizontal__container__motion__molecule__particles__item">
+                <div className="horizontal__container__motion__molecule__particles__item md:w-8/12
+                ">
                   <Image
                     src={item.icon}
                     alt=""
                     width={0}
                     height={0}
-                    className="sm:w-auto w-10/12"
+                    className={`${item.id == 11 ? "size-1/3" : "w-10/12"} `}
                   ></Image>
-                  <div className="horizontal__container__motion__molecule__particles__item__text  w-full p-4 2xl:w-[50vw] xl:w-[50vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-sm">
+                  <div className="horizontal__container__motion__molecule__particles__item__text  w-full p-4 2xl:w-[70vw] xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-sm md:w-full ">
                     <div className="horizontal__container__motion__molecule__particles__item__text__first w-full">
                       {" "}
                       {item.text.map((text, i) => (

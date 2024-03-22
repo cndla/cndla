@@ -23,7 +23,7 @@ const Consorcio = () => {
   const isMobile = useIsMobile()
 
 
-  const axisY = isMobile ? "120px" : "15vh";
+  const axisY = isMobile ? "120px" : "200px";
   //use effect para detectar el tamaño de la pantalla y cambiar el estado de isMobile
 
 
@@ -101,7 +101,7 @@ const Consorcio = () => {
                 repeatType: "reverse",
                 repeatDelay: 1,
               }}
-              className="w-full h-full md:h-auto "
+              className="md:w-full 2xl:w-fit  w-full"
             /></div>
           <div className="col-span-2 row-span-3 col-start-3">
             <motion.img
@@ -109,7 +109,7 @@ const Consorcio = () => {
               alt="imagen que dice reunion de consorcio"
               initial={{ y: -axisY, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              className="w-full h-full md:h-auto"
+              className="md:w-full 2xl:w-fit w-full"
               transition={{
                 duration: 3,
                 delay: 1.5,
@@ -134,26 +134,26 @@ const Consorcio = () => {
                 repeatType: "reverse",
                 repeatDelay: 1,
               }}
-              className="w-full h-full md:h-auto"
+              className="md:w-full 2xl:w-fit w-full"
             />
 
           </div>
-          <div className="col-span-2 row-span-3 col-start-7 row-start-1">
+          <div className="col-span-2 row-span-3 col-start-7 row-start-1  items-center">
             <motion.img
               src={consorcio3.src}
               alt="imagen que dice reunion de consorcio"
               initial={{ x: "-205px" }}
               whileInView={{ x: 0 }}
               transition={{ duration: 1, delay: 1 }}
-              className="w-full h-full md:h-auto "
+              className="md:w-full 2xl:w-fit w-full"
             />
 
           </div>
-          <div className="col-span-2 row-span-3 col-start-7 row-start-4">
+          <div className="col-span-2 row-span-3 col-start-7 row-start-4  ">
             <motion.img
               src={consorcio5.src}
               alt="imagen que dice reunion de consorcio"
-              className="w-full h-full md:h-auto"
+              className="md:w-full 2xl:w-fit w-full"
             />
           </div>
         </div>
@@ -180,8 +180,8 @@ const Consorcio = () => {
         </div>
       </div>
       <div className="col-span-6 row-start-5 md:col-span-4 md:col-start-2 md:row-start-5">
-        <div className="w-full">
-          <div className="flex justify-between p-4">
+        <div className="w-11/12 m-auto">
+          <div className="flex justify-between p-4 sm:pt-8">
             <Image
               src={people}
               alt="imagen que dice reunion de consorcio"
