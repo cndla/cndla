@@ -14,6 +14,11 @@ const HorizontalScroll = () => {
     target: targetRef,
   });
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-1110%"]);
+  useEffect(() => {
+    x.on("change", (latest) => {
+      console.log(latest);
+    });
+  }, [x]);
 
   return (
     <section
@@ -52,14 +57,18 @@ const HorizontalScroll = () => {
                 }}
                 transition={{ duration: 2, delay: 0.5 }}
               >
-                <div className="horizontal__container__motion__molecule__particles__item md:w-8/12
-                ">
+                <div
+                  className="horizontal__container__motion__molecule__particles__item md:w-8/12
+                "
+                >
                   <Image
                     src={item.icon}
                     alt=""
                     width={0}
                     height={0}
-                    className={`${item.id == 11 ? "size-3/12" : "w-10/12 md:w-6/12"} `}
+                    className={`${
+                      item.id == 11 ? "size-3/12" : "w-10/12 md:w-6/12"
+                    } `}
                   ></Image>
                   <div className="horizontal__container__motion__molecule__particles__item__text  w-full p-4 2xl:w-[70vw] xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-sm md:w-full ">
                     <div className="horizontal__container__motion__molecule__particles__item__text__first w-full">

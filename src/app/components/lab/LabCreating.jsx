@@ -9,6 +9,7 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
+import { roboto } from "../fonts/Font";
 
 const LabCreating = () => {
   const words = ["_creating", "an innovation", "activations,"];
@@ -17,7 +18,7 @@ const LabCreating = () => {
   const words4 = [
     "offline experiences.",
     "that reshape culture.",
-    "_             point-of-sale.",
+    "___point-of-sale.",
   ];
 
   const [currentWord, setCurrentWord] = useState(words[0]);
@@ -70,12 +71,12 @@ const LabCreating = () => {
     ));
   };
   return (
-    <section className="bg-white-pattern h-svh bg-cover flex justify-center items-center">    <div
-      className="flex flex-col md:w-[50%] gap-80  w-10/12 justify-center self-center
+    <section className={`${roboto.className} bg-white-pattern h-svh bg-cover flex justify-center items-center`}>    <div
+      className="flex flex-col md:w-[50%] xl:w-[55%] 2xl:w-6/12 gap-80  w-10/12 justify-center self-center
       justify-self-center
      "
     >
-      <div className=" text-3xl flex flex-col text-nowrap lg:text-5xl md:text-4xl 2xl:text-8xl">
+      <div className=" text-3xl flex flex-col text-nowrap lg:text-5xl md:text-4xl xl:text-7xl">
         <div className="flex  justify-between items-center ">
           <Logo text={"cndla / lab"} />
           <div className="flex  leading-[1.1] overflow-y-hidden " ref={wordRef}>
@@ -94,7 +95,7 @@ const LabCreating = () => {
           </div>
         </div>
         <div className="flex gap-9  w-full overflow-y-hidden ">
-          <pre className=" myWord roboto leading-[1.1] overflow-x-visible">{currentWord4}</pre>
+          <p className=" myWord leading-[1.1] overflow-x-visible">{currentWord4}</p>
         </div>
       </div>
     </div>
