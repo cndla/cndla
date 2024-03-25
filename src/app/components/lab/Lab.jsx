@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import "./lab.scss";
 import LabCreating from "./LabCreating";
 import { AnimatePresence } from "framer-motion";
 
