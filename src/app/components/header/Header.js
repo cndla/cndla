@@ -1,21 +1,14 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import './header.scss';
-import { AnimatePresence, motion, useScroll } from 'framer-motion';
+import { AnimatePresence, motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
 import ArrowUp from '../../svgs/ArrowUp';
 
 const Header = () => {
   const [show, setShow] = useState(false)
 
-
   const { scrollYProgress } = useScroll()
-
-  useEffect(() => {
-    if (scrollYProgress > 200) {
-      setShow(true)
-    }
-  }, [scrollYProgress, show]);
 
   const goTo = (link) => {
     const element = document.getElementById(link);
@@ -23,7 +16,19 @@ const Header = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
+  useEffect(() => {
+    scrollYProgress.on("change", (latest) => {
+      if (latest > 0.1) {
+        setShow(true)
+      } else {
+        setShow(false)
+      }
+    })
+    return () => {
+      scrollYProgress.clearListeners()
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps 
+  }, [])
 
   return (
     <AnimatePresence>
@@ -45,10 +50,13 @@ const Header = () => {
               work
             </a>
 
-            <ArrowUp color={"text-black"} show={show} />
-            <a href='#connect' className="hover">
-              connect
-            </a>
+            <div className="relative">
+
+              <ArrowUp color={"fill-black"} show={show} />
+              <a href='#connect' className="hover">
+                connect
+              </a>
+            </div>
           </div>
 
         </div>
