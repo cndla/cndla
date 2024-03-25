@@ -75,7 +75,7 @@ export const UnderOneRoof = () => {
           ))}
         </div>
         <div className="col-span-6 row-start-6 pt-8 md:col-span-2 md:row-start-6 ">
-          <p className="text-xl 2xl:text-4xl lg:text-2xl">
+          <p className="text-xl 2xl:text-4xl lg:text-2xl text-nowrap">
             we put our passion and know-how <br /> at the service of your brand
           </p>
         </div>

@@ -23,65 +23,11 @@ const Consorcio = () => {
   const isMobile = useIsMobile()
 
 
-  const axisY = isMobile ? "87px" : "155px";
-  //use effect para detectar el tamaño de la pantalla y cambiar el estado de isMobile
+  const axisY = isMobile ? "87px" : "169px";
 
 
   return (
-    // <section className="consorcio w-11/12 m-auto py-64">
 
-    //   <div className="consorcio__images">
-    //    
-    //     <div className="">
-    //   <div className="md:col-span-3 md:row-span-4 md:col-start-4 grid grid-cols-4 grid-rows-2 gap-4">
-
-
-    //   <div >
-
-    //   </div>
-    //   <div className="col-start-2 row-start-2">
-    //     <motion.img
-    //       src={consorcio4.src}
-    //       alt="imagen que dice reunion de consorcio"
-    //       width={0}
-    //       height={0}
-    //       initial={{ y: axisY, opacity: 0 }}
-    //       whileInView={{ y: 0, opacity: 1 }}
-    //       transition={{
-    //         duration: 3,
-    //         delay: 1.5,
-    //         type: "spring",
-    //         repeat: Infinity,
-    //         repeatType: "reverse",
-    //         repeatDelay: 1,
-    //       }}
-    //     /></div>
-    //   <div className="col-start-3 row-start-1">
-    //     <motion.img
-    //       src={consorcio2.src}
-    //       alt="imagen que dice reunion de consorcio"
-    //       width={0}
-    //       height={0}
-    //       initial={{ opacity: 0 }}
-    //       whileInView={{ y: axisY, opacity: 1 }}
-    //       transition={{
-    //         duration: 3,
-    //         delay: 1.3,
-    //         type: "spring",
-    //         repeat: Infinity,
-    //         repeatType: "reverse",
-    //         repeatDelay: 1,
-    //       }}
-    //     />
-    //   </div>
-    //   <div className="col-start-4 row-start-1">
-    //   </div>
-    //   <div className="col-start-4 row-start-2">
-    // </div>
-
-    //     </div>
-    //   </div>
-    // </section>
 
     <section className="grid grid-cols-6 grid-rows-6 gap-4 bg-black text-white pt-48 ">
       <div className="col-span-6 row-span-2 md:col-span-3 md:row-span-4 md:col-start-4 md:row-start-1">
