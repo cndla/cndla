@@ -59,7 +59,7 @@ const HorizontalScroll = () => {
                     alt=""
                     width={0}
                     height={0}
-                    className={`${item.id == 11 ? "size-1/3" : "w-10/12"} `}
+                    className={`${item.id == 11 ? "size-3/12" : "w-10/12 md:w-6/12"} `}
                   ></Image>
                   <div className="horizontal__container__motion__molecule__particles__item__text  w-full p-4 2xl:w-[70vw] xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-sm md:w-full ">
                     <div className="horizontal__container__motion__molecule__particles__item__text__first w-full">

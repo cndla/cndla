@@ -17,7 +17,7 @@ const LabCreating = () => {
   const words4 = [
     "offline experiences.",
     "that reshape culture.",
-    "_                 point-of-sale.",
+    "_             point-of-sale.",
   ];
 
   const [currentWord, setCurrentWord] = useState(words[0]);
@@ -93,8 +93,8 @@ const LabCreating = () => {
             <p className="myWord  leading-[1.1]">{currentWord3}</p>
           </div>
         </div>
-        <div className="flex gap-9  w-full overflow-y-hidden">
-          <pre className=" myWord roboto leading-[1.1]">{currentWord4}</pre>
+        <div className="flex gap-9  w-full overflow-y-hidden ">
+          <pre className=" myWord roboto leading-[1.1] overflow-x-visible">{currentWord4}</pre>
         </div>
       </div>
     </div>
