@@ -23,7 +23,7 @@ const Consorcio = () => {
   const isMobile = useIsMobile()
 
 
-  const axisY = isMobile ? "120px" : "200px";
+  const axisY = isMobile ? "87px" : "155px";
   //use effect para detectar el tamaño de la pantalla y cambiar el estado de isMobile
 
 
@@ -101,7 +101,7 @@ const Consorcio = () => {
                 repeatType: "reverse",
                 repeatDelay: 1,
               }}
-              className="md:w-full 2xl:w-fit  w-full"
+              className="md:w-full  2xl:w-fit  w-full"
             /></div>
           <div className="col-span-2 row-span-3 col-start-3">
             <motion.img
@@ -145,7 +145,7 @@ const Consorcio = () => {
               initial={{ x: "-205px" }}
               whileInView={{ x: 0 }}
               transition={{ duration: 1, delay: 1 }}
-              className="md:w-full 2xl:w-fit w-full"
+              className=" w-full aspect-square"
             />
 
           </div>
@@ -153,7 +153,7 @@ const Consorcio = () => {
             <motion.img
               src={consorcio5.src}
               alt="imagen que dice reunion de consorcio"
-              className="md:w-full 2xl:w-fit w-full"
+              className="w-full aspect-square"
             />
           </div>
         </div>

@@ -120,11 +120,11 @@ const WeAreProud = () => {
             <p>commited to empower our clients success and growth</p>
             <div className="w-10 xl:w-64">
               <motion.div
-                className=" h-1 bg-black"
+                className="text-right "
                 initial={{ width: 0 }}
                 animate={{ width: "100%" }}
                 transition={{ duration: 1 }}
-              ></motion.div>
+              >✽</motion.div>
             </div>
           </div>
         </div>

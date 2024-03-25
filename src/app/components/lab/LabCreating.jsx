@@ -70,34 +70,36 @@ const LabCreating = () => {
     ));
   };
   return (
-    <div
+    <section className="bg-white-pattern h-svh bg-cover flex justify-center items-center">    <div
       className="flex flex-col md:w-[50%] gap-80  w-10/12 justify-center self-center
       justify-self-center
      "
     >
-      <div className=" text-3xl flex flex-col text-nowrap md:text-6xl 2xl:text-8xl">
+      <div className=" text-3xl flex flex-col text-nowrap lg:text-5xl md:text-4xl 2xl:text-8xl">
         <div className="flex  justify-between items-center ">
           <Logo text={"cndla / lab"} />
-          <div className="flex  leading-[1.1] overflow-hidden " ref={wordRef}>
-            <p className="myWord">{currentWord}</p>
+          <div className="flex  leading-[1.1] overflow-y-hidden " ref={wordRef}>
+            <p className="myWord ">{currentWord}</p>
           </div>
         </div>
         <div className="flex items-end justify-around">
-          <motion.div className="flex w-full  overflow-hidden ">
-            <p className="myWord leading-[1.1]">{currentWord2}</p>
+          <motion.div className="flex w-full  overflow-y-hidden ">
+            <p className="myWord  leading-[1.1]">{currentWord2}</p>
           </motion.div>
           <p className="transition-all sm:text-4xl self-center text-xl">✽</p>
         </div>
-        <div className="flex items-end justify-end gap-7 overflow-hidden">
+        <div className="flex items-end justify-end gap-7 overflow-y-hidden">
           <div className="text-right flex ">
-            <p className="myWord leading-[1.1]">{currentWord3}</p>
+            <p className="myWord  leading-[1.1]">{currentWord3}</p>
           </div>
         </div>
-        <div className="flex gap-9  w-full overflow-hidden">
-          <pre className="myWord roboto leading-[1.1]">{currentWord4}</pre>
+        <div className="flex gap-9  w-full overflow-y-hidden">
+          <pre className=" myWord roboto leading-[1.1]">{currentWord4}</pre>
         </div>
       </div>
     </div>
+    </section>
+
   );
 };
 

@@ -12,11 +12,7 @@ export const Logo = ({ text, borderColor, extraClass }) => (
 
 const Lab = () => {
   return (
-    <section className="lab roboto" id="experiences">
-      <AnimatePresence>
-        <LabCreating />
-      </AnimatePresence>
-    </section>
+    <LabCreating />
   );
 };
 
