@@ -2,7 +2,7 @@
 
 .contacto {
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -220,7 +220,7 @@
 @media (width <= $cell) {
   .contacto {
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

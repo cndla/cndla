@@ -4,16 +4,8 @@
   background-image: url("../../images/IMAGE-BACKGROUND.jpg");
   background-size: cover;
   width: 100vw;
-  height: 100vh;
+  height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media (width >= 500px) {
-  .presentation {
-    width: 100%;
-    &__group {
-    }
-  }
 }
