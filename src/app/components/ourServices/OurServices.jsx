@@ -32,7 +32,7 @@ const OurServices = () => {
           <motion.a
             key={index}
             onClick={() => goTo(item.text[2])}
-            className="roboto flex lg:flex-col  border border-white justify-center w-11/12 items-center rounded-[50%] hover:bg-white hover:text-black lg:text-5xl lg:h-[70vh] text-xl h-44"
+            className="roboto flex lg:flex-col  border border-white justify-center w-11/12 items-center rounded-[50%] hover:bg-white hover:text-black lg:text-5xl lg:h-[70svh] text-xl h-44"
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 + index * 0.2, duration: 0.65 }}

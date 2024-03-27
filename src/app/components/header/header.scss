@@ -15,9 +15,9 @@
     font-weight: 400;
     font-size: clamp(0.9rem, 0.5vw, 1.25rem);
     width: 90%;
-    height: 90vh;
+    height: 90svh;
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 5svh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -79,7 +79,7 @@ path {
 @media (width <= $cell) {
   .header {
     &__menu {
-      height: 90vh;
+      height: 90svh;
       height: 90dvh;
       &__left {
         .logo {
