@@ -1,24 +1,35 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./horizontal.scss";
 import { useScroll, useTransform } from "framer-motion";
 import { data } from "../carousel/data";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { roboto } from "../fonts/Font";
+import { useGetDivDimensions } from "../../customHooks/useGetDivDimensions";
+import { useSize, useWindowSize } from 'react-use';
 
 const HorizontalScroll = () => {
   const targetRef = useRef(null);
+  const [dimensions, setDimensions] = useState({
+    width: 0,
+    height: 0,
+  });
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-1110%"]);
+  const { width, height } = useWindowSize()
   useEffect(() => {
-    x.on("change", (latest) => {
-      console.log(latest);
-    });
-  }, [x]);
+    setDimensions({
+      width: width,
+      height: height
+    })
+  }, [width, height])
+  if (!width) return
+
+
 
   return (
     <section
@@ -66,9 +77,8 @@ const HorizontalScroll = () => {
                     alt=""
                     width={0}
                     height={0}
-                    className={`${
-                      item.id == 11 ? "size-3/12" : "w-10/12 md:w-6/12"
-                    } `}
+                    className={`${item.id == 11 ? "size-3/12" : "w-10/12 md:w-6/12"
+                      } `}
                   ></Image>
                   <div className="horizontal__container__motion__molecule__particles__item__text  w-full p-4 2xl:w-[70vw] xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-sm md:w-full ">
                     <div className="horizontal__container__motion__molecule__particles__item__text__first w-full">
