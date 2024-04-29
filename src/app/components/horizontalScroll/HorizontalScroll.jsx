@@ -7,7 +7,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { roboto } from "../fonts/Font";
 import { useGetDivDimensions } from "../../customHooks/useGetDivDimensions";
-import { useSize, useWindowSize } from 'react-use';
+import { useSize, useWindowSize } from "react-use";
+import useIsMobile from "../../customHooks/useIsMobile";
 
 const HorizontalScroll = () => {
   const targetRef = useRef(null);
@@ -15,21 +16,23 @@ const HorizontalScroll = () => {
     width: 0,
     height: 0,
   });
-
+  const isMobile = useIsMobile();
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-1110%"]);
-  const { width, height } = useWindowSize()
+  const x = useTransform(
+    scrollYProgress,
+    [0, 1],
+    ["1%", isMobile ? "-1150%" : "-1070%"]
+  );
+  const { width, height } = useWindowSize();
   useEffect(() => {
     setDimensions({
       width: width,
-      height: height
-    })
-  }, [width, height])
-  if (!width) return
-
-
+      height: height,
+    });
+  }, [width, height]);
+  if (!width) return;
 
   return (
     <section
@@ -47,7 +50,7 @@ const HorizontalScroll = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="horizontal__container__motion__molecule w-screen snap-center h-screen px-5"
+              className="w-screen h-screen px-5 horizontal__container__motion__molecule snap-center"
               key={item.id}
             >
               <Image
@@ -55,7 +58,7 @@ const HorizontalScroll = () => {
                 width="auto"
                 height="auto"
                 alt="something"
-                className="pic h-screen w-screen object-cover bg-center"
+                className="object-cover bg-center "
               />
               <motion.div
                 className="horizontal__container__motion__molecule__particles"
@@ -68,20 +71,18 @@ const HorizontalScroll = () => {
                 }}
                 transition={{ duration: 2, delay: 0.5 }}
               >
-                <div
-                  className="horizontal__container__motion__molecule__particles__item md:w-8/12
-                "
-                >
+                <div className="horizontal__container__motion__molecule__particles__item md:w-8/12 ">
                   <Image
                     src={item.icon}
                     alt=""
                     width={0}
                     height={0}
-                    className={`${item.id == 11 ? "size-3/12" : "w-10/12 md:w-6/12"
-                      } `}
+                    className={`${
+                      item.id == 11 ? "size-3/12" : "w-6/12 md:w-6/12"
+                    } `}
                   ></Image>
-                  <div className="horizontal__container__motion__molecule__particles__item__text  w-full p-4 2xl:w-[70vw] xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-sm md:w-full ">
-                    <div className="horizontal__container__motion__molecule__particles__item__text__first w-full">
+                  <div className="horizontal__container__motion__molecule__particles__item__text  w-full  2xl:w-[70vw] xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-sm md:w-full p-12 ">
+                    <div className="w-full horizontal__container__motion__molecule__particles__item__text__first">
                       {" "}
                       {item.text.map((text, i) => (
                         <motion.div

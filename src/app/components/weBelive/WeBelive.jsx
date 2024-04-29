@@ -15,7 +15,7 @@ const WeBelive = () => {
   const x = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
 
-
+console.log(isMobile)
   const Hr = () => (
     <motion.div
       initial={{ width: 0 }}
@@ -24,7 +24,7 @@ const WeBelive = () => {
         height: "10px",
         backgroundColor: "white",
       }}
-      whileInView={{ width: "80px" }}
+      whileInView={{ width: "100%" }}
     ></motion.div>
   );
 
@@ -41,10 +41,10 @@ const WeBelive = () => {
 
   return (
     <section className="h-screen bg-black text-white flex items-center justify-center" ref={container}>
-      <div className={`${roboto.className} md:text-7xl 2xl:text-8xl text-2xl`}>
+      <div className={`${roboto.className} sm:text-5xl  md:text-6xl lg:text-7xl 2xl:text-8xl`}>
         <motion.p style={{ opacity: x }}>we believe in strong</motion.p>
         <motion.div style={{ opacity: x }} className=" flex items-center gap-4">
-          <div className=" overflow-hidden">
+          <div className=" overflow-hidden w-10 md:w-11 lg:w-16">
             <Hr />
           </div>
           partnerships with

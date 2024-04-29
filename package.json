@@ -17,7 +17,7 @@
     "@studio-freight/react-lenis": "^0.0.38",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.6",
-    "framer-motion": "^10.12.17",
+    "framer-motion": "^11.1.7",
     "lottie-react": "^2.4.0",
     "next": "13.4.6",
     "next-cloudinary": "^5.20.0",
