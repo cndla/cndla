@@ -77,11 +77,10 @@ const HorizontalScroll = () => {
                     alt=""
                     width={0}
                     height={0}
-                    className={`${
-                      item.id == 11 ? "size-3/12" : "w-6/12 md:w-6/12"
-                    } `}
+                    className={`${item.id == 11 ? "size-3/12" : "w-6/12 md:w-6/12"
+                      } `}
                   ></Image>
-                  <div className="horizontal__container__motion__molecule__particles__item__text  w-full  2xl:w-[70vw] xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-sm md:w-full p-12 ">
+                  <div className="horizontal__container__motion__molecule__particles__item__text  w-full  2xl:w-[70vw] xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-sm  px-12 p-2 sm:p-10 md:p-12">
                     <div className="w-full horizontal__container__motion__molecule__particles__item__text__first">
                       {" "}
                       {item.text.map((text, i) => (

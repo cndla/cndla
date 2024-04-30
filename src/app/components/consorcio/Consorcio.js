@@ -48,13 +48,13 @@ const Consorcio = () => {
 
   return (
     <section className="pt-32 text-white bg-black ">
-      <div className="space-y-10">
-        <div className="">
-          <div className="flex justify-between w-full ">
+      <div className="space-y-10 sm:flex-row-reverse sm:flex columns-2 sm:space-y-0 ">
+        <div className="sm:w-2/3">
+          <div className="flex justify-between w-full columns-4">
             <motion.img
               src={consorcio1.src}
               alt=""
-              className="object-cover w-1/4 p-1 "
+              className="object-cover w-1/4 p-1 sm:w-24 "
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, y: dimensions.height }}
               transition={{
@@ -69,7 +69,7 @@ const Consorcio = () => {
             <motion.img
               src={consorcio2.src}
               alt=""
-              className="object-cover w-1/4 p-1"
+              className="object-cover w-1/4 p-1 sm:w-24"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, y: dimensions.height }}
               transition={{
@@ -82,7 +82,7 @@ const Consorcio = () => {
             <motion.img
               src={consorcio3.src}
               alt=""
-              className="object-cover w-1/4 p-1 aspect-square"
+              className="object-cover w-1/4 p-1 sm:w-24 aspect-square"
             />
           </div>
           <div className="flex justify-between w-full">
@@ -90,7 +90,7 @@ const Consorcio = () => {
             <motion.img
               src={consorcio4.src}
               alt=""
-              className="object-cover w-1/4 p-1 aspect-square"
+              className="object-cover w-1/4 p-1 sm:w-24 aspect-square"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, y: -dimensions.height }}
               transition={{
@@ -104,13 +104,13 @@ const Consorcio = () => {
             <motion.img
               src={consorcio5.src}
               alt=""
-              className="object-cover w-1/4 p-1 aspect-square"
+              className="object-cover w-1/4 p-1 sm:w-24 aspect-square"
             />
           </div>
         </div>
-        <div className="flex flex-col items-center gap-5 ">
+        <div className="flex flex-col items-center gap-5 sm:items-end sm:pr-2 sm:w-5/12 sm:mt-0">
           <Image src={reunion} alt="" className="w-36" />
-          <div className="px-12 space-y-5 text-center text-balance">
+          <div className="px-12 space-y-5 text-center text-balance sm:text-right sm:space-y-3 sm:text-xs sm:px-2">
             <p>an own project made with love.</p>
             <p>where we talk about everything but the important things.</p>
             <p>
@@ -121,7 +121,7 @@ const Consorcio = () => {
         </div>
       </div>
       <div className="">
-        <div className="flex justify-between p-5 pt-8">
+        <div className="flex justify-between p-5 pt-8 sm:p-14">
           <img src={gastro.src} alt="" className="w-12" />
           <img src={music.src} alt="" className="w-12" />
           <img src={culture.src} alt="" className="w-12" />
