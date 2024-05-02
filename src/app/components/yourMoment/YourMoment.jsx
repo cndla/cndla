@@ -21,7 +21,7 @@ const YourMoment = () => {
 
   if (isMobile)
     return (
-      <section className="flex items-center bg-cover h-dvh bg-white-pattern">
+      <section className="flex items-center bg-cover h-[700px] bg-white-pattern">
         <div className="p-5 text-5xl">
           <p className="flex">
             <span className="bg-black"></span>this is your
@@ -35,21 +35,22 @@ const YourMoment = () => {
     );
 
   return (
-    <section className={`${roboto.className} yourMoment `}>
-      <div className="yourMoment__container">
-        <div className="px-5 yourMoment__container__first">
+    <section className={`${roboto.className} yourMoment h-screen bg-white-pattern bg-cover bg-center`}>
+      <div className="flex flex-col items-center justify-center h-full sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
+        <div className="flex items-baseline">
           <motion.div
             initial={{ width: "0px", opacity: 0 }}
             whileInView={{ width: "60px", opacity: 1 }}
-            className="spacer"
+            className="w-10 h-px bg-black spacer"
             transition={{ duration: 1, type: "tween" }}
             style={{ originX: 0 }}
+
           ></motion.div>
-          <p className="text-xl leading-3 yourMoment__container__first__text sm:text-8xl ">
+          <p className="">
             this is your moment,
           </p>
         </div>
-        <p className="text-xl yourMoment__container__text sm:text-8xl">
+        <p className="">
           go beyond{" "}
           <motion.span
             ref={scope}
@@ -62,7 +63,7 @@ const YourMoment = () => {
               repeatType: "reverse",
               repeatDelay: 1,
             }}
-            className="text-xl yourMoment__container__text__animation sm:text-8xl"
+            className=""
           >
             the normal
           </motion.span>
