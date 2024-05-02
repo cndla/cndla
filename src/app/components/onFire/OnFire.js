@@ -32,23 +32,25 @@ const OnFire = () => {
   return (
     <section className="onFire" id="workshops">
       <div className="onFire__images">
-
-
-        <Logo text={"/wrkshop"} borderColor={"border-white"} extraClass={'mb-8 text-3xl'} />
+        <Logo
+          text={"/wrkshop"}
+          borderColor={"border-white"}
+          extraClass={"mb-8 text-3xl"}
+        />
 
         <Image
           src={hongo}
           alt="aca va un gif"
           width="auto"
           height="auto"
-          className="w-80 xl:w-[625px] aspect-square "
+          className="sm:w-80 xl:w-8/12 aspect-square "
         ></Image>
         <Image
           src={onfire}
           alt="aca va un gif"
           width="auto"
           height="auto"
-          className="onFire__images__onfire w-80 xl:w-[625px]"
+          className="onFire__images__onfire w-60 sm:w-80 xl:w-8/12"
         ></Image>
       </div>
       <motion.div
@@ -57,18 +59,20 @@ const OnFire = () => {
         variants={animation}
         className="onFire__workshops"
       >
-        <p className="text-4xl xl:text-6xl">workshops that inspire</p>
-        <motion.p className=" text-2xl xl:text-4xl">
+        <p className="text-xl sm:text-4xl xl:text-6xl">
+          workshops that inspire
+        </p>
+        <motion.p className="text-lg sm:text-2xl xl:text-4xl">
           for all around the galaxy
         </motion.p>
       </motion.div>
-      <div className="onFire__texts scale-[.35] sm:scale-100">
+      <div className="flex gap-4 text-xs sm:text-2xl">
         <p className="onFire__texts__animation robotoMedium ">
           <motion.span
             initial={{ x: 0 }}
             whileInView={{
-              x: ["-40px", "0px"]
-
+              x: ["-40px", "0px"],
+              opacity: [0, 1],
             }}
             transition={{
               duration: 0.99,
@@ -84,25 +88,8 @@ const OnFire = () => {
           vity✽
         </p>
         /
-        <p className="onFire__texts__animation robotoMedium">
-          <motion.span
-            initial={{ x: 0, }}
-            whileInView={{
-              x: ["-40px", "-10px"]
-
-            }}
-            transition={{
-              duration: 0.99,
-              delay: 0.5,
-              repeat: Infinity,
-              repeatDelay: 2,
-              repeatType: "reverse",
-              type: "spring",
-            }}
-          >
-            digital
-          </motion.span>{" "}
-          world✽
+        <p className="gap-1 onFire__texts__animation robotoMedium">
+          <motion.span>digital</motion.span> world✽
         </p>
         /
         <p className="onFire__texts__animation robotoMedium">
@@ -112,6 +99,7 @@ const OnFire = () => {
             initial={{}}
             whileInView={{
               x: ["40px", "0px"],
+              opacity: [0, 1],
             }}
             transition={{
               duration: 0.99,
@@ -126,7 +114,9 @@ const OnFire = () => {
           </motion.span>
         </p>
       </div>
-      <p className="onFire__newEdition sm:text-3xl text-base">new edition coming soon</p>
+      <p className="text-base onFire__newEdition sm:text-3xl">
+        new edition coming soon
+      </p>
     </section>
   );
 };

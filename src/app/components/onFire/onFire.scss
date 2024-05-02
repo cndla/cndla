@@ -16,9 +16,7 @@
       border: 2px solid white;
       padding: 8px 30px;
       border-radius: 50px;
-      font-size: 40px;
       margin-bottom: 40px;
-      font-weight: bold;
     }
     display: flex;
     flex-direction: column;
@@ -30,7 +28,6 @@
     }
   }
   &__workshops {
-    font-size: 50px;
     text-align: center;
     line-height: 50px;
   }
@@ -38,8 +35,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 38px;
-    gap: 70px;
     &__animation {
       display: flex;
       align-items: center;
