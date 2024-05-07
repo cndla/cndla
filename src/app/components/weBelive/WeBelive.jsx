@@ -15,7 +15,6 @@ const WeBelive = () => {
   const x = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
 
-console.log(isMobile)
   const Hr = () => (
     <motion.div
       initial={{ width: 0 }}
@@ -29,7 +28,7 @@ console.log(isMobile)
   );
 
   if (isMobile) return (
-    <motion.section className="h-dvh bg-black text-white flex items-center px-5">
+    <motion.section className="flex items-center px-5 text-white bg-black h-dvh">
       <motion.div className="text-4xl" style={{ opacity: x }} >
         <p className="flex justify-between w-11/12">we belive in <span>*</span></p>
         <p>strong partnerships with</p>
@@ -40,11 +39,11 @@ console.log(isMobile)
   )
 
   return (
-    <section className="h-screen bg-black text-white flex items-center justify-center" ref={container}>
+    <section className="flex items-center justify-center h-screen text-white bg-black" ref={container}>
       <div className={`${roboto.className} sm:text-5xl  md:text-6xl lg:text-7xl 2xl:text-8xl`}>
         <motion.p style={{ opacity: x }}>we believe in strong</motion.p>
-        <motion.div style={{ opacity: x }} className=" flex items-center gap-4">
-          <div className=" overflow-hidden w-10 md:w-11 lg:w-16">
+        <motion.div style={{ opacity: x }} className="flex items-center gap-4 ">
+          <div className="w-10 overflow-hidden  md:w-11 lg:w-16">
             <Hr />
           </div>
           partnerships with

@@ -11,20 +11,30 @@ const YourMoment = () => {
   const isInView = useInView(scope);
   const isMobile = useIsMobile();
 
-  useEffect(() => {
+  /*  useEffect(() => {
     if (isInView) {
       animate(scope.current, { opacity: 1 }, { duration: 0.5, delay: 0.5 });
     } else {
       animate(scope.current, { opacity: 0 });
     }
-  }, [isInView]);
+  }, [isInView]); */
 
   if (isMobile)
     return (
-      <section className="flex items-center bg-cover h-[700px] bg-white-pattern">
-        <div className="p-5 text-5xl">
-          <p className="flex">
-            <span className="bg-black"></span>this is your
+      <section
+        className={`${roboto.className} flex items-center bg-cover h-[700px] bg-white-pattern p-7`}
+      >
+        <div className="w-full text-[8vw]">
+          <p className="flex items-end">
+            <motion.span
+              className="w-1/2 h-0.5 bg-black"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{duration:3}}
+            >
+              {" "}
+            </motion.span>
+            this is your
           </p>
           <p className="flex justify-between">
             moment, go <span>✽</span>
@@ -35,7 +45,9 @@ const YourMoment = () => {
     );
 
   return (
-    <section className={`${roboto.className} yourMoment h-screen bg-white-pattern bg-cover bg-center`}>
+    <section
+      className={`${roboto.className} yourMoment h-screen bg-white-pattern bg-cover bg-center`}
+    >
       <div className="flex flex-col items-center justify-center h-full sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
         <div className="flex items-baseline">
           <motion.div
@@ -44,18 +56,15 @@ const YourMoment = () => {
             className="w-10 h-px bg-black spacer"
             transition={{ duration: 1, type: "tween" }}
             style={{ originX: 0 }}
-
           ></motion.div>
-          <p className="">
-            this is your moment,
-          </p>
+          <p className="">this is your moment,</p>
         </div>
         <p className="">
           go beyond{" "}
           <motion.span
             ref={scope}
             initial={{ opacity: 0 }}
-            whileInView={{ x: ["-10px", "40px"] }}
+            whileInView={{opacity:1 }}
             transition={{
               duration: 3,
               type: "spring",

@@ -76,11 +76,11 @@ const LabCreating = () => {
     >
       {" "}
       <div
-        className="flex flex-col self-center justify-center w-8/12 md:w-6/12 gap-80 sm:w-7/12 justify-self-center xl:w-5/12"
+        className="flex flex-col self-center justify-center w-8/12 md:w-6/12 gap-80 sm:w-7/12 justify-self-center xl:w-6/12 2xl:w-5/12"
       >
         <div className="flex flex-col text-[6vw] sm:text-3xl text-nowrap lg:text-5xl md:text-4xl xl:text-6xl">
           <div className="flex items-center justify-between ">
-            <div className="px-2 text-sm border-2 border-black rounded-full">
+            <div className="px-2 text-sm border-2 border-black rounded-full sm:text-base md:text-lg lg:text-3xl xl:text-3xl xl:px-2 ">
               cndla / lab
             </div>
             <div
