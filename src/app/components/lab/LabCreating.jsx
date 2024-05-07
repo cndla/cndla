@@ -76,13 +76,13 @@ const LabCreating = () => {
     >
       {" "}
       <div
-        className="flex flex-col md:w-6/12  gap-80  w-10/12 sm:w-7/12 justify-center self-center
-      justify-self-center
-     "
+        className="flex flex-col self-center justify-center w-8/12 md:w-6/12 gap-80 sm:w-7/12 justify-self-center xl:w-5/12"
       >
-        <div className=" text-xl sm:text-3xl flex flex-col text-nowrap lg:text-5xl md:text-4xl xl:text-7xl">
-          <div className="flex  justify-between items-center ">
-            <Logo text={"cndla / lab"} />
+        <div className="flex flex-col text-[6vw] sm:text-3xl text-nowrap lg:text-5xl md:text-4xl xl:text-6xl">
+          <div className="flex items-center justify-between ">
+            <div className="px-2 text-sm border-2 border-black rounded-full">
+              cndla / lab
+            </div>
             <div
               className="flex  leading-[1.1] overflow-y-hidden "
               ref={wordRef}
@@ -91,17 +91,17 @@ const LabCreating = () => {
             </div>
           </div>
           <div className="flex items-end justify-around">
-            <motion.div className="flex w-full  overflow-y-hidden ">
+            <motion.div className="flex w-full overflow-y-hidden ">
               <p className="myWord  leading-[1.1]">{currentWord2}</p>
             </motion.div>
-            <p className="transition-all sm:text-4xl self-center text-xl">✽</p>
+            <p className="self-center text-xl transition-all sm:text-4xl">✽</p>
           </div>
-          <div className="flex items-end justify-end gap-7 overflow-y-hidden">
-            <div className="text-right flex ">
+          <div className="flex items-end justify-end overflow-y-hidden gap-7">
+            <div className="flex text-right ">
               <p className="myWord  leading-[1.1]">{currentWord3}</p>
             </div>
           </div>
-          <div className="flex gap-9  w-full overflow-y-hidden ">
+          <div className="flex w-full overflow-y-hidden gap-9 ">
             <p className=" myWord leading-[1.1] overflow-x-visible">
               {currentWord4}
             </p>
