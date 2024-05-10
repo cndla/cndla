@@ -22,24 +22,24 @@ const YourMoment = () => {
   if (isMobile)
     return (
       <section
-        className={`${roboto.className} flex items-center bg-cover h-[700px] bg-white-pattern p-7`}
+        className={`${roboto.className} flex items-center bg-cover h-[700px] bg-white-pattern p-10`}
       >
-        <div className="w-full text-[8vw]">
+        <div className="w-full text-[8.5vw] text-justify">
           <p className="flex items-end">
             <motion.span
-              className="w-1/2 h-0.5 bg-black"
+              className="w-5/12 h-0.5 bg-black"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{duration:3}}
+              transition={{ duration: 3 }}
             >
               {" "}
             </motion.span>
             this is your
           </p>
-          <p className="flex justify-between">
+          <p className="flex justify-between w-11/12">
             moment, go <span>✽</span>
           </p>
-          <p>beyond the normal</p>
+          <p className="">beyond the normal</p>
         </div>
       </section>
     );
@@ -64,7 +64,7 @@ const YourMoment = () => {
           <motion.span
             ref={scope}
             initial={{ opacity: 0 }}
-            whileInView={{opacity:1 }}
+            whileInView={{ opacity: 1 }}
             transition={{
               duration: 3,
               type: "spring",

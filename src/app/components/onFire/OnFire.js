@@ -6,6 +6,7 @@ import hongo from "public/images/hongo.gif";
 import onfire from "public/images/onfire.png";
 import { motion } from "framer-motion";
 import { Logo } from "../lab/Lab";
+import { roboto } from "../fonts/Font";
 
 const animation = {
   hidden: {
@@ -30,7 +31,7 @@ const animation = {
 
 const OnFire = () => {
   return (
-    <section className="onFire" id="workshops">
+    <section className={`${roboto.className} onFire`} id="workshops">
       <div className="onFire__images">
         <Logo
           text={"/wrkshop"}
@@ -66,8 +67,8 @@ const OnFire = () => {
           for all around the galaxy
         </motion.p>
       </motion.div>
-      <div className="flex gap-4 text-xs sm:text-2xl">
-        <p className="onFire__texts__animation robotoMedium ">
+      <div className="flex gap-4 text-xs font-bold sm:text-2xl">
+        <p className="onFire__texts__animation ">
           <motion.span
             initial={{ x: 0 }}
             whileInView={{
@@ -88,11 +89,11 @@ const OnFire = () => {
           vity✽
         </p>
         /
-        <p className="gap-1 onFire__texts__animation robotoMedium">
+        <p className="gap-1 onFire__texts__animation ">
           <motion.span>digital</motion.span> world✽
         </p>
         /
-        <p className="onFire__texts__animation robotoMedium">
+        <p className="onFire__texts__animation ">
           en
           <motion.span
             layout

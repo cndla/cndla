@@ -7,15 +7,16 @@ import linea from "../../images/linea.png";
 import Image from "next/image";
 
 import { motion } from "framer-motion";
+import { roboto } from "../fonts/Font";
 
 const Contacto = () => {
   const text = "let's work together"
   const splitText = text.split(" ")
 
   return (
-    <section className="contacto" id="connect">
+    <section className={`${roboto.className} contacto pt-20 pb-32`} id="connect">
       <div className="contacto__container">
-        <h2 className="contacto__container__title roboto" >{splitText.map((text, i) => (
+        <h2 className="contacto__container__title" >{splitText.map((text, i) => (
           <motion.span key={i} className={`pr-3 ${i == 2 && "text-cnlda-orange"}`} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
             transition={{ duration: .500, delay: 0.3 * i }} >{text}</motion.span>
         ))}</h2>
@@ -49,7 +50,7 @@ const Contacto = () => {
             </form>
           </div>
           <div className="contacto__container__content__footer">
-            <div className="contacto__container__content__footer__redes flex gap-1">
+            <div className="flex gap-1 contacto__container__content__footer__redes">
               <a href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

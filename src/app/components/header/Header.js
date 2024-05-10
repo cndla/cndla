@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <AnimatePresence>
       <div className="header">
-        <div className="m-auto header__menu sm:w-11/12">
+        <div className="m-auto text-sm header__menu sm:w-11/12">
           <div className="header__menu__left ">
             <a onClick={() => goTo("home")} className="hover">
               home

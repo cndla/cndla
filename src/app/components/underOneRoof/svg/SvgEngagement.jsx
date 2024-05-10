@@ -42,6 +42,7 @@ export const SvgEngagement = () => {
       variants={svgVariants}
       initial="hidden"
       animate="visible"
+      className='w-full h-full'
     >
       <g clipPath="url(#clip0_105_215)">
         <path

@@ -28,9 +28,9 @@ const WeBelive = () => {
   );
 
   if (isMobile) return (
-    <motion.section className="flex items-center px-5 text-white bg-black h-dvh">
-      <motion.div className="text-4xl" style={{ opacity: x }} >
-        <p className="flex justify-between w-11/12">we belive in <span>*</span></p>
+    <motion.section className={`${roboto.className} flex items-center justify-center px-5 text-white bg-black h-[700px]`}>
+      <motion.div className="flex flex-col justify-center text-[8vw] w-11/12 m-auto" style={{ opacity: x }} >
+        <p className="flex justify-between w-10/12">we belive in <span>✽</span></p>
         <p>strong partnerships with</p>
         <p className="">_enganging brands.</p>
       </motion.div>
@@ -43,7 +43,7 @@ const WeBelive = () => {
       <div className={`${roboto.className} sm:text-5xl  md:text-6xl lg:text-7xl 2xl:text-8xl`}>
         <motion.p style={{ opacity: x }}>we believe in strong</motion.p>
         <motion.div style={{ opacity: x }} className="flex items-center gap-4 ">
-          <div className="w-10 overflow-hidden  md:w-11 lg:w-16">
+          <div className="w-10 overflow-hidden md:w-11 lg:w-16">
             <Hr />
           </div>
           partnerships with

@@ -47,7 +47,7 @@ const Consorcio = () => {
   }, []); // Empty dependency array ensures this effect only runs once
 
   return (
-    <section className="text-white bg-black pt-80 ">
+    <section className="pt-20 text-white bg-black">
       <div className="flex flex-col ml-auto space-y-10 sm:flex-row-reverse sm:flex columns-2 sm:space-y-0 max-w-screen-2xl">
         <div className="sm:w-2/3 xl:w-7/12">
           <div className="flex justify-between w-full columns-4">

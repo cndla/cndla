@@ -58,7 +58,14 @@ const HorizontalScroll = () => {
                 width="auto"
                 height="auto"
                 alt="something"
-                className="object-cover w-screen bg-center"
+                className="hidden object-cover h-full sm:block"
+              />
+              <Image
+                src={item.picMobile}
+                width="auto"
+                height="auto"
+                alt="something"
+                className="object-cover h-full sm:hidden"
               />
               <motion.div
                 className="horizontal__container__motion__molecule__particles"

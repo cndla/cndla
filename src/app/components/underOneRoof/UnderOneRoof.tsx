@@ -53,21 +53,21 @@ export const UnderOneRoof = () => {
     <section
       className={`${roboto.className} w-screen bg-black text-white px-5 md:pt-40 md:py-28 py-28  md:h-screen place-content-center `}
     >
-      <div className="grid grid-cols-6 grid-rows-4 justify-center  h-full sm:w-11/12 m-auto">
+      <div className="grid justify-center h-full grid-cols-6 grid-rows-4 m-auto sm:w-11/12">
         <div className="col-span-6 text-2xl font-bold md:col-span-2 2xl:text-5xl lg:text-4xl">
           <p className="">all under one roof</p>
           <p className="">-</p>
         </div>
-        <div className="col-span-6 row-span-4 row-start-2  md:col-span-3 md:row-span-6 md:col-start-4 md:grid flex flex-col gap-4">
+        <div className="flex flex-col col-span-6 row-span-4 row-start-2 gap-4 md:col-span-3 md:row-span-6 md:col-start-4 md:grid">
           {" "}
           <Hr />
           {data.map((item) => (
             <div
               key={item.id}
-              className=" text-lg xl:text-4xl md:gap-8 gap-20  md:flex md:flex-col md:justify-center space-y-4 "
+              className="items-center justify-center gap-20 space-y-4 text-lg xl:text-4xl md:gap-8 md:flex md:flex-col md:justify-center"
             >
-              <div className="flex items-center justify-start gap-6   ">
-                <span className="w-11">{item.icon}</span>
+              <div className="flex items-center justify-start gap-6 ">
+                <span className="w-11 aspect-square">{item.icon}</span>
                 {item.text}
               </div>
               <Hr />
@@ -86,7 +86,7 @@ export const UnderOneRoof = () => {
 
 /* {data.map((item) => (
   <div key={item.id} className="flex flex-col justify-center">
-    <div className="flex items-center gap-6 pb-5 pt-1 text-2xl xl:text-4xl pr-4">
+    <div className="flex items-center gap-6 pt-1 pb-5 pr-4 text-2xl xl:text-4xl">
       <span className="w-11">{item.icon}</span>
       {item.text}
     </div>

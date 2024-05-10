@@ -26,6 +26,18 @@ import logoartbag from 'public/images/logoartbag.png'
 import logobodega from 'public/images/logobodega.png'
 import logopiba from 'public/images/logopiba.png'
 import logovalentina from 'public/images/logovalentina.png'
+import picwyndMobile from 'public/images/picwynMobile.png'
+import picdannyMobile from 'public/images/picdannyMobile.png'
+import picrefikMobile from 'public/images/picrefikMobile.png'
+import picneutroMobile from 'public/images/picneutroMobile.png'
+import picdiamonMobile from 'public/images/picdiamonMobile.png'
+import picmetaMobile from 'public/images/picmetaMobile.png'
+import piceurecaMobile from 'public/images/piceurecaMobile.png'
+import picrockMobile from 'public/images/picrockMobile.png'
+import picartbagMobile from 'public/images/picartbagMobile.png'
+import picbodegaMobile from 'public/images/picbodegaMobile.png'
+import picpibaMobile from 'public/images/picpibaMobile.png'
+import picvalentinaMobile from 'public/images/picvalentinaMobile.png'
 
 
 export const data = [{
@@ -33,7 +45,8 @@ export const data = [{
     icon: logowyn,
     text: ["engagement strategy | content production",],
     text2: ["social media | paid media | brand experience"],
-    pic: picwynd
+    pic: picwynd,
+    picMobile: picwyndMobile
 
 
 },
@@ -42,75 +55,86 @@ export const data = [{
     icon: logodanny,
     text: ["engagement strategy",],
     text2: ["fan club | brand experience"],
-    pic: picdanny
+    pic: picdanny,
+    picMobile: picdannyMobile
 }, {
     id: 3,
     icon: logorefik,
     text: ["engagement strategy | social media",],
     text2: ["audiovisual content"],
-    pic: picrefik
+    pic: picrefik,
+    picMobile: picrefikMobile
 
 }, {
     id: 4,
     icon: logoneutro,
     text: ["content production"],
-    pic: picneutro
+    pic: picneutro,
+    picMobile: picneutroMobile
 
 }, {
     id: 5,
     icon: logodiamond,
     text: ["engagement strategy | social media | content production",],
     text2: ["pr actions | brand experience"],
-    pic: picdiamon
+    pic: picdiamon,
+    picMobile: picdiamonMobile
 
 }, {
     id: 6,
     icon: logometa,
     text: ["meta rise | engagement strategy"],
     text2: [],
-    pic: picmeta
+    pic: picmeta,
+    picMobile: picmetaMobile
 
 }, {
     id: 7,
     icon: logoeureca,
     text: ["branding | engagement strategy",],
     text2: ["social media | brand-experience"],
-    pic: piceureca
+    pic: piceureca,
+    picMobile: piceurecaMobile
 
 }, {
     id: 8,
     icon: logorock,
     text: ["engagement strategy | social media | content production",],
     text2: ["email mkt | paid media | pr actions | brand experience"],
-    pic: picrock
+    pic: picrock,
+    picMobile: picrockMobile
 
 }, {
     id: 9,
     icon: logoartbag,
     text: ["engagement strategy | social media | content production",],
     text2: ["paid media | brand experience"],
-    pic: picartbag
+    pic: picartbag,
+    picMobile: picartbagMobile
 
 }, {
     id: 10,
     icon: logobodega,
     text: ["engagement strategy | social media | content production",],
     text2: ["paid media | pr actions | brand experience"],
-    pic: picbodega
+    pic: picbodega,
+    picMobile: picbodegaMobile
 
 }, {
     id: 11,
     icon: logopiba,
     text: ["engagement strategy | social media | content production",],
     text2: ["paid media | pr actions | brand experience"],
-    pic: picpiba
+    pic: picpiba,
+    picMobile: picpibaMobile
 
 }, {
     id: 12,
     icon: logovalentina,
     text: ["engagement strategy | social media",],
     text2: [" graphic design | content production"],
-    pic: picvalentina
+    pic: picvalentina,
+    picMobile: picvalentinaMobile
 }]
 
 

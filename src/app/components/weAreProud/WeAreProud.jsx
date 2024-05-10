@@ -44,18 +44,20 @@ const WeAreProud = () => {
       <section
         className={`${roboto.className} weAreProud h-screen flex justify-center items-center`}
       >
-        <div className="max-w-[24rem] m-auto flex flex-col gap-20 w-8/12">
+        <div className="flex flex-col gap-20 p-5 m-auto text-4xl md:text-5xl">
           <div className="font-bold">
-            <Logo text={"dgital studio"} />
-            <p className="md:text-5xl mt-4 text-3xl  ">
+            <div className="flex px-4 py-1 text-base border border-black rounded-full w-fit">
+              dgital studio
+            </div>
+            <p className="mt-4 ">
               our full-service creative
             </p>
-            <p className="md:text-5xl flex items-end text-3xl">
+            <p className="flex items-end ">
               - and strategic studio{" "}
-              <span className="text-3xl font-normal">✽</span>
+              <span className="text-3xl font-normal ">✽</span>
             </p>
           </div>
-          <div className="md:text-2xl text-xl">
+          <div className="text-xl md:text-2xl">
             <div className="text-justify ">
               with digital and offline impact, is dedicated and committed to
               empower our clients{" "}
@@ -64,7 +66,7 @@ const WeAreProud = () => {
               </span>
             </div>
             <p className="flex justify-between text-xl">
-              ✽<span className="md:text-2xl text-xl">success and growth</span>
+              ✽<span className="text-xl md:text-2xl">success and growth</span>
             </p>
           </div>
         </div>
@@ -77,14 +79,14 @@ const WeAreProud = () => {
       className={`${roboto.className} weAreProud text-black h-screen flex justify-center items-center`}
       id="studio"
     >
-      <div className=" lg:w-10/12 m-auto flex flex-col justify-center items-center overflow-hidden">
-        <div className="xl:text-8xl lg:text-7xl font-bold">
+      <div className="flex flex-col items-center justify-center m-auto overflow-hidden lg:w-10/12">
+        <div className="font-bold xl:text-8xl lg:text-7xl">
           <Logo text={"dgital studio"} />
           <p className="">our full-service creative</p>
           <div className="grid grid-cols-12 gap-2 place-content-center place-items-center">
-            <div className="col-start-1 col-end-3 w-full ">
+            <div className="w-full col-start-1 col-end-3 ">
               <motion.div
-                className=" h-2 bg-black "
+                className="h-2 bg-black "
                 initial={{ width: 0 }}
                 whileInView={{ width: "auto" }}
                 style={{ originY: 0.1 }}
@@ -95,7 +97,7 @@ const WeAreProud = () => {
           </div>
           <motion.div
             layout
-            className="text-3xl w-full font-normal flex justify-between gap-3 mt-9"
+            className="flex justify-between w-full gap-3 text-3xl font-normal mt-9"
           >
             <motion.p layout className="text-nowrap">
               with online and offline impact,
@@ -116,7 +118,7 @@ const WeAreProud = () => {
             <p>dedicated</p>
             <p>and</p>
           </motion.div>
-          <div className="text-3xl font-normal flex items-center justify-between">
+          <div className="flex items-center justify-between text-3xl font-normal">
             <p>commited to empower our clients success and growth</p>
             <div className="w-10 xl:w-64">
               <motion.div
