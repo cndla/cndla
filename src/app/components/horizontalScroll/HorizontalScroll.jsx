@@ -50,7 +50,7 @@ const HorizontalScroll = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="w-screen h-screen px-5 horizontal__container__motion__molecule snap-center"
+              className="w-full px-3 horizontal__container__motion__molecule snap-center"
               key={item.id}
             >
               <Image
@@ -87,7 +87,7 @@ const HorizontalScroll = () => {
                     className={`${item.id == 11 ? "w-3/12" : "w-6/12 md:w-6/12"
                       } `}
                   ></Image>
-                  <div className="horizontal__container__motion__molecule__particles__item__text  w-full  2xl:w-[70vw] xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-xs  px-12 p-2 sm:p-10 md:p-12">
+                  <div className="horizontal__container__motion__molecule__particles__item__text  w-full  xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-xs  px-12 p-2 sm:p-10 md:p-12">
                     <div className="w-full horizontal__container__motion__molecule__particles__item__text__first">
                       {" "}
                       {item.text.map((text, i) => (
