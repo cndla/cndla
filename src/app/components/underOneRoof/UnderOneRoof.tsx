@@ -46,6 +46,7 @@ export const UnderOneRoof = () => {
         backgroundColor: "white", // Color de fondo, puedes cambiarlo
       }}
       whileInView={{ width: "100%" }}
+      className="self-start justify-self-start"
     ></motion.div>
   );
 
@@ -64,7 +65,7 @@ export const UnderOneRoof = () => {
           {data.map((item) => (
             <div
               key={item.id}
-              className="items-center justify-center gap-20 space-y-4 text-lg xl:text-4xl md:gap-8 md:flex md:flex-col md:justify-center"
+              className="items-center justify-center gap-20 space-y-4 text-lg xl:text-4xl md:gap-8 md:flex md:flex-col sm:items-start"
             >
               <div className="flex items-center justify-start gap-6 ">
                 <span className="w-11 aspect-square">{item.icon}</span>

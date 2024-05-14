@@ -44,8 +44,8 @@ const WeAreProud = () => {
       <section
         className={`${roboto.className} weAreProud h-screen flex justify-center items-center`}
       >
-        <div className="flex flex-col gap-20 p-5 m-auto text-4xl md:text-5xl">
-          <div className="font-bold">
+        <div className="flex flex-col w-10/12 gap-20 p-5 m-auto text-4xl md:text-5xl">
+          <div className="m-auto font-bold ">
             <div className="flex px-4 py-1 text-base border border-black rounded-full w-fit">
               dgital studio
             </div>

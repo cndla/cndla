@@ -126,7 +126,7 @@ export const data = [{
     text: ["engagement strategy | social media | content production",],
     text2: ["paid media | pr actions | brand experience"],
     pic: picpiba,
-    picMobile: picpibaMobile
+    picMobile: picpiba
 
 }, {
     id: 12,
