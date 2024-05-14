@@ -1,7 +1,5 @@
 @import "../../variables";
 .onFire {
-  font-family: Roboto;
-
   background-color: black;
   width: 100%;
   display: flex;
@@ -54,7 +52,6 @@
     &__container {
       gap: 60px;
       &__title {
-        font-family: "Wagon";
         font-size: 2.5rem;
         text-align: center;
         width: 50%;

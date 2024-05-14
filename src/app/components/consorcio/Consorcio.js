@@ -18,6 +18,7 @@ import {
 import reunion from "public/images/reuniondeconsorcio.png";
 import { motion } from "framer-motion";
 import useIsMobile from "../../customHooks/useIsMobile";
+import { roboto } from "../fonts/Font";
 
 const Consorcio = () => {
   const isMobile = useIsMobile();
@@ -47,7 +48,7 @@ const Consorcio = () => {
   }, []); // Empty dependency array ensures this effect only runs once
 
   return (
-    <section className="pt-20 text-white bg-black">
+    <section className={` ${roboto.className} pt-20 text-white bg-black`}>
       <div className="flex flex-col ml-auto space-y-10 sm:flex-row-reverse sm:flex columns-2 sm:space-y-0 max-w-screen-2xl">
         <div className="sm:w-2/3 xl:w-7/12">
           <div className="flex justify-between w-full columns-4">
