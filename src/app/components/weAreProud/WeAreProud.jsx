@@ -42,7 +42,7 @@ const WeAreProud = () => {
   if (isMobile) {
     return (
       <section
-        className={`${roboto.className} weAreProud h-screen flex justify-center items-center`}
+        className={`${roboto.className} weAreProud h-[800px] flex justify-center items-center`}
       >
         <div className="flex flex-col w-10/12 gap-20 p-5 m-auto text-4xl md:text-5xl">
           <div className="m-auto font-bold ">

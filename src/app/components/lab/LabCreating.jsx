@@ -72,7 +72,7 @@ const LabCreating = () => {
   };
   return (
     <section
-      className={`${roboto.className} bg-white-pattern h-svh bg-cover flex justify-center items-center`}
+      className={`${roboto.className} bg-white-pattern h-[800px] sm:h-screen bg-cover flex justify-center items-center`}
     >
       {" "}
       <div
