@@ -23,7 +23,7 @@ const HorizontalScroll = () => {
   const x = useTransform(
     scrollYProgress,
     [0, 1],
-    ["1%", isMobile ? "-1100%" : "-825%"]
+    ["1%", isMobile ? "-1105%" : "-825%"]
   );
   const { width, height } = useWindowSize();
   useEffect(() => {
