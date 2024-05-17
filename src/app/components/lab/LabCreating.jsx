@@ -46,7 +46,7 @@ const LabCreating = () => {
       setCurrentWord2(words2[nextWordIndex2]);
       setCurrentWord3(words3[nextWordIndex3]);
       setCurrentWord4(words4[nextWordIndex4]);
-    }, 3000);
+    }, 5000);
     enterAnimation();
     return () => {
       clearInterval(interval);
@@ -72,7 +72,7 @@ const LabCreating = () => {
   };
   return (
     <section
-      className={`${roboto.className} bg-white-pattern h-[800px] sm:h-screen bg-cover flex justify-center items-center`}
+      className={`${roboto.className} bg-white-pattern h-[800px] sm:h-screen bg-cover flex justify-center items-center`} id=""
     >
       {" "}
       <div
@@ -106,6 +106,7 @@ const LabCreating = () => {
               {currentWord4}
             </p>
           </div>
+          <motion.div className="w-full h-px mt-10 bg-black" whileInView={{width:0}} transition={{duration: 5, repeat:Infinity}} ></motion.div>
         </div>
       </div>
     </section>
