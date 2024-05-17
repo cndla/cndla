@@ -31,7 +31,8 @@ const WeBelive = () => {
     <motion.section className={`${roboto.className} flex items-center justify-center px-5 text-white bg-black h-[700px]`}>
       <motion.div className="flex flex-col justify-center text-[8vw] w-11/12 m-auto" style={{ opacity: x }} >
         <p className="flex justify-between w-10/12">we belive in <span>✽</span></p>
-        <p>strong partnerships with</p>
+        <p>strong partnerships </p>
+        <motion.p whileInView={{marginLeft:['0px', '69%']}} transition={{repeat:Infinity, duration:3, repeatDelay:3, repeatType:"reverse" }}>with</motion.p>
         <p className="">_enganging brands.</p>
       </motion.div>
 

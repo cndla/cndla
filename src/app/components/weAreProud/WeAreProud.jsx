@@ -61,12 +61,9 @@ const WeAreProud = () => {
             <div className="text-justify ">
               with digital and offline impact, is dedicated and committed to
               empower our clients{" "}
-              <span className="font-bold -tracking-[0.2rem]">
-                ---------------
-              </span>
             </div>
             <p className="flex justify-between text-xl">
-              ✽<span className="text-xl md:text-2xl">success and growth</span>
+              ✽<motion.span className="text-xl md:text-2xl" whileInView={{marginRight: ['10%', 0]}} transition={{repeat: Infinity, duration:3, repeatType:'reverse', repeatDelay:3}} >success and growth</motion.span>
             </p>
           </div>
         </div>

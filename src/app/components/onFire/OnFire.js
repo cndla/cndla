@@ -44,14 +44,14 @@ const OnFire = () => {
           alt="aca va un gif"
           width="auto"
           height="auto"
-          className="sm:w-80 xl:w-8/12 aspect-square "
+          className="sm:w-96 w-72 aspect-square "
         ></Image>
         <Image
           src={onfire}
           alt="aca va un gif"
           width="auto"
           height="auto"
-          className="onFire__images__onfire w-60 sm:w-80 xl:w-8/12"
+          className="w-72 sm:w-96 "
         ></Image>
       </div>
       <motion.div
@@ -73,7 +73,7 @@ const OnFire = () => {
             initial={{ x: 0 }}
             whileInView={{
               x: ["-40px", "0px"],
-              opacity: [0, 1],
+              opacity: [1],
             }}
             transition={{
               duration: 0.99,
@@ -100,7 +100,7 @@ const OnFire = () => {
             initial={{}}
             whileInView={{
               x: ["40px", "0px"],
-              opacity: [0, 1],
+              opacity: [1],
             }}
             transition={{
               duration: 0.99,

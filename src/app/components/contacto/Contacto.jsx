@@ -112,8 +112,7 @@ const Contacto = () => {
                 </svg>{" "}
               </a>
             </div>
-            <p>subscribe for our latest stories and insights</p>
-            <Image src={linea} alt="" className="linea" width={0} height={0} />
+            <p className="">subscribe for our latest stories and insights</p>
           </div>
           <button className="button ">send</button>
         </div>

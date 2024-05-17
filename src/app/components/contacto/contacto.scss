@@ -72,9 +72,12 @@
       &__footer {
         width: 100%;
         display: inline-flex;
-        justify-content: space-between;
+        flex-direction: column-reverse;
+        gap: 10px;
+        justify-content: center;
         align-items: center;
         height: 29px;
+
         p {
           color: #fff;
           font-size: 1.7rem;
@@ -86,6 +89,8 @@
         }
         &__redes {
           color: #fff;
+          display: flex;
+          gap: 10px;
           a {
             mix-blend-mode: normal;
           }
