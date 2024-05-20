@@ -9,6 +9,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import ArrowUp from "../../svgs/ArrowUp";
+import { roboto } from "../hero/Hero";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -37,7 +38,7 @@ const Header = () => {
 
   return (
     <AnimatePresence>
-      <div className="header">
+      <div className={`header ${roboto.className}`}>
         <div className="m-auto text-sm header__menu sm:w-11/12">
           <div className="header__menu__left ">
             <a onClick={() => goTo("home")} className="hover">

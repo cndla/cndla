@@ -19,6 +19,7 @@ const OurServices = () => {
 
   const goTo = (link) => {
     const element = document.getElementById(link);
+    console.log(link);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
 

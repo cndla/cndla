@@ -16,7 +16,7 @@ const Presentation = () => {
   };
 
   return (
-    <section className="presentation h-[900px] sm:h-screen" id="home">
+    <section className="presentation h-[900px] sm:h-screen max-w-screen" id="home">
       <div className="flex items-baseline scale-50 presentation__group lg:scale-100">
         <motion.svg
           className="presentation__group__letter c "

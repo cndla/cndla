@@ -72,7 +72,7 @@ const LabCreating = () => {
   };
   return (
     <section
-      className={`${roboto.className} bg-white-pattern h-[800px] sm:h-screen bg-cover flex justify-center items-center`} id=""
+      className={`${roboto.className} bg-white-pattern h-[800px] sm:h-screen bg-cover flex justify-center items-center`} id="experiences"
     >
       {" "}
       <div
@@ -105,8 +105,8 @@ const LabCreating = () => {
             <p className=" myWord leading-[1.1] overflow-x-visible">
               {currentWord4}
             </p>
+            <motion.div className="w-full h-1 mt-10 bg-black" animate={{ width: 0 }} transition={{ duration: 5, repeat: Infinity }} ></motion.div>
           </div>
-          <motion.div className="w-full h-px mt-10 bg-black" whileInView={{width:0}} transition={{duration: 5, repeat:Infinity}} ></motion.div>
         </div>
       </div>
     </section>
