@@ -9,48 +9,27 @@ import { roboto } from "../fonts/Font";
 import { useGetDivDimensions } from "../../customHooks/useGetDivDimensions";
 import { useSize, useWindowSize } from "react-use";
 import useIsMobile from "../../customHooks/useIsMobile";
+import { useHorizontalScroll } from "../../customHooks/useHorizontalScroll";
 
 const HorizontalScroll = () => {
   const targetRef = useRef(null);
-  const [dimensions, setDimensions] = useState({
-    width: 0,
-    height: 0,
-  });
-  const isMobile = useIsMobile();
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
-  const x = useTransform(
-    scrollYProgress,
-    [0, 1],
-    ["1%", isMobile ? "-1105%" : `-${dimensions.width * 8.17}px `]
-  );
-  const { width, height } = useWindowSize();
-  useEffect(() => {
-    setDimensions({
-      width: width,
-      height: height,
-    });
-  }, [width, height]);
-  if (!width) return;
-
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-93%"]);
   return (
     <section
       ref={targetRef}
-      className={`${roboto.className} horizontal`}
-      id="work"
+      className={`${roboto.className} relative h-[1000vh] bg-black`}
     >
-      <div className="horizontal__container">
-        <motion.div
-          className="horizontal__container__motion snap-x"
-          style={{ x, transition: "all 200ms ease" }}
-        >
+      <div className="sticky top-0 flex items-center h-screen overflow-hidden">
+        <motion.div style={{ x }} className="flex">
           {data.map((item) => (
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="w-full px-3 horizontal__container__motion__molecule snap-center"
+              className="relative flex items-center justify-center w-full snap-center"
               key={item.id}
             >
               <Image
@@ -68,7 +47,7 @@ const HorizontalScroll = () => {
                 className="object-cover h-full sm:hidden"
               />
               <motion.div
-                className="horizontal__container__motion__molecule__particles"
+                className="absolute z-30 flex items-center justify-center w-full h-full"
                 initial={{ opacity: 0 }}
                 whileInView={{
                   opacity: 1,
@@ -78,17 +57,18 @@ const HorizontalScroll = () => {
                 }}
                 transition={{ duration: 2, delay: 0.5 }}
               >
-                <div className="horizontal__container__motion__molecule__particles__item md:w-8/12 ">
+                <div className="flex flex-col items-center justify-center h-full text-white md:w-8/12 ">
                   <Image
                     src={item.icon}
                     alt=""
                     width={0}
                     height={0}
-                    className={`${item.id == 11 ? "w-3/12" : "w-6/12 md:w-6/12"
-                      } `}
+                    className={`${
+                      item.id == 11 ? "w-3/12" : "w-6/12 md:w-6/12"
+                    } `}
                   ></Image>
-                  <div className="horizontal__container__motion__molecule__particles__item__text  w-full  xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-xs  px-12 p-2 sm:p-10 md:p-12">
-                    <div className="w-full horizontal__container__motion__molecule__particles__item__text__first">
+                  <div className="flex flex-col justify-around gap-2.5   xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-xs  px-12 p-2 sm:p-10 md:p-12">
+                    <div className="w-full flex gap-2.5 ">
                       {" "}
                       {item.text.map((text, i) => (
                         <motion.div
@@ -96,6 +76,7 @@ const HorizontalScroll = () => {
                           initial={{ opacity: 0, x: -200 }}
                           whileInView={{ opacity: 1, x: 0 }}
                           transition={{ duration: 0.5, delay: 1 + i * 0.2 }}
+                          className="flex justify-between w-full"
                         >
                           <motion.p
                             whileInView={{ opacity: 1, y: 0 }}
@@ -112,15 +93,15 @@ const HorizontalScroll = () => {
                         </motion.div>
                       ))}
                     </div>
-                    <div className="horizontal__container__motion__molecule__particles__item__text__second">
+                    <div className="flex gap-2.5 ">
                       {" "}
                       {item.text2?.map((text, i) => (
                         <motion.div
-                          className=""
                           key={i}
                           initial={{ opacity: 0, x: 200 }}
                           whileInView={{ opacity: 1, x: 0 }}
                           transition={{ duration: 0.5, delay: 1 + i * 0.2 }}
+                          className="flex justify-between w-full"
                         >
                           <motion.p
                             whileInView={{ opacity: 1, y: 0 }}
