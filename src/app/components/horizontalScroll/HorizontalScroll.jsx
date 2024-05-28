@@ -67,7 +67,7 @@ const HorizontalScroll = () => {
                       item.id == 11 ? "w-3/12" : "w-6/12 md:w-6/12"
                     } `}
                   ></Image>
-                  <div className="flex flex-col justify-around gap-2.5   xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-xs  px-12 p-2 sm:p-10 md:p-12">
+                  <div className="flex flex-col justify-around gap-2.5   xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-xs  px-12 p-2 sm:p-10 md:p-12 w-full">
                     <div className="w-full flex gap-2.5 ">
                       {" "}
                       {item.text.map((text, i) => (

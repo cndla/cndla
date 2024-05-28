@@ -36,18 +36,14 @@ const Hero = () => {
   const y = useTransform(scrollYProgress3, [0, 1], [0, -300]);
   const x3 = useTransform(scrollYProgress3, [0, 1], [0, 300]);
 
-  useEffect(() => {
-    y.on("change", e => console.log(e))
-  }, [y])
-
 
   return (
     <section className={`${roboto.className} hero lg:h-auto md:p-24 overflow-y-hidden pt-24`} id="about">
 
-      <div ref={container} className="flex justify-center items-center w-full ">
+      <div ref={container} className="flex items-center justify-center w-full ">
 
-        <div className="w-8/12 relative overflow-hidden">
-          <div className="absolute h-full w-full">
+        <div className="relative w-8/12 overflow-hidden">
+          <div className="absolute w-full h-full">
             <motion.div style={{ y: y }} className="h-[50%] bg-black w-full"></motion.div>
 
             <motion.div ref={theElemente} style={{ y: x3 }} className="h-[50%] bg-black  "></motion.div>
@@ -63,7 +59,7 @@ const Hero = () => {
       <div className="">
         <motion.div
           style={{ opacity: scrollYProgress2 }}
-          className="hero__subtitle__text flex flex-wrap m-auto w-11/12"
+          className="flex flex-wrap w-11/12 m-auto hero__subtitle__text"
           ref={element}
         >
           <Word value={text} />

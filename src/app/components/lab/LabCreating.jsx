@@ -87,26 +87,26 @@ const LabCreating = () => {
               className="flex  leading-[1.1] overflow-y-hidden "
               ref={wordRef}
             >
-              <p className="myWord ">{currentWord}</p>
+              <p className="myWord min-w-fit">{currentWord}</p>
             </div>
           </div>
           <div className="flex items-end justify-around">
             <motion.div className="flex w-full overflow-y-hidden ">
-              <p className="myWord  leading-[1.1]">{currentWord2}</p>
+              <p className="myWord  leading-[1.1] min-w-fit">{currentWord2}</p>
             </motion.div>
             <p className="self-center text-xl transition-all sm:text-4xl">✽</p>
           </div>
           <div className="flex items-end justify-end overflow-y-hidden gap-7">
             <div className="flex text-right ">
-              <p className="myWord  leading-[1.1]">{currentWord3}</p>
+              <p className="myWord  leading-[1.1] min-w-fit">{currentWord3}</p>
             </div>
           </div>
           <div className="flex w-full overflow-y-hidden gap-9 ">
-            <p className=" myWord leading-[1.1] overflow-x-visible">
+            <p className=" myWord leading-[1.1] overflow-x-visible min-w-fit">
               {currentWord4}
             </p>
-            <motion.div className="w-full h-1 mt-10 bg-black" animate={{ width: 0 }} transition={{ duration: 5, repeat: Infinity }} ></motion.div>
           </div>
+            <motion.div className="w-full h-px mt-10 bg-black" animate={{ width: 0 }} transition={{ duration: 5, repeat: Infinity }} ></motion.div>
         </div>
       </div>
     </section>
