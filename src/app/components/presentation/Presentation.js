@@ -1,7 +1,6 @@
 "use client";
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import "./presentation.scss";
 import { delay, motion } from "framer-motion";
 
 const Presentation = () => {
@@ -16,7 +15,7 @@ const Presentation = () => {
   };
 
   return (
-    <section className="presentation h-[900px] sm:h-screen max-w-screen" id="home">
+    <section className="bg-presentationMobile  sm:bg-presentation bg-cover flex justify-center items-center h-[900px] sm:h-screen max-w-screen " id="home">
       <div className="flex items-baseline scale-50 presentation__group lg:scale-100">
         <motion.svg
           className="presentation__group__letter c "

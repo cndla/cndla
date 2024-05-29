@@ -38,8 +38,8 @@ const YourMoment = () => {
           </p>
           <p className="flex justify-between w-full">
             moment,{" "}
-            <motion.span
-              animate={{ left: ["-10%", "10%"] }}
+            <motion.p
+              animate={{ left: ["-30px", "30px"] }}
               transition={{
                 repeat: Infinity,
                 repeatType: "reverse",
@@ -49,7 +49,7 @@ const YourMoment = () => {
               className="relative"
             >
               go
-            </motion.span>{" "}
+            </motion.p>{" "}
             <span>✽</span>
           </p>
           <p className="min-w-fit">beyond the normal</p>

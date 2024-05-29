@@ -11,7 +11,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'white-pattern': "url('images/fondogris.png')"
+        'white-pattern': "url('images/fondogris.png')",
+        presentation: "url('images/presentation.jpg')",
+        presentationMobile: "url('images/presentationMobile.jpeg')",
       },
       colors: {
         "cnlda-orange": "#F36F10"
