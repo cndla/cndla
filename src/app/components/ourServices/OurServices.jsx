@@ -31,7 +31,7 @@ const OurServices = () => {
         {data.map((item, index) => (
           <motion.a
             key={index}
-            onClick={() => goTo(item.text[2])}
+            href={`#${item.text[2]}`}
             className={" flex lg:flex-col  border border-white justify-center w-11/12 items-center rounded-[50%] hover:bg-white hover:text-black lg:text-5xl lg:h-[70svh] text-lg h-44"}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}

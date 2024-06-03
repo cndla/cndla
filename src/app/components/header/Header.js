@@ -56,7 +56,7 @@ const Header = () => {
               work
             </a>
 
-            <div className="relative flex flex-col items-center justify-center">
+            <div className="relative ">
               <ArrowUp color={"fill-black"} show={show} />
               <a href="#connect" className="hover">
                 connect

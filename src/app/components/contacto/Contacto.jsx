@@ -88,6 +88,11 @@ const Contacto = () => {
             />
           </div>
         </div>
+        <div className="text-right sm:px-20">
+          <button className="px-3 py-2 text-white border border-white rounded-full">
+            Enviar
+          </button>
+        </div>
         <div className="flex flex-col items-center gap-4 mt-6 text-center text-white sm:mt-0 ">
           <div className="flex gap-1">
             <a href="https://ar.linkedin.com/company/cndla" className="" target="_blank">
@@ -100,11 +105,6 @@ const Contacto = () => {
           <p className="text-xs text-nowrap sm:text-sm md:text-md lg:text-lg xl:text-xl">
             follow us for our latest stories and insights
           </p>
-        </div>
-        <div className="text-right">
-          <button className="px-3 py-2 text-white border border-white rounded-full">
-            Enviar
-          </button>
         </div>
       </div>
     </section>

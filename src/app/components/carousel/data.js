@@ -2,7 +2,7 @@
 import picwynd from 'public/images/picwyn.jpg'
 import picdanny from 'public/images/picdanny.png'
 import picrefik from 'public/images/picrefik.png'
-import picneutro from 'public/images/picneutro.png'
+import picneutro from 'public/images/picneutro.jpg'
 import picdiamon from 'public/images/picdiamon.png'
 import picmeta from 'public/images/picmeta.png'
 import piceureca from 'public/images/piceureca.png'
@@ -70,7 +70,7 @@ export const data = [{
     icon: logoneutro,
     text: ["content production"],
     pic: picneutro,
-    picMobile: picneutroMobile
+    picMobile: picneutro
 
 }, {
     id: 5,

@@ -21,15 +21,16 @@ const HorizontalScroll = () => {
     <section
       ref={targetRef}
       className={`${roboto.className} relative h-[1000vh] bg-black`}
+      id="work"
     >
       <div className="sticky top-0 flex items-center h-screen overflow-hidden">
-        <motion.div style={{ x }} className="flex">
+        <motion.div style={{ x }} className="flex h-screen">
           {data.map((item) => (
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.8 }}
-              className="relative flex items-center justify-center w-full snap-center"
+              className="relative flex items-center justify-center w-full snap-center "
               key={item.id}
             >
               <Image
@@ -63,9 +64,8 @@ const HorizontalScroll = () => {
                     alt=""
                     width={0}
                     height={0}
-                    className={`${
-                      item.id == 11 ? "w-3/12" : "w-6/12 md:w-6/12"
-                    } `}
+                    className={`${item.id == 11 ? "w-3/12" : "w-6/12 md:w-6/12"
+                      } `}
                   ></Image>
                   <div className="flex flex-col justify-around gap-2.5   xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-xs  px-12 p-2 sm:p-10 md:p-12 w-full">
                     <div className="w-full flex gap-2.5 ">
@@ -76,7 +76,7 @@ const HorizontalScroll = () => {
                           initial={{ opacity: 0, x: -200 }}
                           whileInView={{ opacity: 1, x: 0 }}
                           transition={{ duration: 0.5, delay: 1 + i * 0.2 }}
-                          className="flex justify-between w-full"
+                          className="flex justify-between w-full m-auto sm:text-2xl sm:w-8/12"
                         >
                           <motion.p
                             whileInView={{ opacity: 1, y: 0 }}
@@ -101,7 +101,7 @@ const HorizontalScroll = () => {
                           initial={{ opacity: 0, x: 200 }}
                           whileInView={{ opacity: 1, x: 0 }}
                           transition={{ duration: 0.5, delay: 1 + i * 0.2 }}
-                          className="flex justify-between w-full"
+                          className="flex justify-between w-full m-auto sm:text-2xl sm:w-8/12"
                         >
                           <motion.p
                             whileInView={{ opacity: 1, y: 0 }}
