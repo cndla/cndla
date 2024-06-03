@@ -26,13 +26,15 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
       ref={targetRef}
       className={cn("relative z-0 h-[200vh] bg-black", className)}
     >
+      
       <div
         className={`sticky top-0 mx-auto flex h-[50%] max-w-4xl items-center bg-transparent px-[1rem] py-[5rem] ${roboto.className}`}
       >
+       
         <p
           ref={targetRef}
           className={
-            "flex flex-wrap p-5 text-2xl font-bold text-black/20 dark:text-white/20 md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-5xl"
+            "flex flex-wrap p-5 text-2xl  text-black/20 dark:text-white/20 md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-6xl  text-balance"
           }
         >
           {words.map((word, i) => {

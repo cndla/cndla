@@ -36,7 +36,7 @@ const Contacto = () => {
       className={`${roboto.className} bg-black pt-20 pb-40 p-10`}
       id="connect"
     >
-      <div className="space-y-6 sm:space-y-32">
+      <div className="flex flex-col justify-between max-w-screen-xl m-auto space-y-6 sm:space-y-32">
         <h2 className="text-2xl text-center text-white sm:text-4xl">
           {splitText.map((text, i) => (
             <motion.span

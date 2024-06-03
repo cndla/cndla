@@ -14,9 +14,7 @@ const Lab = () => {
   return (
     // <LabCreating />
     <div className="pt-10 text-white bg-black" id="experiences">
-      <div className="sticky z-10 left-[15%] flex items-center justify-center w-24 h-12 bg-transparent border border-white rounded-full top-[35%] md:top-[40%] md:left-[5%] lg:left-[15%] lg:top-[37%] xl:left-[23%] 2xl:left-[32%]">
-        <p>cndla/lab</p>
-      </div>
+    
       <TextRevealByWord text="creating impactful online and offline experiences." className="" />
       <TextRevealByWord text="an innovation lab that builds ideas and projects that reshape culture and entertainment." className="" />
       <TextRevealByWord text="activations, events and strategies on the point-of-sale." className="" />
