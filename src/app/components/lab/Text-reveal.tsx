@@ -24,19 +24,20 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
   return (
     <div
       ref={targetRef}
-      className={cn("relative z-0 h-[200vh] bg-black", className)}
+      className={cn("relative z-0 h-[200vh] bg-cover", className)}
     >
-      
       <div
         className={`sticky top-0 mx-auto flex h-[50%] max-w-4xl items-center bg-transparent px-[1rem] py-[5rem] ${roboto.className}`}
       >
-       
         <p
           ref={targetRef}
           className={
-            "flex flex-wrap p-5 text-2xl  text-black/20 dark:text-white/20 md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-6xl  text-balance"
+            "flex flex-wrap p-5 text-2xl  text-black/20  md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-6xl  text-balance"
           }
         >
+          <div className="flex items-center self-center justify-center w-32 h-8 text-lg text-black border border-black rounded-full md:h-10 xl:h-12">
+            <p>cndla/lab</p>
+          </div>
           {words.map((word, i) => {
             const start = i / words.length;
             const end = start + 1 / words.length;
@@ -63,10 +64,7 @@ const Word: FC<WordProps> = ({ children, progress, range }) => {
   return (
     <span className="xl:lg-3 relative mx-1 lg:mx-2.5">
       <span className={"absolute opacity-30"}>{children}</span>
-      <motion.span
-        style={{ opacity: opacity }}
-        className={"text-black dark:text-white"}
-      >
+      <motion.span style={{ opacity: opacity }} className={"text-black"}>
         {children}
       </motion.span>
     </span>

@@ -13,8 +13,8 @@ export const Logo = ({ text, borderColor, extraClass }) => (
 const Lab = () => {
   return (
     // <LabCreating />
-    <div className="pt-10 text-white bg-black" id="experiences">
-    
+    <div className="pt-10 text-black bg-fixed bg-cover bg-white-pattern " id="experiences">
+
       <TextRevealByWord text="creating impactful online and offline experiences." className="" />
       <TextRevealByWord text="an innovation lab that builds ideas and projects that reshape culture and entertainment." className="" />
       <TextRevealByWord text="activations, events and strategies on the point-of-sale." className="" />
