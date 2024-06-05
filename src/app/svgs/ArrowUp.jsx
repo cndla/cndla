@@ -18,7 +18,7 @@ const ArrowUp = ({ show, color }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       xmlns="http://www.w3.org/2000/svg"
-      className="absolute w-8 cursor-pointer sm:left-7 left-5 -top-10"
+      className="absolute w-8 cursor-pointer sm:left-7 left-5 -top-12 "
       viewBox="0 0 32 32"
     >
       <g data-name="17-Arrow Up">

@@ -66,7 +66,7 @@ const YourMoment = () => {
           <motion.div
             initial={{ width: "0px", opacity: 0 }}
             whileInView={{ width: "60px", opacity: 1 }}
-            className="w-10 h-px bg-black spacer"
+            className="w-10 h-2 bg-black spacer"
             transition={{ duration: 1, type: "tween" }}
             style={{ originX: 0 }}
           ></motion.div>

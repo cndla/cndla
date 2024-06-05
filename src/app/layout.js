@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>{children}
-        <LenisScroller />
+        {/* <LenisScroller /> */}
       </body>
     </html>
   );

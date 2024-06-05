@@ -16,6 +16,11 @@ const Contacto = () => {
   const splitText = text.split(" ");
   const [textArea, setTextArea] = useState("");
   const [textAreaRows, setTextAreaRows] = useState(1);
+  const [email, setEmail] = useState("")
+  const [name, setName] = useState("")
+  const [company, setCompany] = useState("")
+  const [error, setError] = useState("");
+  const [status, setStatus] = useState("");
 
   const handleChangeTextArea = (e) => {
     setTextArea(e.target.value);
@@ -30,7 +35,58 @@ const Contacto = () => {
       setTextAreaRows(1);
     }
   };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
+    // Validaciones
+    if (!name.trim()) {
+      setError('Name is required.');
+      return;
+    }
+    if (!company.trim()) {
+      setError('Company is required.');
+      return;
+    }
+    if (!email.trim() || !/\S+@\S+\.\S+/.test(email)) {
+      setError('A valid email is required.');
+      return;
+    }
+    if (!textArea.trim()) {
+      setError('Message is required.');
+      return;
+    }
+
+    setError('');
+
+    try {
+      const res = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          company,
+          email,
+          textArea,
+        }),
+      });
+      console.log(res);
+
+      if (res.ok) {
+        setStatus('Email sent successfully!');
+        setName('');
+        setCompany('');
+        setEmail('');
+        setTextArea('');
+      } else {
+        setStatus('Failed to send email.');
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus('An error occurred while sending the email.');
+    }
+  };
   return (
     <section
       className={`${roboto.className} bg-black pt-20 pb-40 p-10`}
@@ -51,13 +107,15 @@ const Contacto = () => {
           ))}
         </h2>
 
-        <div className="flex flex-wrap justify-center w-full gap-8 text-white sm:p-8">
+        <div className="flex flex-wrap justify-between w-full gap-8 text-white sm:p-8">
           <div className="w-full text-xl sm:w-auto sm:text-3xl">
             <p className="font-thin">01</p>
             <p className="font-bold">name</p>
             <input
               type="text"
               className="w-full mt-6 bg-black border-b-2 border-white sm:w-56 focus:outline-none"
+              onChange={(e) => setName(e.target.value)}
+              value={name}
             />
           </div>
           <div className="w-full text-xl sm:w-auto sm:text-3xl">
@@ -66,6 +124,8 @@ const Contacto = () => {
             <input
               type="text"
               className="w-full mt-6 bg-black border-b-2 border-white sm:w-56 focus:outline-none"
+              onChange={(e) => setCompany(e.target.value)}
+              value={company}
             />
           </div>
           <div className="w-full text-xl sm:text-3xl sm:text-right sm:w-auto">
@@ -74,6 +134,8 @@ const Contacto = () => {
             <input
               type="text"
               className="w-full mt-6 bg-black border-b-2 border-white sm:w-56 focus:outline-none"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
             />
           </div>
           <div className="w-full text-xl sm:text-3xl sm:text-right sm:w-auto">
@@ -85,11 +147,12 @@ const Contacto = () => {
               onChange={handleChangeTextArea}
               value={textArea}
               className="w-full mt-6 bg-black border-b-2 border-white sm:w-56 focus:outline-none"
+
             />
           </div>
         </div>
-        <div className="text-right sm:px-20">
-          <button className="px-3 py-2 text-white border border-white rounded-full">
+        <div className="text-right ">
+          <button className="px-3 py-2 text-white transition-colors duration-300 border border-white rounded-full hover:bg-white hover:text-black" onClick={handleSubmit}>
             Enviar
           </button>
         </div>
