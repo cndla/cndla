@@ -16,23 +16,25 @@ const Contacto = () => {
   const splitText = text.split(" ");
   const [textArea, setTextArea] = useState("");
   const [textAreaRows, setTextAreaRows] = useState(1);
-  const [email, setEmail] = useState("")
-  const [name, setName] = useState("")
-  const [company, setCompany] = useState("")
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [company, setCompany] = useState("");
   const [error, setError] = useState("");
   const [status, setStatus] = useState("");
+  const [already, setAlready] = useState([]);
 
   const handleChangeTextArea = (e) => {
     setTextArea(e.target.value);
-    let isDeleting = [];
 
     if (textArea.length % 25 == 0) {
-      if (isDeleting.includes(textArea.length)) return null;
-      isDeleting.push(textArea.length);
+      if (already.includes(textArea.length))
+        return setTextAreaRows(textAreaRows - 1);
+      setAlready((prev) => [...prev, textArea.length]);
       setTextAreaRows(textAreaRows + 1);
     }
-    if (textArea.length == 1) {
+    if (textArea.length == 1 || textArea == "") {
       setTextAreaRows(1);
+      setAlready([]);
     }
   };
   const handleSubmit = async (e) => {
@@ -40,23 +42,23 @@ const Contacto = () => {
 
     // Validaciones
     if (!name.trim()) {
-      setError('Name is required.');
+      setError("Name is required.");
       return;
     }
     if (!company.trim()) {
-      setError('Company is required.');
+      setError("Company is required.");
       return;
     }
     if (!email.trim() || !/\S+@\S+\.\S+/.test(email)) {
-      setError('A valid email is required.');
+      setError("A valid email is required.");
       return;
     }
     if (!textArea.trim()) {
-      setError('Message is required.');
+      setError("Message is required.");
       return;
     }
 
-    setError('');
+    setError("");
 
     try {
       const res = await fetch("/api/send", {
@@ -74,17 +76,17 @@ const Contacto = () => {
       console.log(res);
 
       if (res.ok) {
-        setStatus('Email sent successfully!');
-        setName('');
-        setCompany('');
-        setEmail('');
-        setTextArea('');
+        setStatus("Email sent successfully!");
+        setName("");
+        setCompany("");
+        setEmail("");
+        setTextArea("");
       } else {
-        setStatus('Failed to send email.');
+        setStatus("Failed to send email.");
       }
     } catch (error) {
       console.error(error);
-      setStatus('An error occurred while sending the email.');
+      setStatus("An error occurred while sending the email.");
     }
   };
   return (
@@ -146,22 +148,31 @@ const Contacto = () => {
               rows={textAreaRows}
               onChange={handleChangeTextArea}
               value={textArea}
-              className="w-full mt-6 text-base bg-black border-b-2 border-white sm:w-56 focus:outline-none"
-
+              className="w-full mt-6 text-base bg-black border-b-2 border-white min-h-10 sm:w-56 focus:outline-none"
             />
           </div>
         </div>
         <div className="text-right ">
-          <button className="px-3 py-2 text-white transition-colors duration-300 border border-white rounded-full hover:bg-white hover:text-black" onClick={handleSubmit}>
+          <button
+            className="px-3 py-2 text-white transition-colors duration-300 border border-white rounded-full hover:bg-white hover:text-black"
+            onClick={handleSubmit}
+          >
             Enviar
           </button>
         </div>
         <div className="flex flex-col items-center gap-4 mt-6 text-center text-white sm:mt-0 ">
           <div className="flex gap-1">
-            <a href="https://ar.linkedin.com/company/cndla" className="" target="_blank">
+            <a
+              href="https://ar.linkedin.com/company/cndla"
+              className=""
+              target="_blank"
+            >
               <Linkedin />
             </a>
-            <a href="https://www.instagram.com/cndlacollective/" target="_blank">
+            <a
+              href="https://www.instagram.com/cndlacollective/"
+              target="_blank"
+            >
               <Instagram />
             </a>
           </div>

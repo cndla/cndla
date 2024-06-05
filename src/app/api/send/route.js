@@ -17,7 +17,7 @@ export async function POST(req) {
     body: JSON.stringify({
       from: "CNDLA <onboarding@resend.dev>",
       to: ["aspolchi@gmail.com"],
-      subject: "hello world",
+      subject: "Nuevo contacto desde la web - CNDLA",
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html dir="ltr" lang="en">
       

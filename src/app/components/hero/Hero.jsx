@@ -42,7 +42,7 @@ const Hero = () => {
 
       <div ref={container} className="flex items-center justify-center w-full ">
 
-        <div className="relative w-8/12 overflow-hidden">
+        <div className="relative w-7/12 overflow-hidden">
           <div className="absolute w-full h-full">
             <motion.div style={{ y: y }} className="h-[50%] bg-black w-full"></motion.div>
 
