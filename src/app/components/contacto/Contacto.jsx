@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import { roboto } from "../fonts/Font";
 import Linkedin from "../../svgs/Linkedin";
 import Instagram from "../../svgs/Instagram";
+import Toast from "../toast/Toast";
 
 const Contacto = () => {
   const text = "let's work together";
@@ -22,6 +23,8 @@ const Contacto = () => {
   const [error, setError] = useState("");
   const [status, setStatus] = useState("");
   const [already, setAlready] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [isToastVisible, setToastVisible] = useState(false);
 
   const handleChangeTextArea = (e) => {
     setTextArea(e.target.value);
@@ -38,6 +41,7 @@ const Contacto = () => {
     }
   };
   const handleSubmit = async (e) => {
+    setLoading(true);
     e.preventDefault();
 
     // Validaciones
@@ -73,7 +77,7 @@ const Contacto = () => {
           message: textArea,
         }),
       });
-      console.log(res);
+      setLoading(false);
 
       if (res.ok) {
         setStatus("Email sent successfully!");
@@ -81,13 +85,26 @@ const Contacto = () => {
         setCompany("");
         setEmail("");
         setTextArea("");
+        setTextAreaRows(1);
+        setAlready([]);
+        setLoading(false);
+        showToast();
       } else {
         setStatus("Failed to send email.");
+        setLoading(false);
       }
     } catch (error) {
       console.error(error);
       setStatus("An error occurred while sending the email.");
+      setLoading(false);
     }
+  };
+
+  const showToast = () => {
+    setToastVisible(true);
+    setTimeout(() => {
+      setToastVisible(false);
+    }, 3000); // El toast desaparecerá después de 3 segundos
   };
   return (
     <section
@@ -152,12 +169,16 @@ const Contacto = () => {
             />
           </div>
         </div>
-        <div className="text-right ">
+        <div className="flex flex-col items-end justify-end gap-3 text-right ">
+          <Toast
+            message="Message sent successfully."
+            isVisible={isToastVisible}
+          />{" "}
           <button
             className="px-3 py-2 text-white transition-colors duration-300 border border-white rounded-full hover:bg-white hover:text-black"
             onClick={handleSubmit}
           >
-            Enviar
+            {loading ? "Sending..." : "Send"}
           </button>
         </div>
         <div className="flex flex-col items-center gap-4 mt-6 text-center text-white sm:mt-0 ">
