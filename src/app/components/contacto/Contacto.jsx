@@ -65,10 +65,10 @@ const Contacto = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          name,
-          company,
-          email,
-          textArea,
+          name: name,
+          company: company,
+          email: email,
+          message: textArea,
         }),
       });
       console.log(res);
