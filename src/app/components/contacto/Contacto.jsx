@@ -26,7 +26,7 @@ const Contacto = () => {
     setTextArea(e.target.value);
     let isDeleting = [];
 
-    if (textArea.length % 13 == 0) {
+    if (textArea.length % 25 == 0) {
       if (isDeleting.includes(textArea.length)) return null;
       isDeleting.push(textArea.length);
       setTextAreaRows(textAreaRows + 1);
@@ -113,7 +113,7 @@ const Contacto = () => {
             <p className="font-bold">name</p>
             <input
               type="text"
-              className="w-full mt-6 bg-black border-b-2 border-white sm:w-56 focus:outline-none"
+              className="w-full h-10 mt-6 text-base bg-black border-b-2 border-white sm:w-56 focus:outline-none"
               onChange={(e) => setName(e.target.value)}
               value={name}
             />
@@ -123,7 +123,7 @@ const Contacto = () => {
             <p className="font-bold">company</p>
             <input
               type="text"
-              className="w-full mt-6 bg-black border-b-2 border-white sm:w-56 focus:outline-none"
+              className="w-full h-10 mt-6 text-base bg-black border-b-2 border-white sm:w-56 focus:outline-none"
               onChange={(e) => setCompany(e.target.value)}
               value={company}
             />
@@ -133,7 +133,7 @@ const Contacto = () => {
             <p className="font-bold">email</p>
             <input
               type="text"
-              className="w-full mt-6 bg-black border-b-2 border-white sm:w-56 focus:outline-none"
+              className="w-full h-10 mt-6 text-base bg-black border-b-2 border-white sm:w-56 focus:outline-none"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
             />
@@ -146,7 +146,7 @@ const Contacto = () => {
               rows={textAreaRows}
               onChange={handleChangeTextArea}
               value={textArea}
-              className="w-full mt-6 bg-black border-b-2 border-white sm:w-56 focus:outline-none"
+              className="w-full mt-6 text-base bg-black border-b-2 border-white sm:w-56 focus:outline-none"
 
             />
           </div>
