@@ -80,7 +80,7 @@ const Contacto = () => {
       setLoading(false);
 
       if (res.ok) {
-        setStatus("Email sent successfully!");
+        setStatus("email sent successfully!");
         setName("");
         setCompany("");
         setEmail("");
@@ -90,12 +90,16 @@ const Contacto = () => {
         setLoading(false);
         showToast();
       } else {
-        setStatus("Failed to send email.");
+        setStatus("failed to send email. try again later");
         setLoading(false);
+        showToast();
+
       }
     } catch (error) {
       console.error(error);
-      setStatus("An error occurred while sending the email.");
+      showToast();
+
+      setStatus("an error occurred while sending the email. try again later");
       setLoading(false);
     }
   };
@@ -171,7 +175,7 @@ const Contacto = () => {
         </div>
         <div className="flex flex-col items-end justify-end gap-3 text-right ">
           <Toast
-            message="Message sent successfully."
+            message={status}
             isVisible={isToastVisible}
           />{" "}
           <button
