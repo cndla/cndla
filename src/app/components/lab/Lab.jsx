@@ -18,7 +18,7 @@ const Lab = () => {
   return (
     // <LabCreating />
     <div
-      className="pt-10 text-black bg-fixed bg-cover bg-white-pattern "
+      className="pt-10 text-black bg-fixed bg-center bg-cover sm:bg-white-pattern bg-white-pattern-mobile "
       id="experiences"
     >
       <TextRevealByWord

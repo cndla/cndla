@@ -14,6 +14,7 @@ module.exports = {
         'white-pattern': "url('images/fondogris.png')",
         presentation: "url('images/presentation.jpg')",
         presentationMobile: "url('images/presentationMobile.jpeg')",
+        'white-pattern-mobile': "url('images/fondogrisMobile.jpg')",
       },
       colors: {
         "cnlda-orange": "#F36F10"

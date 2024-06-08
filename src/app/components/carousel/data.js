@@ -39,6 +39,14 @@ import picbodegaMobile from 'public/images/picbodegaMobile.png'
 import picpibaMobile from 'public/images/picpibaMobile.png'
 import picvalentinaMobile from 'public/images/picvalentinaMobile.png'
 
+/* WYNDHAM: https://www.instagram.com/esplendorh/
+DANNY: https://www.instagram.com/dannocean/
+NEUTROGENA: https://www.instagram.com/neutrogena.ar/
+DIAMOND: https://www.instagram.com/diamondfilmsarg/
+META: https://www.instagram.com/meta/
+FORMOSA: https://www.instagram.com/fundacionbancoformosa/
+ROCKCYCLE: https://www.instagram.com/rockcyclenow/
+BODEGA: https://www.instagram.com/bodega.araujo/ */
 
 export const data = [{
     id: 1,
@@ -46,7 +54,8 @@ export const data = [{
     text: ["engagement strategy | content production",],
     text2: ["social media | paid media | brand experience"],
     pic: picwynd,
-    picMobile: picwyndMobile
+    picMobile: picwyndMobile,
+    ig: 'https://www.instagram.com/esplendorh/'
 
 
 },
@@ -56,7 +65,8 @@ export const data = [{
     text: ["engagement strategy",],
     text2: ["fan club | brand experience"],
     pic: picdanny,
-    picMobile: picdannyMobile
+    picMobile: picdannyMobile,
+    ig:'https://www.instagram.com/dannocean/'
 }, {
     id: 3,
     icon: logorefik,
@@ -70,7 +80,8 @@ export const data = [{
     icon: logoneutro,
     text: ["content production"],
     pic: picneutro,
-    picMobile: picneutro
+    picMobile: picneutro,
+    ig:'https://www.instagram.com/neutrogena.ar/'
 
 }, {
     id: 5,
@@ -78,7 +89,8 @@ export const data = [{
     text: ["engagement strategy | social media | content production",],
     text2: ["pr actions | brand experience"],
     pic: picdiamon,
-    picMobile: picdiamonMobile
+    picMobile: picdiamonMobile,
+    ig: 'https://www.instagram.com/diamondfilmsarg/'
 
 }, {
     id: 6,
@@ -86,7 +98,8 @@ export const data = [{
     text: ["meta rise | engagement strategy"],
     text2: [],
     pic: picmeta,
-    picMobile: picmetaMobile
+    picMobile: picmetaMobile,
+    ig:'https://www.instagram.com/meta/'
 
 }, {
     id: 7,
@@ -94,7 +107,8 @@ export const data = [{
     text: ["branding | engagement strategy",],
     text2: ["social media | brand-experience"],
     pic: piceureca,
-    picMobile: piceurecaMobile
+    picMobile: piceurecaMobile,
+    ig:'https://www.instagram.com/fundacionbancoformosa/'
 
 }, {
     id: 8,
@@ -102,7 +116,8 @@ export const data = [{
     text: ["engagement strategy | social media | content production",],
     text2: ["email mkt | paid media | pr actions | brand experience"],
     pic: picrock,
-    picMobile: picrockMobile
+    picMobile: picrockMobile,
+    ig:'https://www.instagram.com/rockcyclenow/'
 
 }, {
     id: 9,
@@ -118,7 +133,8 @@ export const data = [{
     text: ["engagement strategy | social media | content production",],
     text2: ["paid media | pr actions | brand experience"],
     pic: picbodega,
-    picMobile: picbodegaMobile
+    picMobile: picbodegaMobile,
+    ig: 'https://www.instagram.com/bodega.araujo/'
 
 }, {
     id: 11,
