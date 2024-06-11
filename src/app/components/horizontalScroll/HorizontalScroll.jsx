@@ -58,7 +58,7 @@ const HorizontalScroll = () => {
                 }}
                 transition={{ duration: 2, delay: 0.5 }}
               >
-                <div className="flex flex-col items-center justify-center h-full text-white md:w-8/12 ">
+                <div className="flex flex-col items-center justify-center h-full text-white lg:w-8/12 ">
                   <Image
                     src={item.icon}
                     alt=""
@@ -78,7 +78,7 @@ const HorizontalScroll = () => {
                             initial={{ opacity: 0, x: -200 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: 1 + i * 0.2 }}
-                            className="flex justify-between w-full m-auto sm:text-2xl sm:w-8/12"
+                            className="flex justify-between w-full m-auto sm:text-2xl 2xl:w-8/12"
                           >
                             <motion.p
                               whileInView={{ opacity: 1, y: 0 }}
@@ -103,7 +103,7 @@ const HorizontalScroll = () => {
                             initial={{ opacity: 0, x: 200 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5, delay: 1 + i * 0.2 }}
-                            className="flex justify-between w-full m-auto sm:text-2xl sm:w-8/12"
+                            className="flex justify-between w-full m-auto sm:text-2xl 2xl:w-8/12"
                           >
                             <motion.p
                               whileInView={{ opacity: 1, y: 0 }}

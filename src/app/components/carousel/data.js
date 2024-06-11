@@ -66,14 +66,15 @@ export const data = [{
     text2: ["fan club | brand experience"],
     pic: picdanny,
     picMobile: picdannyMobile,
-    ig:'https://www.instagram.com/dannocean/'
+    ig: 'https://www.instagram.com/dannocean/'
 }, {
     id: 3,
     icon: logorefik,
     text: ["engagement strategy | social media",],
     text2: ["audiovisual content"],
     pic: picrefik,
-    picMobile: picrefikMobile
+    picMobile: picrefikMobile,
+    ig: "https://www.instagram.com/refikanadol/"
 
 }, {
     id: 4,
@@ -81,7 +82,7 @@ export const data = [{
     text: ["content production"],
     pic: picneutro,
     picMobile: picneutro,
-    ig:'https://www.instagram.com/neutrogena.ar/'
+    ig: 'https://www.instagram.com/neutrogena.ar/'
 
 }, {
     id: 5,
@@ -99,7 +100,7 @@ export const data = [{
     text2: [],
     pic: picmeta,
     picMobile: picmetaMobile,
-    ig:'https://www.instagram.com/meta/'
+    ig: 'https://www.instagram.com/meta/'
 
 }, {
     id: 7,
@@ -108,16 +109,16 @@ export const data = [{
     text2: ["social media | brand-experience"],
     pic: piceureca,
     picMobile: piceurecaMobile,
-    ig:'https://www.instagram.com/fundacionbancoformosa/'
+    ig: 'https://www.instagram.com/fundacionbancoformosa/'
 
 }, {
     id: 8,
     icon: logorock,
     text: ["engagement strategy | social media | content production",],
-    text2: ["email mkt | paid media | pr actions | brand experience"],
+    text2: ["email mkt | pr actions | brand experience"],
     pic: picrock,
     picMobile: picrockMobile,
-    ig:'https://www.instagram.com/rockcyclenow/'
+    ig: 'https://www.instagram.com/rockcyclenow/'
 
 }, {
     id: 9,
@@ -142,7 +143,8 @@ export const data = [{
     text: ["engagement strategy | social media | content production",],
     text2: ["paid media | pr actions | brand experience"],
     pic: picpiba,
-    picMobile: picpiba
+    picMobile: picpiba,
+    ig: ""
 
 }, {
     id: 12,
@@ -150,7 +152,8 @@ export const data = [{
     text: ["engagement strategy | social media",],
     text2: [" graphic design | content production"],
     pic: picvalentina,
-    picMobile: picvalentinaMobile
+    picMobile: picvalentinaMobile,
+    ig: "https://www.instagram.com/valentinaamengualofficial/"
 }]
 
 
