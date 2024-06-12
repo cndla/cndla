@@ -121,10 +121,10 @@ const HorizontalScroll = () => {
                         ))}
                       </div>
                     </div>
-                    <motion.a
+                    {/* <motion.a
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
-                      transition={{ duration: 0.5 }} href={item.ig} target="_blank" rel="noreferrer" className="text-xs text-center text-white underline md:text-base underline-offset-4 sm:text-sm">ver más</motion.a>
+                      transition={{ duration: 0.5 }} href={item.ig} target="_blank" rel="noreferrer" className="text-xs text-center text-white underline md:text-base underline-offset-4 sm:text-sm">ver más</motion.a> */}
 
                   </div>
                 </div>
