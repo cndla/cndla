@@ -12,11 +12,11 @@ export async function POST(req) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer re_jbJpyTdb_Gfms6jcftD9wGEoxEFJWayx2`,
+      Authorization: `Bearer re_bVRc7i4Y_AueMAVSq2MJz6RPjEq3j86kw`,
     },
     body: JSON.stringify({
       from: "CNDLA <onboarding@resend.dev>",
-      to: ["aspolchi@gmail.com"],
+      to: ["saturno@cndlacollective.com"],
       subject: "Nuevo contacto desde la web - CNDLA",
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html dir="ltr" lang="en">
