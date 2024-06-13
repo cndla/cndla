@@ -144,7 +144,7 @@ export const data = [{
     text2: ["paid media | pr actions | brand experience"],
     pic: picpiba,
     picMobile: picpiba,
-    ig: ""
+    ig: "https://www.instagram.com/pibastreetgourmet"
 
 }, {
     id: 12,

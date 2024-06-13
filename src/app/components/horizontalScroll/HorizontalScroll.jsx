@@ -59,14 +59,17 @@ const HorizontalScroll = () => {
                 transition={{ duration: 2, delay: 0.5 }}
               >
                 <div className="flex flex-col items-center justify-center h-full text-white lg:w-8/12 ">
-                  <Image
-                    src={item.icon}
-                    alt=""
-                    width={0}
-                    height={0}
-                    className={`${item.id == 11 ? "w-3/12" : item.id == 2 ? "w-8/12" : "w-6/12 md:w-6/12"
-                      } `}
-                  ></Image>
+                  <a href={item.ig} target="_blank" rel="noreferrer" className="flex justify-center w-full">
+
+                    <Image
+                      src={item.icon}
+                      alt=""
+                      width={0}
+                      height={0}
+                      className={`${item.id == 11 ? "w-3/12" : item.id == 2 ? "w-8/12" : "w-6/12 md:w-6/12"
+                        } `}
+                    ></Image>
+                  </a>
                   <div className="flex flex-col justify-around gap-5  xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-xs  px-12 p-2 sm:p-10 md:p-12 w-full">
                     <div className="">
 
