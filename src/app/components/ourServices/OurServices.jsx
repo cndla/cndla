@@ -26,7 +26,7 @@ const OurServices = () => {
   }
 
   return (
-    <section className={`${roboto.className} ourServices h-[800px] sm:h-screen lg:p-24 `}>
+    <section className={`${roboto.className} ourServices h-[800px] sm:h-screen lg:p-24 `} id="home">
       <div className="flex flex-col items-center justify-center h-full ourServices__container lg:flex-row">
         {data.map((item, index) => (
           <motion.a
