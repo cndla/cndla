@@ -10,7 +10,7 @@ import Word from "./Word";
 
 export const roboto = Roboto({ subsets: ["latin"], weight: ["100", "300", "400", "500", "700", "900"] });
 
-const text = "an impulsive feeling that drives you to do everything you love, to achieve and to take on new challenges_____the passion  of each of the people who are part of the team____ thoughts that are transformed into real strategic actions______the rush of adrenaline of a new project______based in Argentina working globally."
+const text = "we are an impulsive feeling that drives you to do everything you love, to achieve and to take on new challenges_____the passion  of each of the people who are part of the team____ thoughts that are transformed into real strategic actions______the rush of adrenaline of a new project______based in Argentina working globally."
 
 const Hero = () => {
   const container = useRef(null);
