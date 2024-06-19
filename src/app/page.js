@@ -19,32 +19,44 @@ import ArrowUp from "./svgs/ArrowUp";
 import { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll, useTransform } from "framer-motion";
 import './input.css'
+import Head from "next/head";
 
 
 
 export default function Home() {
   return (
-    <div className="">
-      <Header />
-      <main>
-        <Presentation />
-        <Hero />
-        <OurServices />
-        <WeAreProud />
-        <UnderOneRoof />
-        <WeBelive />
+    <>
+
+      <Head>
+        <title>CNDLA</title>
+        <meta property="og:title" content="CNDLA" key="title" />
+        <meta property="og:url" content="https://imgur.com/a/c9KeWw7" />
+        <meta property="og:image" content="https://imgur.com/a/c9KeWw7" />
+        <meta property="keywords" content="CNDLA, cndla, marketing, empresa, emprendedora, candela, saturno, web, web de marketing, diseño, diseño web, " />
+
+      </Head>
+      <div className="">
+        <Header />
+        <main>
+          <Presentation />
+          <Hero />
+          <OurServices />
+          <WeAreProud />
+          <UnderOneRoof />
+          <WeBelive />
 
 
 
-        <HorizontalScroll />
-        <Lab />
+          <HorizontalScroll />
+          <Lab />
 
-        <Consorcio />
-        <OnFire />
-        <YourMoment />
-        <Contacto />
+          <Consorcio />
+          <OnFire />
+          <YourMoment />
+          <Contacto />
 
-      </main>
-    </div>
+        </main>
+      </div>
+    </>
   );
 }
