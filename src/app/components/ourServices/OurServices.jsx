@@ -13,7 +13,7 @@ const OurServices = () => {
       text: ["creative", "lab and", "experiences"],
     },
     {
-      text: ["on fire", "sessions ", "workshops"],
+      text: ["on fire", "session ", "workshops"],
     },
   ];
 

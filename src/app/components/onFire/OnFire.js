@@ -34,7 +34,7 @@ const OnFire = () => {
     <section className={`${roboto.className} onFire`} id="workshops">
       <div className="onFire__images">
         <Logo
-          text={"/wrkshop"}
+          text={"/wrkshops"}
           borderColor={"border-white"}
           extraClass={"mb-8 text-3xl"}
         />

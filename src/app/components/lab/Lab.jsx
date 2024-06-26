@@ -29,7 +29,7 @@ const Lab = () => {
         className=""
       />
       <TextRevealByWord
-        text="activations, events and strategies on the point-of-sale."
+        text="brand activations, events and strategies on the point-of-sale."
         className=""
       />
     </div>

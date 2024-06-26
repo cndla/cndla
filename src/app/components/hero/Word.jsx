@@ -11,7 +11,7 @@ const Word = ({ value }) => {
     })
     const words = value.split(" ");
     return (
-        <p ref={theElemente} className='flex flex-wrap items-center justify-between w-10/12 m-auto'>
+        <p ref={theElemente} className='flex flex-wrap items-center justify-between w-10/12 gap-1 m-auto'>
             <span className='flex pr-20 text-lg text-cnlda-orange md:pr-44 md:text-3xl'>manifst</span>
             {words.map((word, index) => {
                 const start = index / words.length;

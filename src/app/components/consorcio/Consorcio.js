@@ -112,41 +112,44 @@ const Consorcio = () => {
         <div className="flex flex-col items-center gap-5 sm:items-end sm:pr-2 sm:w-5/12 sm:mt-0 md:w-4/12 lg:p-2">
           <Image src={reunion} alt="" className="w-36 xl:w-72" />
           <div className="px-12 space-y-5 text-xs text-center text-balance sm:text-right sm:space-y-3 sm:text-xs sm:px-2 md:text-base lg:text-lg xl:text-2xl">
-            <p>an own project made with love.</p>
+            <p>
+              we mix everything we love and make experiences [events] in the
+              cities we travel to.
+            </p>
             <p>where we talk about everything but the important things.</p>
             <p>
-              we mix everything we love and we make experiences in the cities we
-              visit.
+            shaped by the passion for gastronomy, moved by music, perceived through culture and expressed by the people.
             </p>
+            <p>an original project created by us.</p>
           </div>
         </div>
       </div>
       <div className="pt-10 md:pt-16 ">
-        <div className="flex justify-between w-10/12 p-5 pt-8 m-auto xl:w-8/12">
+        <div className="flex items-start justify-between w-10/12 p-5 pt-8 m-auto xl:w-8/12">
           <img
             src={gastro.src}
             alt=""
-            className="w-1/6 md:w-16 lg:w-20 xl:w-24 2xl:w-28"
+            className="w-1/6 h-12 md:w-16 lg:w-20 xl:w-24 2xl:w-28"
           />
           <img
             src={music.src}
             alt=""
-            className="w-1/6 md:w-16 lg:w-20 xl:w-24 2xl:w-28"
+            className="w-1/6 h-12 md:w-16 lg:w-20 xl:w-24 2xl:w-28"
           />
           <img
             src={culture.src}
             alt=""
-            className="w-1/6 md:w-16 lg:w-20 xl:w-24 2xl:w-28"
+            className="w-1/6 h-12 md:w-16 lg:w-20 xl:w-24 2xl:w-28"
           />
           <img
             src={people.src}
             alt=""
-            className="w-1/6 md:w-16 lg:w-20 xl:w-24 2xl:w-28"
+            className="w-1/6 h-12 md:w-16 lg:w-20 xl:w-24 2xl:w-28"
           />
           <img
             src={gozadera.src}
             alt=""
-            className="w-1/6 md:w-16 lg:w-20 xl:w-24 2xl:w-28"
+            className="w-1/6 h-12 md:w-16 lg:w-20 xl:w-24 2xl:w-28"
           />
         </div>
         <p className="pt-12 text-sm text-center underline underline-offset-4 sm:pt-14">
