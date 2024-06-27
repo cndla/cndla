@@ -118,7 +118,8 @@ const Consorcio = () => {
             </p>
             <p>where we talk about everything but the important things.</p>
             <p>
-            shaped by the passion for gastronomy, moved by music, perceived through culture and expressed by the people.
+              shaped by the passion for gastronomy, moved by music, perceived
+              through culture and expressed by the people.
             </p>
             <p>an original project created by us.</p>
           </div>
