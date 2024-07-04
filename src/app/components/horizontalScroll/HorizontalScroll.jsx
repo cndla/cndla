@@ -23,8 +23,8 @@ const HorizontalScroll = () => {
       className={`${roboto.className} relative h-[1000vh] bg-black`}
       id="work"
     >
-      <div className="sticky top-0 flex items-center h-screen overflow-hidden">
-        <motion.div style={{ x }} className="flex h-screen">
+      <div className="sticky top-0 flex items-center overflow-hidden">
+        <motion.div style={{ x }} className="flex max-h-full h-svh min-h-fit">
           {data.map((item) => (
             <motion.div
               initial={{ opacity: 0 }}
@@ -59,20 +59,28 @@ const HorizontalScroll = () => {
                 transition={{ duration: 2, delay: 0.5 }}
               >
                 <div className="flex flex-col items-center justify-center h-full text-white lg:w-8/12 ">
-                  <a href={item.ig} target="_blank" rel="noreferrer" className="flex justify-center w-full">
-
+                  <a
+                    href={item.ig}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex justify-center w-full"
+                  >
                     <Image
                       src={item.icon}
                       alt=""
                       width={0}
                       height={0}
-                      className={`${item.id == 11 ? "w-3/12" : item.id == 2 ? "w-8/12" : "w-6/12 md:w-6/12"
-                        } `}
+                      className={`${
+                        item.id == 11
+                          ? "w-3/12"
+                          : item.id == 2
+                          ? "w-8/12"
+                          : "w-6/12 md:w-6/12"
+                      } `}
                     ></Image>
                   </a>
                   <div className="flex flex-col justify-around gap-5  xl:w-[70vw] 2xl:text-4xl xl:text-3xl sm:text-lg text-xs  px-12 p-2 sm:p-10 md:p-12 w-full">
                     <div className="">
-
                       <div className="w-full flex gap-2.5 ">
                         {" "}
                         {item.text.map((text, i) => (
@@ -128,7 +136,6 @@ const HorizontalScroll = () => {
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       transition={{ duration: 0.5 }} href={item.ig} target="_blank" rel="noreferrer" className="text-xs text-center text-white underline md:text-base underline-offset-4 sm:text-sm">ver más</motion.a> */}
-
                   </div>
                 </div>
               </motion.div>{" "}
