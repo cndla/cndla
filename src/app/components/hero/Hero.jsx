@@ -13,7 +13,7 @@ export const roboto = Roboto({
 });
 
 const text =
-  "we are_ignited by the impulsive feeling that drives you to do everything you love, to conquer and take on new challengesthe passion of the minds behind this teamthe thoughts that are transformed into real strategic actionsand the rush of adrenaline for a new project_based in Argentina, working globally.";
+  "we are__ignited by the impulsive feeling that drives you to do everything you love, to conquer and take on new challenges_the passion of the minds behind this team_the thoughts that are transformed into real strategic actions_and the rush of adrenaline for a new project__we are based in Argentina, working globally.";
 
 const Hero = () => {
   const container = useRef(null);
