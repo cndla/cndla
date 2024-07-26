@@ -1,5 +1,4 @@
 import "./globals.css";
-import { LenisScroller } from "./LenisScroll";
 import { Roboto } from "next/font/google";
 
 export const metadata = {
