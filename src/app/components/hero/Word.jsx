@@ -17,19 +17,21 @@ const Word = ({ value, highlightedText }) => {
             <span className="flex pr-20 text-lg text-cnlda-orange md:pr-44 md:text-3xl">
                 {highlightedText}
             </span>
-            {words.map((word, index) => {
-                const start = index / words.length;
-                const end = start + 1 / words.length;
-                return (
-                    <TheWord
-                        key={index}
-                        range={[start, end]}
-                        progress={scrollYProgress3}
-                    >
-                        {word}
-                    </TheWord>
-                );
-            })}
+            <div className="flex flex-wrap items-center justify-between w-10/12 gap-1">
+                {words.map((word, index) => {
+                    const start = index / words.length;
+                    const end = start + 1 / words.length;
+                    return (
+                        <TheWord
+                            key={index}
+                            range={[start, end]}
+                            progress={scrollYProgress3}
+                        >
+                            {word}
+                        </TheWord>
+                    );
+                })}
+            </div>
         </p>
     );
 };

@@ -70,12 +70,12 @@ const Hero = () => {
                             {"/kan'dela/"}
                         </span>
                         <span className="relative md:leading-9">
-                            <span className="absolute text-lg opacity-0 md:opacity-15 md:text-3xl">
+                            <span className="absolute text-lg opacity-0 md:opacity-15 md:text-2xl">
                                 {firstText}
                             </span>
                             <motion.span
                                 style={{ opacity: 1 }}
-                                className="mr-1 text-lg text-white md:text-3xl"
+                                className="mr-1 text-lg text-white md:text-2xl"
                             >
                                 {firstText}
                             </motion.span>

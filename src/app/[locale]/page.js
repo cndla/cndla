@@ -43,7 +43,7 @@ export default function Home({ params: { locale } }) {
                 <main>
                     <Presentation />
                     <Hero />
-                    <OurServices />
+                    <OurServices locale={locale} />
                     <WeAreProud />
                     <UnderOneRoof />
                     <WeBelive />

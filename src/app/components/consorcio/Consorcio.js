@@ -155,7 +155,7 @@ const Consorcio = () => {
                         className="w-1/6 h-12 md:w-16 lg:w-20 xl:w-24 2xl:w-28"
                     />
                 </div>
-                <p className="pt-12 text-sm text-center underline underline-offset-4 sm:pt-14">
+                <p className="pt-12 text-lg sm:text-xl text-center underline underline-offset-4 sm:pt-14">
                     {t('consortium-seventh-paragraph')}
                 </p>
             </div>

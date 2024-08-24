@@ -31,13 +31,24 @@ const OurServices = ({ locale }) => {
         },
     ];
 
-    const goTo = (link) => {
-        const element = document.getElementById(link);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
+    const goToSection = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        element.scrollIntoView({ behavior: 'smooth' });
     };
 
+    const goTo = (index) => {
+        switch (index) {
+            case 0:
+                return goToSection('studio');
+            case 1:
+                return goToSection('experiences');
+            case 2:
+                return goToSection('workshops');
+            default:
+                return;
+        }
+    };
+    console.log('LOCALE', locale);
     return (
         <section
             className={`${roboto.className} ourServices h-[800px] sm:h-screen lg:p-24 `}
@@ -47,7 +58,7 @@ const OurServices = ({ locale }) => {
                 {data.map((item, index) => (
                     <motion.a
                         key={index}
-                        onClick={() => goTo(item.text[2])}
+                        onClick={() => goTo(index)}
                         className={
                             ' flex lg:flex-col  border border-white justify-center w-11/12 items-center rounded-[50%] hover:bg-white hover:text-black lg:text-5xl lg:h-[70svh] text-lg h-44'
                         }
@@ -59,7 +70,14 @@ const OurServices = ({ locale }) => {
                         }}
                     >
                         {item.text.map((text, i) => (
-                            <span key={i} className="pr-1 last:font-bold">
+                            <span
+                                key={i}
+                                className={`pr-1 ${
+                                    locale === 'en'
+                                        ? 'last:font-bold'
+                                        : 'first:font-bold'
+                                }`}
+                            >
                                 {text}
                             </span>
                         ))}
