@@ -57,35 +57,34 @@ const Hero = () => {
                         ></motion.div>
                     </div>
                     <motion.img src={video.src} alt="logo" className="w-full" />
-                </div>
-            </div>
-            <div className="">
-                <motion.div
-                    style={{ opacity: scrollYProgress2 }}
-                    className="flex flex-wrap w-11/12 m-auto text-balance "
-                    ref={element}
-                >
-                    <p className="flex flex-col justify-between mb-8 mt-10 w-10/12 gap-1 m-auto">
-                        <span className="flex pr-20 text-lg text-cnlda-orange md:pr-44 md:text-3xl">
-                            {"/kan'dela/"}
-                        </span>
-                        <span className="relative md:leading-9">
-                            <span className="absolute text-lg opacity-0 md:opacity-15 md:text-2xl">
-                                {firstText}
+                    <motion.div
+                        style={{ opacity: scrollYProgress2 }}
+                        className="flex flex-wrap w-full text-balance "
+                        ref={element}
+                    >
+                        <p className="flex flex-col justify-between mb-8 mt-10 w-full gap-1 m-auto">
+                            <span className="flex pr-20 text-lg text-cnlda-orange md:pr-44 md:text-3xl">
+                                {"/kan'dela/"}
                             </span>
-                            <motion.span
-                                style={{ opacity: 1 }}
-                                className="mr-1 text-lg text-white md:text-2xl"
-                            >
-                                {firstText}
-                            </motion.span>
-                        </span>
-                    </p>
-                    <Word
-                        value={secondText}
-                        highlightedText={t('hero-manifest')}
-                    />
-                </motion.div>
+                            <span className="relative md:leading-9">
+                                <span className="absolute text-lg opacity-0 md:opacity-15 md:text-2xl">
+                                    {firstText}
+                                </span>
+                                <motion.span
+                                    style={{ opacity: 1 }}
+                                    className="mr-1 text-lg text-white md:text-2xl"
+                                >
+                                    {firstText}
+                                </motion.span>
+                            </span>
+                        </p>
+                        <Word
+                            customWidth={'w-full'}
+                            value={secondText}
+                            highlightedText={t('hero-manifest')}
+                        />
+                    </motion.div>
+                </div>
             </div>
         </section>
     );

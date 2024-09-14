@@ -1,8 +1,9 @@
 'use client';
 import { useScroll, motion, useTransform, progress } from 'framer-motion';
 import React, { useRef } from 'react';
+import { twMerge } from 'tailwind-merge';
 
-const Word = ({ value, highlightedText }) => {
+const Word = ({ value, highlightedText, customWidth }) => {
     const theElemente = useRef(null);
     const { scrollYProgress: scrollYProgress3 } = useScroll({
         target: theElemente,
@@ -12,12 +13,20 @@ const Word = ({ value, highlightedText }) => {
     return (
         <p
             ref={theElemente}
-            className="flex flex-wrap items-center justify-between w-10/12 gap-1 m-auto"
+            className={twMerge(
+                'flex flex-wrap items-center justify-between gap-1 m-auto',
+                customWidth ?? 'w-10/12'
+            )}
         >
             <span className="flex pr-20 text-lg text-cnlda-orange md:pr-44 md:text-3xl">
                 {highlightedText}
             </span>
-            <div className="flex flex-wrap items-center justify-between w-10/12 gap-1">
+            <div
+                className={twMerge(
+                    'flex flex-wrap items-center justify-between gap-1',
+                    customWidth ?? 'w-10/12'
+                )}
+            >
                 {words.map((word, index) => {
                     const start = index / words.length;
                     const end = start + 1 / words.length;
